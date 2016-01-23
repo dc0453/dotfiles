@@ -1,1 +1,1 @@
-eval `dircolors ${HOME}/plugins/dircolors-solarized/dircolors.ansi-dark`
+eval `dircolors ${HOME}/.plugins/dircolors-solarized/dircolors.ansi-dark`

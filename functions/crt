@@ -2,7 +2,7 @@
 function crt
 {
     user="$(whoami)";
-    host="$(ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d " " -f 2 )";
+    host=$(ifconfig | grep "inet " | grep -v 127.0.0.1 | awk '{print $2}' | awk -F":" '{print $2}');
     PWD="$(pwd)"
 
     if [[ $# == 1 ]]; then

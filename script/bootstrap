@@ -5,6 +5,11 @@
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd)
 
+IS_MAC_OS=""
+if [[ "$OSTYPE" == darwin* ]]; then
+    IS_MAC_OS=true
+fi
+
 set -e
 
 echo ""
@@ -32,6 +37,8 @@ echo ""
 echo "     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo ""
 echo ""
+
+# =============== function ===============
 
 info () {
   printf "  [ \033[00;34m..\033[0m ] $1\n"
@@ -146,20 +153,32 @@ install_dotfiles () {
   info 'installing dotfiles'
 
   local overwrite_all=false backup_all=false skip_all=false
-  for src in $(find "$DOTFILES_ROOT/" -maxdepth 2 -name '*.symlink')
+
+#  if [[ "$IS_MAC_OS" == true ]]; then
+#    symlink=$(find "$DOTFILES_ROOT/" -maxdepth 2 -name '*.symlink_mac')
+#  else
+#    symlink=$(find "$DOTFILES_ROOT/" -maxdepth 2 -name '*.symlink')
+#  fi
+
+  symlink=$(find "$DOTFILES_ROOT/" -maxdepth 2 -name '*.symlink')
+  for src in $symlink
   do
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
 }
 
-install_homebrew
+# =============== main ===============
+
+if [[ "$IS_MAC_OS" == true ]]; then
+  install_homebrew
+fi
 install_ohmyzsh
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]
-then
+#if [ "$IS_MAC_OS" == true ]
+#then
   info "installing dependencies"
   if source bin/dot
   then
@@ -167,7 +186,7 @@ then
   else
     fail "error installing dependencies"
   fi
-fi
+#fi
 
 echo ''
 echo '  All installed!'

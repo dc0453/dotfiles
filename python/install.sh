@@ -11,10 +11,15 @@ plugins=(
     unittest2
     thefuck
 )
+if test ! $(which pip)
+then
+    echo "no python pip, exit"
+    exit 0
+fi
 
-pip install --upgrade pip
+sudo pip install --upgrade pip
 
 # pyenv
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
-pip install ${plugins[@]}
+sudo pip install ${plugins[@]}
