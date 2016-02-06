@@ -31,4 +31,4 @@ sh $HOME/.dotfiles/python/install.sh
 sh $HOME/.dotfiles/beautify/install.sh
 
 # Set up spf13-vim
-#sh $HOME/.dotfiles/vim/install.sh
+sh $HOME/.dotfiles/vim/install.sh

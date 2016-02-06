@@ -1,27 +1,12 @@
-# !/bin/sh
+# !/usr/bin/env bash
+base_dir="$HOME/.spf13-vim-3"
+spf13_script="$HOME/spf13-vim.sh"
+echo "installing spf13-vim-3"
 
-plugins=${HOME}/plugins
-
-if [[ ! -d ${plugins} ]]; then
-    mkdir ${plugins}
+if [[ ! -d $base_dir ]]; then
+  echo "create new spf13-vim-3"
+  #sh < $(curl -fsSL https://j.mp/spf13-vim3)
+  curl https://j.mp/spf13-vim3 -L > $spf13_script && sh $spf13_script
 fi
 
-cd ${plugins}
-
-# mac中的vim版本太低, 换成macvim
-echo "Installing macvim..."
-brew install macvim --override-system-vim
-brew linkapps macvim
-
-# 安装依赖
-brew install ctags
-brew install the_silver_searcher
-
-# 可以选择安装
-# brew tap neovim/neovim
-# brew install --HEAD neovim
-# pip install neovim
-
-# git clone https://github.com/wklken/k-vim.git
-# cd k-vim/
-# sh -x install.sh
+echo "install spf13-vim done"

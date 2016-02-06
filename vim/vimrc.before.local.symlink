@@ -1,0 +1,10 @@
+
+let g:spf13_no_fastTabs = 1
+let unnamedplus = 0
+
+
+" change to be installed bundles
+if !exists('g:spf13_bundle_groups')
+    let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'php', 'python', 'javascript', 'html',]
+endif
+

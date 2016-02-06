@@ -1,0 +1,3 @@
+
+" color schemes solarized
+Bundle 'vim-airline/vim-airline-themes'

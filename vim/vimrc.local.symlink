@@ -1,0 +1,8 @@
+" use default mouse option that can use mouse 
+set mouse=""
+
+" do not strip whitespace when save
+let g:spf13_keep_trailing_whitespace = 1
+
+let g:snips_author = 'dc0453 <diwenchen@edaijia-inc.cn>'
+
