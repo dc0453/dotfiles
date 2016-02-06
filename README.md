@@ -5,7 +5,7 @@
 
 ![iMac-MacBook-flat](http://i.imgur.com/GBpjrHB.png)
 
-这份 [dotfiles](https://github.com/zoumo/dotfiles) 是 fork 自 [Jim's dotfiles](https://github.com/zoumo/dotfiles) 基于[Holman's dotfiles](https://github.com/holman/dotfiles)，并更加个人的需求进行了修改, 如果有兴趣欢迎fork一份回去配置适合自己的dotfiles。
+这份 [dotfiles](https://github.com/zoumo/dotfiles) 是 fork 自 [zoumo's dotfiles](https://github.com/zoumo/dotfiles) 基于[Holman's dotfiles](https://github.com/holman/dotfiles)，并更加个人的需求进行了修改, 如果有兴趣欢迎fork一份回去配置适合自己的dotfiles。
 
 更多的 dotfiles 请参考 [GitHub does dotfiles](https://dotfiles.github.io/)。
 
