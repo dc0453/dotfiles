@@ -1,11 +1,11 @@
-# Jim does dotfiles
+# dc0453's dotfiles
 
 
 > The set of files used to describe session initialization procedures and store user customizations are commonly referred to as "dotfiles". These files can be used to customize screen appearance, shell behavior, program specifications and aspects of your Athena session. Most dotfiles are text files, although some exist in other formats. Dotfiles generally contain one command per line and are stored in your home directory. Dotfiles usually have names that begin with a period, hence the name dotfiles. You are given some dotfiles that are necessary for you to be able to login when you get your account.
 
 ![iMac-MacBook-flat](http://i.imgur.com/GBpjrHB.png)
 
-这份 [dotfiles](https://github.com/zoumo/dotfiles) 是 fork 自 [Amowu's dotfiles](https://github.com/amowu/dotfiles) 基于[Holman's dotfiles](https://github.com/holman/dotfiles)，并更加个人的需求进行了修改, 如果有兴趣欢迎fork一份回去配置适合自己的dotfiles。
+这份 [dotfiles](https://github.com/zoumo/dotfiles) 是 fork 自 [Jim's dotfiles](https://github.com/zoumo/dotfiles) 基于[Holman's dotfiles](https://github.com/holman/dotfiles)，并更加个人的需求进行了修改, 如果有兴趣欢迎fork一份回去配置适合自己的dotfiles。
 
 更多的 dotfiles 请参考 [GitHub does dotfiles](https://dotfiles.github.io/)。
 
@@ -44,10 +44,10 @@ $ xcode-select --install
 使用 git clone 一份到 `$HOME` 目录底下的 `.dotfiles` 文件夹里面:
 
 ```bash
-$ git clone git@github.com:zoumo/dotfiles.git ~/.dotfiles
+$ git clone git@github.com:dc0453/dotfiles.git ~/.dotfiles
 ```
 
-進入 `.dotfiles` 文件夹, 然后安装dotfiles:
+进入 `.dotfiles` 文件夹, 然后安装dotfiles:
 
 ```bash
 $ cd ~/.dotfiles
@@ -60,16 +60,18 @@ $ ./script/bootstrap
 1. 检查并安装 [Homebrew](http://brew.sh/)。
 2. 检查并安装 [Oh My Zsh](http://ohmyz.sh/)。
 3. 检查并链接 dotfiles(`.zshrc`, `.vimrc`, `.gitconfig`,` .gitignore`, ...)。
-4. 更新并安装 brew packages(binaries, fonts, apps)。
-5. 设置 Mac OS X 的 defaults settings。
-6. 安装python packages(powerline-status, pyenv, ...)
-7. 对vim, ls, terminal进行美化, 主要是安装了solarized配色和powerline状态栏
+4. 更新并安装 brew packages(binaries, apps)。
+5. 安装zshrc的自定义文件。
+6. 设置 Mac OS X 的 defaults settings。(fork版本已经取消)
+7. 安装python packages。(powerline-status, pyenv, ...)
+8. 对vim, ls, terminal进行美化, 主要是安装了solarized配色和powerline状态栏。
+9. 安装spf13-vim。
 
 完成之后, 手动安装一些其他软件(Sublime3, Alfred, 以及一些较大的软件java, mysql, mongodb, nginx, jmeter)
 
 ## Restore backup
 
-使用 [Mackup](https://github.com/lra/mackup) 进行备份恢复:
+使用 [Mackup](https://github.com/lra/mackup) 进行备份恢复:(这个部分fork版本暂时没有使用)
 
 ```bash
 $ mackup restore
@@ -85,15 +87,17 @@ $ mackup restore
 
 | topic  | *.symlink          | .dotfiles     |
 | ------ | ------------------ | ------------- |
-| git    | gitconfig.symlink  | ~/.gitconfig  |
-| git    | gitignore.symlink  | ~/.gitignore  |
-| mackup | mackup.cfg.symlink | ~/.mackup.cfg |
-| vim    | vimrc.symlink      | ~/.vimrc      |
+| vim    | vimrc.before.local.symlink      | ~/.vimrc.before.local|
+| vim    | vimrc.bundles.local.symlink      | ~/.vimrc.bundles.local|
+| vim    | vimrc.local.symlink      | ~/.vimrc.local|
 | zsh    | zshrc.symlink      | ~/.zshrc      |
+| zsh   | bash_profile.symlink      | ~/.bash_profile |
 
 ### Topical
 
-每一个环境的配置是以文件夹的形式独立区分, 例如, 如果想要增加"Python"的配置到ditfiles, 则简单的新增一个名字为 `python` 的文件夹
+每一个环境的配置是以文件夹的形式独立区分。
+例如, 如果想要增加"Python"的配置到dotfiles, 则简单的新增一个名字为 `python` 的文件夹。
+如果有需要安装的东西，比如说会下载一些软件或者模块什么的，就要在这个文件夹中自己添加install.sh的脚本，然后在~/.dotfiles/bin/dot中将这个脚本的执行路径加上。
 任何后缀名是 `.zsh` 的文件将在 shell 执行时自动被载入环境中。
 任何后缀名是 `.symlink` 的文件将在你执行 `script/bootstrap`的时候自动链接到 `$HOME` 目录下
 
@@ -111,6 +115,7 @@ $ mackup restore
 - Shell 的部分改用 [Oh My Zsh](http://ohmyz.sh/)取代原作者自己配置的 zsh。
 - 移除 **topic/aliases.zsh**、**topic/completion.zsh** 等文件，改用 Oh My Zsh 的 [plugins]。(https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) 代替。
 - 移除 **zsh/prompt.zsh**、**zsh/window.zsh** 等文件，改用 Oh My Zsh 的 [themes]。(https://github.com/robbyrussell/oh-my-zsh/wiki/Themes) 代替。
+- vim部分，该用[spf13-vim](https://github.com/spf13/spf13-vim)取代原作者自己配置的zsh。
 - dotfiles 只專注在 **topic/*.symlink**、**topic/path.zsh** 的配置。
 
 
@@ -118,12 +123,14 @@ $ mackup restore
 
 `bin/dot` 会在`script/bootstrap`最后执行, 负责安装OS X的程序和修改系统配置
 
-执行 `$ dot` 之后，它会执行下面两个脚本:
+执行 `$ dot` 之后，它会执行下面的脚本:
 
 1. `$HOME/.dotfiles/homebrew/install.sh` - Homebrew packages
-2. `$HOME/.dotfiles/osx/set-defaults.sh` - OS X defaults setting
+2. `$HOME/.dotfiles/zsh/install.sh`      - Zsh customize config
+2. `$HOME/.dotfiles/osx/set-defaults.sh` - OS X defaults setting (此fork版本暂时不会用到这个)
 3. `$HOME/.dotfiles/python/install.sh`   - Set up python env
 4. `$HOME/.dotfiles/beautify/install.sh` - beautify vim, terminal, ls
+5. `$HOME/.dotfiles/vim/install.sh`      - spf13-vim 
 
 ### Homebrew packages
 
@@ -133,15 +140,6 @@ $ mackup restore
 binaries=(
   git
   tree
-  ...
-)
-```
-
-字体都是以 **font-XXX** 的形式命名，可以用 `$ brew cask search /font-XXX/` 搜索是否存在。
-
-```bash
-fonts=(
-  font-roboto
   ...
 )
 ```
@@ -168,19 +166,14 @@ apps=(
 | ctags | 方便代码阅读 |
 | [grc](http://kassiopeia.juls.savba.sk/~garabik/software/grc/README.txt)| log上色 |
 | [git-flow](https://github.com/nvie/gitflow) | Git branch manage model |
-| [tree](http://mama.indstate.edu/users/ice/tree/) | 树状目录结构显示 |
+| ssh-copy-id | 拷贝ssh key |
+| watch | 检测一个命令的运行结果 |
+| task | 命令行todo工具 |
 | [mackup](https://github.com/lra/mackup) | 同步应用程序配置 |
-| [z](https://github.com/rupa/z.git) | autojump |
+| autojump | autojump |
 | tmux | tmux |
 | htop | 加强版top |
-| [trash](http://hasseg.org/blog/post/406/trash-files-from-the-os-x-command-line/) | 模拟Finder的移到废纸篓功能, 在alias中对rm进行替换, 进行安全删除 |
 
-
-#### Fonts
-
-| name | info |
-| --- | --- |
-| [font-source-code-pro](http://www.google.com/fonts/specimen/Source+Code+Pro) | Source Code Pro |
 
 #### Apps
 
@@ -190,13 +183,7 @@ apps=(
 | [qq](http://im.qq.com/macqq/) | 聊天 |
 | [macdown](http://macdown.uranusjr.com/) | Open source Markdown editor for OS X |
 | [iterm2](http://iterm2.com/) | 加强版终端 |
-| [scroll-reverser](http://pilotmoon.com/scrollreverser/) | 支持鼠标和触控板滚轮分别设置 |
-| [slate](https://github.com/jigish/slate) | Mac窗口调节程序,类似于Divvy and SizeUp |
-| [beyond-compare](http://www.scootersoftware.com/) | Beyond Compare 是一个优秀的文件/目录对比工具 |
 | the-unarchiver | 优秀免费的解压软件 |
-| movist | 播放器 |
-| lingon-x | 启动项管理 |
-| appzapper | app卸载器 |
 | xtrafinder | finder加强 |
 
 
@@ -209,7 +196,6 @@ apps=(
 | mysql | 数据库 |
 | mongodb | 数据库 |
 | nginx | 反向代理 |
-| node | nodejs |
 
 #### Apps
 
@@ -290,33 +276,16 @@ $ git clone https://github.com/seebi/dircolors-solarized.git ~/plugins
 
 ### Terminal/Iterm2
 
-在 `~/plugins/solarized/iterm2-colors-solarized/` 双击 `Solarized Dark.itermcolors` 导入iterm2的配色
+在 `~/.plugins/solarized/iterm2-colors-solarized/` 双击 `Solarized Dark.itermcolors` 导入iterm2的配色
  
-在 `~/plugins/solarized/osx-terminal.app-colors-solarized/xterm-256color/` 双击 `Solarized Dark ansi.terminal` 导入Terminal.app的配色
-
-### vim
-
-```bash
-$ mkdir -p ~/.vim/colors
-$ cd ~/plugins/solarized/vim-colors-solarized/colors/
-$ cp solarized.vim ~/.vim/colors
-```
-
-修改 `.vimrc` 
-
-```bash
-$ vi ~/.vimrc
-syntax on
-set background=dark
-colorscheme solarized
-```
+在 `~/.plugins/solarized/osx-terminal.app-colors-solarized/xterm-256color/` 双击 `Solarized Dark ansi.terminal` 导入Terminal.app的配色
 
 ### ls
 
 Max OS X是基于FreeBSD的, 所以ls是BSD那一套, 不是GNU的ls, 所以即使Terminal/iTerm2配置了颜色, 但是ls也不会受到影响, 所以通过安装GNU的coreutils, 来解决
 
 ```bash
-eval `dircolors ~/plugins/dircolors-solarized/dircolors.ansi-dark`
+eval `dircolors ~/.plugins/dircolors-solarized/dircolors.ansi-dark`
 ```
 
 
@@ -330,53 +299,6 @@ powerline修改了terminal/vim下面的statusline
 $ git clone https://github.com/powerline/fonts
 $ cd ~/plugins/fonts && ./install.sh
 ```
-
-用`pip`安装, 然后获取到安装目录, 然后打开 vim ~/.zshrc, 在最后添加(注意前面的点)
-
-```bash
-$ pip install powerline-status
-$ vim ~/.zshrc
-
-if test $(which pip)
-then
-    export POWERLINE_ROOT="$(python -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")/powerline"
-    . ${POWERLINE_ROOT}/bindings/zsh/powerline.zsh
-
-fi
-```	
-之后使用`source ~/.zshrc`使之生效, 修改终端(iTerm2)的字体为`14pt Meslo LG S DZ Regular for Powerline`
-
-如下图
-
-![image](http://7xjgzy.com1.z0.glb.clouddn.com/powerline_1.png)
-
-然后修改配置powerline for vim
-
-`vim ~/.vimrc` 添加下面的配置, 路径和字体改成自己的
-
-```bash
-set rtp+=${POWERLINE_ROOT}/bindings/vim
-set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h14
-set laststatus=2
-set encoding=utf-8
-set t_Co=256
-set number
-set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
-set termencoding=utf-8
-set background=dark
-syntax on
-colorscheme solarized
-set tabstop=4
-set shiftwidth=4
-set expandtab
-filetype plugin on
-filetype indent on
-```
-    
-效果图如下, 会有一个状态栏出来
-
-![image](http://7xjgzy.com1.z0.glb.clouddn.com/powerline_2.png)
 
 ## Mackup
 
@@ -394,7 +316,7 @@ $ brew install mackup
 
 ```bash
 [storage]
-engine = dropbox # 同步的云盘, 目前只有弓dropbox和google_drive可以选择
+engine = dropbox # 同步的云盘, 目前只有dropbox和google_drive可以选择
 directory = Mackup # 同步的文件夹，这里会将所有的同步备份至 ~/Dropbox/Mackup 底下
 
 # 指定要同步的应用程序
@@ -434,7 +356,7 @@ $ mackup backup
 $ mackup restore
 ```
 
-以下是目前我备份的应用程序：
+以下是目前我备份的应用程序：(此fork版本暂时没有使用)
 
 
 | app | backup-conf |
@@ -454,19 +376,6 @@ $ mackup restore
 
 更多详细的配置说明和支持软件请查看 [mackup 的文件](https://github.com/lra/mackup/tree/master/doc)。
 
-## alias
-
-由于个人习惯需要对一些命令进行alias, 如下
-
-```bash
-alias dos2mac="dos2unix -c mac"
-alias gbk2utf8="iconv -f GBK -t UTF-8"
-alias utf82gbk="iconv -f UTF-8 -t GBK"
-alias tailf="tail -f"
-alias ve="pyenv local"
-alias rm="trash" # 这个需要brew install trash
-```
-
 ## Issue
 
 有一些程序我使用的破解版本, 需要手动安装
@@ -477,23 +386,11 @@ alias rm="trash" # 这个需要brew install trash
 | Sublime Text 3 | 我最喜欢的Editor |
 | Alfred | workflow神器 |
 | Dash | API查询神器 |
-| Airmail2 | 漂亮的邮件客户端 |
+| Unibox | 漂亮的邮件客户端 |
 | MindNode Pro | 简单漂亮的思维导图 |
-| sequel-pro | mysql客户端 |
-| clipmenu | 粘贴板增强 |
+| mysql-workbench | mysql客户端 |
 | sourcetree | git客户端 |
 | lantern | 开源P2P翻墙 |
-
-还有一些压根装不上的
-
-| name | 说明 |
-| --- | --- |
-| [qlcolorcode](https://code.google.com/p/qlcolorcode/) | 让 Quick Look 支持 syntax highlighting |
-| [qlmarkdown](https://github.com/toland/qlmarkdown) | 让 Quick Look 支持 Markdown |
-| [qlstephen](http://whomwah.github.io/qlstephen/) | 让 Quick Look 支持无后拓展名的纯文本 |
-| [font-roboto](http://www.google.com/fonts/specimen/Roboto) | Roboto字体 |
-| [goagentx](https://goagentx.com/releasenotes.html) | 支持各种协议的翻墙GUI, 被和谐了 |
-
 
 ## Reference
 
@@ -503,12 +400,12 @@ alias rm="trash" # 这个需要brew install trash
 - [如何優雅地在 Mac 上使用 dotfiles?](http://segmentfault.com/a/1190000002713879)
 - [osx-for-hackers.sh](https://gist.github.com/brandonb927/3195465)
 - [Mackup](https://github.com/lra/mackup/tree/master/doc)
-- [我的mac-dev-setup](https://github.com/zoumo/mac-dev-setup)
+- [zoumo mac-dev-setup](https://github.com/zoumo/mac-dev-setup)
 
 ## Thanks
 
-I forked [Amowu](https://github.com/amowu/)'s [dotfiles](https://github.com/amowu/dotfiles.git) base on [Zach Holman](http://github.com/holman)'s excellent [dotfiles](http://github.com/holman/dotfiles).
+I forked [zoumo](https://github.com/zoumo/)'s [dotfiles](https://github.com/zoumo/dotfiles.git) base on [Zach Holman](http://github.com/holman)'s excellent [dotfiles](http://github.com/holman/dotfiles).
 
 ## GitHub
 
-这是我的[dotfiles](https://github.com/zoumo/dotfiles)欢迎fork
+这是我的[dotfiles](https://github.com/dc0453/dotfiles)欢迎fork
