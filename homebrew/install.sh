@@ -18,7 +18,9 @@ binaries=(
   task
   mackup
   autojump
+  autossh
   tmux
+  reattach-to-user-namespace
   htop
   # tree
   # z
