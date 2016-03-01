@@ -1,0 +1,6 @@
+color.branch auto
+color.diff auto
+color.interactive auto
+color.status auto
+user.name dc0453
+core.excludesfile ~/.gitignore_global
