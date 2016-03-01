@@ -23,7 +23,7 @@ bind r source-file ~/.tmux.conf
 # Rename your terminals
 # 重命名终端
 set -g set-titles on
-set -g set-titles-string '#(whoami)::#h::#(curl ipecho.net/plain;echo)'
+#set -g set-titles-string '#(whoami)::#h::#(curl ipecho.net/plain;echo)'
 
 # 状态栏
 
@@ -42,7 +42,8 @@ set-option -g status-left-length 20
 
 
 # 窗口列表
-setw -g automatic-rename on
+setw -g automatic-rename off
+set -g allow-rename off
 set-window-option -g window-status-format '#[dim]#I:#[default]#W#[fg=grey,dim]'
 set-window-option -g window-status-current-format '#[fg=cyan,bold]#I#[fg=blue]:#[fg=cyan]#W#[fg=dim]'
 
