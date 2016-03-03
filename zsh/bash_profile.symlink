@@ -19,3 +19,5 @@ alias vim='/usr/local/bin/vim'
 
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
+
+alias vi='vim'
