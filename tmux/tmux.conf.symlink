@@ -1,12 +1,10 @@
 setw -g mode-keys vi
-set-window-option -g utf8 on
+#set-window-option -g utf8 on
 setw -g monitor-activity on
 set -g visual-activity on
 set -g default-terminal "screen-256color"
 
-setw -g mode-mouse on
-setw -g mouse-select-window on
-setw -g mouse-select-pane on
+set-option -g mouse on
 
 # Copy mode
 setw -g mode-keys vi
@@ -14,16 +12,16 @@ bind ` copy-mode
 unbind [
 unbind p
 bind p paste-buffer
-bind -t vi-copy v begin-selection
-bind -t vi-copy y copy-selection
-bind -t vi-copy Escape cancel
+#bind -t vi-copy v begin-selection
+#bind -t vi-copy y copy-selection
+#bind -t vi-copy Escape cancel
 
 bind r source-file ~/.tmux.conf
 
 # Rename your terminals
 # 重命名终端
 set -g set-titles on
-#set -g set-titles-string '#(whoami)::#h::#(curl ipecho.net/plain;echo)'
+set -g set-titles-string '#(whoami)::#h::#(curl ipecho.net/plain;echo)'
 
 # 状态栏
 

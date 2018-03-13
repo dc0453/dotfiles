@@ -15,7 +15,7 @@ cd ${plugins}
 
 # install powerline fonts
 if [[ ! -d ${plugins}/fonts ]]; then
-	git clone https://github.com/powerline/fonts
+	git clone https://github.com/powerline/fonts.git
 	sh ./fonts/install.sh
 fi
 
