@@ -14,10 +14,12 @@ export PATH=$PATH:$M2_HOME/bin
 #my scripts
 export PATH=$PATH:${HOME}/code/scripts
 
-export PATH=${HOME}/Downloads/JetbrainsPatchKeygen-master/gradle-2.1/bin/:$PATH
+export PATH=${HOME}/Downloads/JetbrainsPatchKeygen-master/gradle-2.1/bin:$PATH
 alias vim='/usr/local/bin/vim'
 
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 
 alias vi='vim'
+#export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
