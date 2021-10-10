@@ -11,9 +11,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 
 # Install homebrew packages
-if [[ "$IS_MAC_OS" == true ]]; then
-  sh $HOME/.dotfiles/homebrew/install.sh
-fi
+sh $HOME/.dotfiles/homebrew/install.sh
 
 # Set up oh-my-zsh
 $HOME/.dotfiles/zsh/install.sh

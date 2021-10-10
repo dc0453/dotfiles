@@ -5,16 +5,14 @@ PATH=$PATH:$HOME/bin
 export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 
 #java
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
-export PATH=$PATH:$JAVA_HOME/bin
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
+#export PATH=$PATH:$JAVA_HOME/bin
 #mvn
-export M2_HOME=/usr/local/apache-maven-3.2.3
-export PATH=$PATH:$M2_HOME/bin
+#export M2_HOME=/usr/local/apache-maven-3.2.3
+#export PATH=$PATH:$M2_HOME/bin
 #my scripts
 export PATH=$PATH:${HOME}/code/scripts
 
-export PATH=${HOME}/Downloads/JetbrainsPatchKeygen-master/gradle-2.1/bin:$PATH
 alias vim='/usr/local/bin/vim'
 
 export PATH=/opt/local/bin:$PATH
@@ -22,4 +20,4 @@ export PATH=/opt/local/sbin:$PATH
 
 alias vi='vim'
 #export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+#export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles

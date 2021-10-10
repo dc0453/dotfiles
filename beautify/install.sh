@@ -32,5 +32,4 @@ if [[ ! -d ${plugins}/dircolors-solarized ]]; then
 	git clone https://github.com/seebi/dircolors-solarized.git
 fi
 
-
 exit 0

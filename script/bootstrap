@@ -2,6 +2,8 @@
 #
 # bootstrap installs things.
 
+xcode-select --install
+
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd)
 
@@ -133,22 +135,6 @@ link_file () {
   fi
 }
 
-install_homebrew () {
-  if test ! $(which brew)
-  then
-    echo "Installing Homebrew for you..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  fi
-}
-
-install_ohmyzsh () {
-  if [ ! -d ~/.oh-my-zsh ]
-  then
-    info 'installing oh-my-zsh'
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  fi
-}
-
 install_dotfiles () {
   info 'installing dotfiles'
 
@@ -170,15 +156,10 @@ install_dotfiles () {
 
 # =============== main ===============
 
-if [[ "$IS_MAC_OS" == true ]]; then
-  install_homebrew
-fi
-install_ohmyzsh
 install_dotfiles
 
 # If we're on a Mac, let's install and setup homebrew.
-#if [ "$IS_MAC_OS" == true ]
-#then
+if [ "$IS_MAC_OS" == true ]; then
   info "installing dependencies"
   if source bin/dot
   then
@@ -186,7 +167,35 @@ install_dotfiles
   else
     fail "error installing dependencies"
   fi
-#fi
+fi
 
+TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
+zsh_bin=$(grep "/zsh$" /etc/shells | tail -1)
+
+Command::GetType() {
+    local name="$1"
+    local typeMatch=$(type -t "$name" 2>/dev/null || true)
+    echo $typeMatch
+}
+
+Command::Exists() {
+    local name="$1"
+    local typeMatch=$(Command::GetType "$name")
+    [[ "$typeMatch" == "alias" || "$typeMatch" == "function" || "$typeMatch" == "builtin" || "$typeMatch" == "file" ]]
+}
+
+if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
+    # If this platform provides a "chsh" command (not Cygwin), do it, man!
+    if Command::Exists chsh; then
+        echo "Time to change your default shell to zsh!"
+        sudo chsh -s "${zsh_bin}" "$(whoami)"
+        # Else, suggest the user do so manually.
+    else
+        echo "I can't change your shell automatically because this system does not have chsh."
+        echo "Please manually change your default shell to zsh!"
+    fi
+fi
 echo ''
 echo '  All installed!'
+
+[[ -n ${zsh_bin} ]] && ${zsh_bin}
