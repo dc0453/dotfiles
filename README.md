@@ -44,14 +44,13 @@ $ xcode-select --install
 使用 git clone 一份到 `$HOME` 目录底下的 `.dotfiles` 文件夹里面:
 
 ```bash
-$ git clone git@github.com:dc0453/dotfiles.git ~/.dotfiles
+$ git clone --recurse-submodules https://github.com/dc0453/dotfiles.git ~/.dotfiles
 ```
 
 进入 `.dotfiles` 文件夹, 然后安装dotfiles:
 
 ```bash
 $ cd ~/.dotfiles
-
 $ ./script/bootstrap
 ```
 
@@ -406,6 +405,3 @@ $ mackup restore
 
 I forked [zoumo](https://github.com/zoumo/)'s [dotfiles](https://github.com/zoumo/dotfiles.git) base on [Zach Holman](http://github.com/holman)'s excellent [dotfiles](http://github.com/holman/dotfiles).
 
-## GitHub
-
-这是我的[dotfiles](https://github.com/dc0453/dotfiles)欢迎fork
