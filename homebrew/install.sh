@@ -157,8 +157,13 @@ brew install findutils
 # Install Homebrew Cask
 # brew tap caskroom/fonts
 # brew tap caskroom/versions
-brew install caskroom/cask/brew-cask
-brew upgrade brew-cask
+# brew install caskroom/cask/brew-cask
+# brew upgrade brew-cask
+
+# Install GCM Core using Homebrew
+# see more : https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
+brew tap microsoft/git
+brew install --cask git-credential-manager-core
 
 echo "Installing binaries..."
 brew install ${binaries[@]}
