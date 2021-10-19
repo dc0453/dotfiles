@@ -16,6 +16,9 @@ fi
 # Install homebrew packages
 sh $DOTFILES_ROOT/homebrew/install.sh
 
+# beautify vim ls terminal
+sh $DOTFILES_ROOT/beautify/install.sh
+
 # Set up oh-my-zsh
 $DOTFILES_ROOT/zsh/install.sh
 
@@ -27,9 +30,6 @@ sh $DOTFILES_ROOT/python/install.sh
 
 # Set up ruby
 #sh $DOTFILES_ROOT/ruby/install.sh
-
-# beautify vim ls terminal
-sh $DOTFILES_ROOT/beautify/install.sh
 
 # Set up spf13-vim
 sh $DOTFILES_ROOT/vim/install.sh
