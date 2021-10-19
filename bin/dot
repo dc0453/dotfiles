@@ -5,28 +5,31 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd)
+
 IS_MAC_OS=""
 if [[ "$OSTYPE" == darwin* ]]; then
       IS_MAC_OS=true
 fi
 
 # Install homebrew packages
-sh $HOME/.dotfiles/homebrew/install.sh
+sh $DOTFILES_ROOT/homebrew/install.sh
 
 # Set up oh-my-zsh
-$HOME/.dotfiles/zsh/install.sh
+$DOTFILES_ROOT/zsh/install.sh
 
 # Set OS X defaults
-#sh $HOME/.dotfiles/osx/set-defaults.sh
+#sh $DOTFILES_ROOT/osx/set-defaults.sh
 
 # Set up python env
-sh $HOME/.dotfiles/python/install.sh
+sh $DOTFILES_ROOT/python/install.sh
 
 # Set up ruby
-#sh $HOME/.dotfiles/ruby/install.sh
+#sh $DOTFILES_ROOT/ruby/install.sh
 
 # beautify vim ls terminal
-sh $HOME/.dotfiles/beautify/install.sh
+sh $DOTFILES_ROOT/beautify/install.sh
 
 # Set up spf13-vim
-sh $HOME/.dotfiles/vim/install.sh
+sh $DOTFILES_ROOT/vim/install.sh
