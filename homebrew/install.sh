@@ -178,6 +178,5 @@ brew install --cask --appdir="/Applications" ${apps[@]}
 
 # clean things up
 brew cleanup
-brew cleanup --cask
 
 exit 0
