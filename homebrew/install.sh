@@ -71,9 +71,10 @@ binaries=(
   maven
   mysql
   openjdk
-  python@3.9
+  pyenv
   reattach-to-user-namespace
   ssh-copy-id
+  the_silver_searcher
   thrift
   tldr
   tmux
