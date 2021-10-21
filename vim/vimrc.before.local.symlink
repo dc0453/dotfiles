@@ -8,3 +8,7 @@ if !exists('g:spf13_bundle_groups')
     let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'php', 'go', 'python', 'javascript', 'html',]
 endif
 
+" airline enable
+let g:airline_powerline_fonts=1
+let g:airline_theme='badwolf'
+
