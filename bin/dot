@@ -33,3 +33,6 @@ sh $DOTFILES_ROOT/python/install.sh
 
 # Set up spf13-vim
 sh $DOTFILES_ROOT/vim/install.sh
+
+# Set up jenv
+sh $DOTFILES_ROOT/jen/install.sh

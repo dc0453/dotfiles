@@ -103,6 +103,7 @@ binaries=(
 
 # Apps
 apps=(
+  adoptopenjdk8
   postman
   sublime-text
   # java
