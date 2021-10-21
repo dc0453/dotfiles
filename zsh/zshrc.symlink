@@ -165,3 +165,5 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 
 eval "$(jenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
