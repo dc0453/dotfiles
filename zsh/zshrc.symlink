@@ -125,11 +125,11 @@ if [ -d "$DOTFILES" ];
 then
   # all of our zsh files
   typeset -U config_files
-  config_files=($DOTFILES/**/*.zsh)
+  config_files=($DOTFILES/**/*.env)
 
   # load the path files
   # 获取到所有目录下path.zsh的文件, 优先载入
-  for file in ${(M)config_files:#*/path.zsh}
+  for file in ${(M)config_files:#*/path.env}
   do
     load $file
   done
