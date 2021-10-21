@@ -59,17 +59,20 @@ echo "install homebrew done"
 
 # Binaries
 binaries=(
+  ack
   autojump
   autossh
   ctags
   dos2unix
   fzf
+  graphviz
   htop
   jenv
   jq
   mackup
   maven
   mysql
+  node
   openjdk
   pyenv
   reattach-to-user-namespace
@@ -101,6 +104,7 @@ binaries=(
 # Apps
 apps=(
   postman
+  sublime-text
   # java
   # google-chrome
   # qq
