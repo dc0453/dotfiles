@@ -49,6 +49,11 @@ install_homebrew () {
       git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/linuxbrew-core.git
       git -C "$(brew --repo homebrew/command-not-found)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-command-not-found.git
     fi
+
+    # Install GCM Core using Homebrew
+    # see more : https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
+    brew tap microsoft/git
+
     brew update-reset
   fi
 }
@@ -106,6 +111,7 @@ apps=(
   adoptopenjdk8
   postman
   sublime-text
+  git-credential-manager-core
   # java
   # google-chrome
   # qq
@@ -165,11 +171,6 @@ brew install findutils
 # brew tap caskroom/versions
 # brew install caskroom/cask/brew-cask
 # brew upgrade brew-cask
-
-# Install GCM Core using Homebrew
-# see more : https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
-brew tap microsoft/git
-brew install --cask git-credential-manager-core
 
 echo "Installing binaries..."
 brew install ${binaries[@]}
