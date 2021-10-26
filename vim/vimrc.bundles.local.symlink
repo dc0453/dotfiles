@@ -1,4 +1,4 @@
-
+Plugin 'rizzatti/dash.vim'
 " color schemes solarized
 " Bundle 'vim-airline/vim-airline-themes'
 UnBundle 'tomtom/tlib_vim'

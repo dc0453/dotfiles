@@ -5,7 +5,7 @@ let unnamedplus = 0
 
 " change to be installed bundles
 if !exists('g:spf13_bundle_groups')
-    let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'php', 'go', 'python', 'javascript', 'html',]
+    let g:spf13_bundle_groups=['general', 'writing', 'youcompleteme', 'programming', 'go', 'python', 'html',]
 endif
 
 " airline enable
