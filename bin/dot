@@ -35,4 +35,8 @@ sh $DOTFILES_ROOT/python/install.sh
 sh $DOTFILES_ROOT/vim/install.sh
 
 # Set up jenv
-sh $DOTFILES_ROOT/jen/install.sh
+sh $DOTFILES_ROOT/jenv/install.sh
+
+# Set up iterm2
+sh $DOTFILES_ROOT/iterm2/install.sh
+
