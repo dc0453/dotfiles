@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>io.github.xieyezi</string>
+	<key>connections</key>
+	<dict>
+		<key>FEF86E3F-9070-4ED2-8718-02117ABD0905</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D1359A0-92B6-4218-9465-E1179E0F7D74</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>xieyezi</string>
+	<key>description</key>
+	<string>网易云音乐命令行操作快捷键</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>NeteaseMusic Controller</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>nm</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>neteaseMusic controller</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FEF86E3F-9070-4ED2-8718-02117ABD0905</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set query to "{query}"
+set PAUSE to "pause"
+set PAUSE_SHORT to "p"
+set NEXT to "next"
+set NEXT_SHORT to "ne"
+set PREVIOUS to "previous"
+set PREVIOUS_SHORT to "pr"
+set LOVE to "love"
+set LOVE_SHORT to "lv"
+set VOLUME_UP to "volumeup"
+set VOLUME_DOWN to "volumedown"
+set VOLUME_UP_SHORT to "vu"
+set VOLUME_DOWN_SHORT to "vd"
+set OPEN_LYRIC to "lyric"
+set OPEN_LYRIC_SHORT to "ly"
+set EXIT_A to "exit"
+set EXIT_SHORT to "ex"
+
+
+if query is equal to PAUSE or query is equal to PAUSE_SHORT then
+  tell application "System Events" to tell process "NeteaseMusic"		click menu item 1 of menu 1 of menu bar item 4 of menu bar 1	end tell
+else if query is equal to NEXT or query is equal to NEXT_SHORT then
+  tell application "System Events" to tell process "NeteaseMusic"		click menu item 2 of menu 1 of menu bar item 4 of menu bar 1	end tell
+else if query is equal to PREVIOUS or query is equal to PREVIOUS_SHORT then
+  tell application "System Events" to tell process "NeteaseMusic"		click menu item 3 of menu 1 of menu bar item 4 of menu bar 1	end tell
+else if query is equal to VOLUME_UP or query is equal to VOLUME_UP_SHORT then
+   tell application "System Events" to tell process "NeteaseMusic"		click menu item 4 of menu 1 of menu bar item 4 of menu bar 1	end tell
+else if query is equal to VOLUME_DOWN or query is equal to VOLUME_DOWN_SHORT then
+   tell application "System Events" to tell process "NeteaseMusic"		click menu item 5 of menu 1 of menu bar item 4 of menu bar 1	end tell
+else if query is equal to LOVE or query is equal to LOVE_SHORT then
+   tell application "System Events" to tell process "NeteaseMusic"		click menu item 6 of menu 1 of menu bar item 4 of menu bar 1	end tell
+else if query is equal to OPEN_LYRIC or query is equal to OPEN_LYRIC_SHORT then
+   tell application "System Events" to tell process "NeteaseMusic"		click menu item 9 of menu 1 of menu bar item 4 of menu bar 1	end tell
+else if query is equal to EXIT_A or query is equal to EXIT_SHORT then
+   tell application "System Events" to tell process "NeteaseMusic"		click menu item 14 of menu 1 of menu bar item 2 of menu bar 1	end tell
+else
+   tell application "NeteaseMusic"
+		activate
+   end tell
+end if</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5D1359A0-92B6-4218-9465-E1179E0F7D74</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>5D1359A0-92B6-4218-9465-E1179E0F7D74</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>FEF86E3F-9070-4ED2-8718-02117ABD0905</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://xieyezi.github.io/</string>
+</dict>
+</plist>
