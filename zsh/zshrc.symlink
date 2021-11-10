@@ -67,7 +67,7 @@ plugins=(
   git
   mvn
   tmux
-  osx
+  macos
   zsh-syntax-highlighting
   zsh-autosuggestions
   history-substring-search
