@@ -112,6 +112,7 @@ apps=(
   postman
   sublime-text
   git-credential-manager-core
+  keycastr
   # java
   # google-chrome
   # qq
