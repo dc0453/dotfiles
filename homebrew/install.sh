@@ -113,6 +113,7 @@ apps=(
   sublime-text
   git-credential-manager-core
   keycastr
+  karabiner-elements
   # java
   # google-chrome
   # qq
