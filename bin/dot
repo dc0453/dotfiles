@@ -40,3 +40,6 @@ sh $DOTFILES_ROOT/jenv/install.sh
 # Set up iterm2
 sh $DOTFILES_ROOT/iterm2/install.sh
 
+# Set up karabiner
+sh $DOTFILES_ROOT/karabiner/install.sh
+
