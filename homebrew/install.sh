@@ -54,6 +54,9 @@ install_homebrew () {
     # see more : https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
     brew tap microsoft/git
 
+    # Install jdk8
+    brew tap adoptopenjdk/openjdk
+
     brew update-reset
   fi
 }
@@ -108,7 +111,7 @@ binaries=(
 
 # Apps
 apps=(
-  adoptopenjdk8
+  adoptopenjdk/openjdk/adoptopenjdk8
   postman
   sublime-text
   git-credential-manager-core
