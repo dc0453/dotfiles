@@ -8,6 +8,8 @@
 	<integer>0</integer>
 	<key>AllowClipboardAccess</key>
 	<false/>
+	<key>AutoCommandHistory</key>
+	<true/>
 	<key>AutoHideTmuxClientSession</key>
 	<true/>
 	<key>BracketedPasteMode</key>
@@ -1021,9 +1023,9 @@
 	<false/>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Command History</string>
 		<string>Paste History</string>
 		<string>Recent Directories</string>
+		<string>Actions</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<true/>
