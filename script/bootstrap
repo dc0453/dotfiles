@@ -2,14 +2,13 @@
 #
 # bootstrap installs things.
 
-xcode-select --install
-
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd)
 
 IS_MAC_OS=""
 if [[ "$OSTYPE" == darwin* ]]; then
     IS_MAC_OS=true
+    xcode-select --install
 fi
 
 set -e
@@ -60,6 +59,18 @@ fail () {
   exit
 }
 
+command_GetType() {
+    local name="$1"
+    local typeMatch=$(type -t "$name" 2>/dev/null || true)
+    echo $typeMatch
+}
+
+command_Exists() {
+    local name="$1"
+    local typeMatch=$(command_GetType "$name")
+    [[ "$typeMatch" == "alias" || "$typeMatch" == "function" || "$typeMatch" == "builtin" || "$typeMatch" == "file" ]]
+}
+
 link_file () {
   local src=$1 dst=$2
 
@@ -68,19 +79,14 @@ link_file () {
 
   if [ -f "$dst" -o -d "$dst" -o -L "$dst" ]
   then
-
     if [ "$overwrite_all" == "false" ] && [ "$backup_all" == "false" ] && [ "$skip_all" == "false" ]
     then
-
       local currentSrc="$(readlink $dst)"
 
       if [ "$currentSrc" == "$src" ]
       then
-
         skip=true;
-
       else
-
         user "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
         [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all?"
         read -n 1 action
@@ -101,9 +107,7 @@ link_file () {
           * )
             ;;
         esac
-
       fi
-
     fi
 
     overwrite=${overwrite:-$overwrite_all}
@@ -140,12 +144,6 @@ install_dotfiles () {
 
   local overwrite_all=false backup_all=false skip_all=false
 
-#  if [[ "$IS_MAC_OS" == true ]]; then
-#    symlink=$(find "$DOTFILES_ROOT/" -maxdepth 2 -name '*.symlink_mac')
-#  else
-#    symlink=$(find "$DOTFILES_ROOT/" -maxdepth 2 -name '*.symlink')
-#  fi
-
   symlink=$(find "$DOTFILES_ROOT/" -maxdepth 2 -name '*.symlink')
   for src in $symlink
   do
@@ -173,21 +171,9 @@ fi
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
 zsh_bin=$(grep "/zsh$" /etc/shells | tail -1)
 
-Command::GetType() {
-    local name="$1"
-    local typeMatch=$(type -t "$name" 2>/dev/null || true)
-    echo $typeMatch
-}
-
-Command::Exists() {
-    local name="$1"
-    local typeMatch=$(Command::GetType "$name")
-    [[ "$typeMatch" == "alias" || "$typeMatch" == "function" || "$typeMatch" == "builtin" || "$typeMatch" == "file" ]]
-}
-
 if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
-    if Command::Exists chsh; then
+    if command_Exists chsh; then
         echo "Time to change your default shell to zsh!"
         sudo chsh -s "${zsh_bin}" "$(whoami)"
         # Else, suggest the user do so manually.
