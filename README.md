@@ -54,7 +54,7 @@ $ cd ~/.dotfiles
 $ ./script/bootstrap
 ```
 
-`bootstrap.sh` 这个程序会自动完成以下的工作:
+`bootstrap` 这个程序会自动完成以下的工作:
 
 1. 检查并安装 [Homebrew](http://brew.sh/)。
 2. 检查并安装 [Oh My Zsh](http://ohmyz.sh/)。

@@ -73,6 +73,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B8F463D9-BE69-48A0-9CA8-79526BF25FC2</key>
+		<array/>
 		<key>CD368563-4527-4653-981D-1B566CC99DE3</key>
 		<array>
 			<dict>
@@ -467,7 +469,7 @@
 					<string>/System/Volumes/Data/Applications/Google Chrome.app</string>
 				</array>
 				<key>toggle</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
