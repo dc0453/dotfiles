@@ -55,10 +55,24 @@ install_homebrew () {
     brew tap microsoft/git
 
     # Install jdk8
-    brew tap adoptopenjdk/openjdk
+    # brew tap adoptopenjdk/openjdk
 
     brew update-reset
   fi
+}
+
+declare -a not_installed_apps
+filte_already_installed_apps() {
+    for app in ${apps[@]}
+    do
+        appName=$(brew info $app --json=v2 | jq '.casks[].name[0]' -r)
+        if ls /Applications | grep "$appName"
+        then
+            echo "$app has installed\n"
+        else
+            not_installed_apps+="$app "
+        fi
+    done
 }
 
 echo "installing homebrew"
@@ -111,7 +125,7 @@ binaries=(
 
 # Apps
 apps=(
-  adoptopenjdk/openjdk/adoptopenjdk8
+  adoptopenjdk8
   postman
   sublime-text
   git-credential-manager-core
@@ -169,13 +183,6 @@ echo "Update Homebrew..."
 brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
-# Install Bash 4
-#brew install bash
-# Install Homebrew Cask
-# brew tap caskroom/fonts
-# brew tap caskroom/versions
-# brew install caskroom/cask/brew-cask
-# brew upgrade brew-cask
 
 echo "Installing binaries..."
 brew install ${binaries[@]}
@@ -186,7 +193,9 @@ brew install ${binaries[@]}
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "Installing apps..."
-brew install --cask --appdir="/Applications" ${apps[@]}
+filte_already_installed_apps
+echo $not_installed_apps" will install"
+brew install --cask --appdir="/Applications" ${not_installed_apps[@]}
 
 # clean things up
 brew cleanup
