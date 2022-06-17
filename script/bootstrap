@@ -150,27 +150,16 @@ install_dotfiles () {
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
-  link_file "$DOTFILES_ROOT" "~/.dotfiles"
+  link_file "$DOTFILES_ROOT" "$HOME/.dotfiles"
 }
 
 # =============== main ===============
-
+# install link files
 install_dotfiles
 
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$IS_MAC_OS" == true ]; then
-  info "installing dependencies"
-  if source bin/dot
-  then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
-
+# change shell from cshell to zsh
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
 zsh_bin=$(grep "/zsh$" /etc/shells | tail -1)
-
 if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
     # If this platform provides a "chsh" command (not Cygwin), do it, man!
     if command_Exists chsh; then
@@ -181,6 +170,17 @@ if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
         echo "I can't change your shell automatically because this system does not have chsh."
         echo "Please manually change your default shell to zsh!"
     fi
+fi
+
+# If we're on a Mac, let's install and setup homebrew and more
+if [ "$IS_MAC_OS" == true ]; then
+  info "installing dependencies"
+  if source bin/dot
+  then
+    success "dependencies installed"
+  else
+    fail "error installing dependencies"
+  fi
 fi
 echo ''
 echo '  All installed!'
