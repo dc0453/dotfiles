@@ -232,7 +232,7 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>9B14E53E-7926-498F-9840-D4BA591A6510</string>
+	<string>0E2F354B-A724-47B9-82C5-01267945C201</string>
 	<key>DockIconTogglesWindow</key>
 	<true/>
 	<key>DoubleClickPerformsSmartSelection</key>
@@ -560,7 +560,7 @@
 				<real>0.51372549019607838</real>
 			</dict>
 			<key>Guid</key>
-			<string>9B14E53E-7926-498F-9840-D4BA591A6510</string>
+			<string>0E2F354B-A724-47B9-82C5-01267945C201</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Idle Code</key>
