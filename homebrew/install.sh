@@ -62,7 +62,7 @@ install_homebrew () {
 }
 
 declare -a not_installed_apps
-filte_already_installed_apps() {
+filter_already_installed_apps() {
     for app in ${apps[@]}
     do
         appName=$(brew info $app --json=v2 | jq '.casks[].name[0]' -r)
@@ -193,7 +193,7 @@ brew install ${binaries[@]}
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "Installing apps..."
-filte_already_installed_apps
+filter_already_installed_apps
 echo $not_installed_apps" will install"
 brew install --cask --appdir="/Applications" ${not_installed_apps[@]}
 
