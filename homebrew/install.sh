@@ -97,6 +97,7 @@ binaries=(
   node
   openjdk
   pyenv
+  pyenv-virtualenv
   reattach-to-user-namespace
   ssh-copy-id
   the_silver_searcher

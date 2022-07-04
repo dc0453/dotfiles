@@ -64,6 +64,7 @@ POWERLINE_PATH="full"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  pyenv
   git
   mvn
   tmux

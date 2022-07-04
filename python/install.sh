@@ -20,6 +20,6 @@ fi
 sudo pip install --upgrade pip
 
 # pyenv
-curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+# curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
 sudo pip install ${plugins[@]}
