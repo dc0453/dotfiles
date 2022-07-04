@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.dc0453.tools</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>3AD72B73-42DE-429D-9724-E1CCC60F45E0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>70F8A31B-D16A-48BE-AC7D-70E51C3A25BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A36944B0-0F2E-47FF-A7F4-7CDDF4144CB1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F22EE2A3-B95D-4C3B-A0B6-2CFCC8E36864</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B2981760-991A-4A48-882C-96452E5FB78E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F22EE2A3-B95D-4C3B-A0B6-2CFCC8E36864</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D41F4980-3730-45E5-9990-048D52F6707D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A36944B0-0F2E-47FF-A7F4-7CDDF4144CB1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D5E1B63C-D90D-4856-8FD7-79D43F5C2332</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D5E1B63C-D90D-4856-8FD7-79D43F5C2332</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B2981760-991A-4A48-882C-96452E5FB78E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>dc0453</string>
+	<key>description</key>
+	<string>dc0453Tools</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>dc0453Tools</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>cfp</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Copy current open Finder window Path to clipboard</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3AD72B73-42DE-429D-9724-E1CCC60F45E0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)tell application "Finder"	set finderPath to (quoted form of POSIX path of (folder of the front window as alias))end tellset the clipboard to finderPath
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>70F8A31B-D16A-48BE-AC7D-70E51C3A25BC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run
+	tell application "zoom.us" to activate
+	tell application "zoom.us" to reopen
+	delay 4
+	tell application "System Events"
+		tell process "zoom.us"
+			keystroke "j" using command down
+			delay 1
+			set roomNum to "{query}"
+        		set windowName to name of window 1
+        		if windowName is not equal to "" then
+            		set value of text field 1 of sheet 1 of window "Zoom" to roomNum
+	        		click button 2 of sheet 1 of window 1
+        		else
+            		set value of text field 1 of window 1 to roomNum
+	        		click button 2 of window 1
+        		end if
+
+		end tell
+	end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F22EE2A3-B95D-4C3B-A0B6-2CFCC8E36864</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string></string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>matchstring</key>
+				<string>(?&lt;=/)(\d+)|\d+[\d\s]*</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>A36944B0-0F2E-47FF-A7F4-7CDDF4144CB1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>zo</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>join the zoom meeting</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D41F4980-3730-45E5-9990-048D52F6707D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#query=$(pbpaste | grep -E 'https.*/\d+' -o | grep -E '\d+' -o)
+query=$(pbpaste | perl -anE 'print /(?&lt;=\/)(\d+)/')
+echo ${query}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B2981760-991A-4A48-882C-96452E5FB78E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string></string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>D5E1B63C-D90D-4856-8FD7-79D43F5C2332</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>3AD72B73-42DE-429D-9724-E1CCC60F45E0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+		<key>70F8A31B-D16A-48BE-AC7D-70E51C3A25BC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>355</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+		<key>A36944B0-0F2E-47FF-A7F4-7CDDF4144CB1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+		<key>B2981760-991A-4A48-882C-96452E5FB78E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>355</integer>
+		</dict>
+		<key>D41F4980-3730-45E5-9990-048D52F6707D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>D5E1B63C-D90D-4856-8FD7-79D43F5C2332</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>385</integer>
+		</dict>
+		<key>F22EE2A3-B95D-4C3B-A0B6-2CFCC8E36864</key>
+		<dict>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

@@ -15,6 +15,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -23,6 +25,8 @@
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
 				<string>Open Startup News iterm……</string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -39,12 +43,51 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>open "$(echo '{query}' | cut -d '|' -f 1 )"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>61E83C43-E906-49D1-9642-F64017F8942E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>keyword</key>
 				<string>sn</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>请稍候...</string>
 				<key>script</key>
@@ -74,6 +117,10 @@ for item in urldoc.getElementsByTagName('item'):
         print '''        &lt;icon type="fileicon"&gt;/Applications/Safari.app/&lt;/icon&gt;
     &lt;/item&gt;'''
 print "&lt;/items&gt;\n"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
 				<string>Get the rss items of Startup News</string>
 				<key>title</key>
@@ -87,29 +134,22 @@ print "&lt;/items&gt;\n"</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>AC9E9C29-3E78-492F-9E31-3ACFFEC7C2EA</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>open "$(echo '{query}' | cut -d '|' -f 1 )"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>61E83C43-E906-49D1-9642-F64017F8942E</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>63</integer>
 				<key>script</key>
 				<string>open "$(echo '{query}' | cut -d '|' -f 2 )"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -117,6 +157,8 @@ print "&lt;/items&gt;\n"</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>445E514A-AFF6-428D-A4AE-59CD57731FA1</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -125,18 +167,24 @@ print "&lt;/items&gt;\n"</string>
 	<dict>
 		<key>445E514A-AFF6-428D-A4AE-59CD57731FA1</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>130</real>
 		</dict>
 		<key>61E83C43-E906-49D1-9642-F64017F8942E</key>
 		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
 		<key>AC9E9C29-3E78-492F-9E31-3ACFFEC7C2EA</key>
 		<dict>
+			<key>xpos</key>
+			<integer>185</integer>
 			<key>ypos</key>
-			<real>170</real>
+			<integer>60</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
