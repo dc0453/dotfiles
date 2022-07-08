@@ -223,7 +223,7 @@ end run</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>#query=$(pbpaste | grep -E 'https.*/\d+' -o | grep -E '\d+' -o)
-query=$(pbpaste | perl -anE 'print /(?&lt;=\/)(\d+)/')
+query=$(pbpaste | perl -anE 'print /(?&lt;=\/)(\d+)|(\d+[\d\s]*)/')
 echo ${query}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -273,44 +273,44 @@ echo ${query}</string>
 		<key>70F8A31B-D16A-48BE-AC7D-70E51C3A25BC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>355</integer>
+			<integer>525</integer>
 			<key>ypos</key>
 			<integer>30</integer>
 		</dict>
 		<key>A36944B0-0F2E-47FF-A7F4-7CDDF4144CB1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>185</integer>
+			<integer>240</integer>
 		</dict>
 		<key>B2981760-991A-4A48-882C-96452E5FB78E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>325</integer>
+			<integer>330</integer>
 			<key>ypos</key>
-			<integer>355</integer>
+			<integer>410</integer>
 		</dict>
 		<key>D41F4980-3730-45E5-9990-048D52F6707D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>295</integer>
 		</dict>
 		<key>D5E1B63C-D90D-4856-8FD7-79D43F5C2332</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>440</integer>
 		</dict>
 		<key>F22EE2A3-B95D-4C3B-A0B6-2CFCC8E36864</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>525</integer>
 			<key>ypos</key>
-			<integer>155</integer>
+			<integer>210</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

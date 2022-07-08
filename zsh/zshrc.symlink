@@ -78,7 +78,7 @@ plugins=(
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
-source ${HOME}/.bash_profile
+#source ${HOME}/.bash_profile
 
 # User configuration
 

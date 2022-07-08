@@ -1,0 +1,23 @@
+#.zprofile
+
+# Setting PATH for Python 2.7
+# The original version is saved in .zprofile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
+
+# pyenv
+export PYENV_ROOT=/usr/local/var/pyenv
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+# my scripts
+export PATH=$PATH:${HOME}/code/scripts
+
+export PATH=/opt/local/bin:$PATH
+export PATH=/opt/local/sbin:$PATH
+
+PATH=$PATH:$HOME/bin
+export PATH="/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
+
+alias vim='/usr/local/bin/vim'
+alias vi='vim'
