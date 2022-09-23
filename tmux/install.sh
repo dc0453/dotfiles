@@ -19,9 +19,13 @@ cd ${plugins}
 if [[ ! -d ${plugins}/.tmux ]]; then
 	git clone https://github.com/gpakosz/.tmux.git
     ln -s -f ${plugins}/.tmux/.tmux.conf ~/.tmux.conf
-    cp ${plugins}/.tmux/.tmux.conf.local ~/.tmux.conf.local
 fi
 
+script_dir="$(dirname "$0")"
+base_dir=`cd $script_dir && pwd`
+
+# link my customized configuration
+ln -s -f ${base_dir}/.tmux/.tmux.conf.local ~/.tmux.conf.local
 echo "[done] install tmux config"
 
 exit 0
