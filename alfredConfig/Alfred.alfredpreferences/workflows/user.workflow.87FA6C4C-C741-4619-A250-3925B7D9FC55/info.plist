@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5B8E8CA8-E7BB-497C-AE27-36995FA5EF8D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD520F42-2F0A-44DB-98CA-DE501EE24A32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A36944B0-0F2E-47FF-A7F4-7CDDF4144CB1</key>
 		<array>
 			<dict>
@@ -75,6 +88,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B2981760-991A-4A48-882C-96452E5FB78E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E3F234C7-B914-49BC-9643-47917EA380A0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD520F42-2F0A-44DB-98CA-DE501EE24A32</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -142,7 +168,7 @@ end alfred_script</string>
 				<string>on run
 	tell application "zoom.us" to activate
 	tell application "zoom.us" to reopen
-	delay 4
+	delay 2
 	tell application "System Events"
 		tell process "zoom.us"
 			keystroke "j" using command down
@@ -258,6 +284,81 @@ echo ${query}</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>gcf</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>switch chrome to hide/show toolbar</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E3F234C7-B914-49BC-9643-47917EA380A0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run	tell application "Google Chrome" to activate	tell application "System Events"		tell process "Google Chrome"			click menu item 2 of menu 1 of menu bar item 5 of menu bar 1		end tell	end tellend run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BD520F42-2F0A-44DB-98CA-DE501EE24A32</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>9</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>V</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>5B8E8CA8-E7BB-497C-AE27-36995FA5EF8D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -269,6 +370,13 @@ echo ${query}</string>
 			<integer>60</integer>
 			<key>ypos</key>
 			<integer>30</integer>
+		</dict>
+		<key>5B8E8CA8-E7BB-497C-AE27-36995FA5EF8D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>645</integer>
 		</dict>
 		<key>70F8A31B-D16A-48BE-AC7D-70E51C3A25BC</key>
 		<dict>
@@ -291,6 +399,13 @@ echo ${query}</string>
 			<key>ypos</key>
 			<integer>410</integer>
 		</dict>
+		<key>BD520F42-2F0A-44DB-98CA-DE501EE24A32</key>
+		<dict>
+			<key>xpos</key>
+			<integer>530</integer>
+			<key>ypos</key>
+			<integer>530</integer>
+		</dict>
 		<key>D41F4980-3730-45E5-9990-048D52F6707D</key>
 		<dict>
 			<key>xpos</key>
@@ -304,6 +419,13 @@ echo ${query}</string>
 			<integer>245</integer>
 			<key>ypos</key>
 			<integer>440</integer>
+		</dict>
+		<key>E3F234C7-B914-49BC-9643-47917EA380A0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>530</integer>
 		</dict>
 		<key>F22EE2A3-B95D-4C3B-A0B6-2CFCC8E36864</key>
 		<dict>
