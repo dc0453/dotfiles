@@ -77,6 +77,8 @@ set OPEN_LYRIC_SHORT to "ly"
 set EXIT_A to "exit"
 set EXIT_SHORT to "ex"
 
+tell application "NeteaseMusic" to activate
+delay 1
 
 if query is equal to PAUSE or query is equal to PAUSE_SHORT then
   tell application "System Events" to tell process "NeteaseMusic"		click menu item 1 of menu 1 of menu bar item 4 of menu bar 1	end tell

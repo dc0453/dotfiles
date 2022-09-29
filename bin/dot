@@ -43,3 +43,6 @@ sh $DOTFILES_ROOT/iterm2/install.sh
 # Set up karabiner
 sh $DOTFILES_ROOT/karabiner/install.sh
 
+# Set up tmux
+sh $DOTFILES_ROOT/tmux/install.sh
+

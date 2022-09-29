@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # encoding: utf-8
 import getpass
+import os.path
 from multiprocessing import Process
 from os import path
 
@@ -17,7 +18,7 @@ chrome_path = 'open -a /Applications/Google\\ Chrome.app %s'
 
 
 class LoginManager(object):
-    def __init__(self, login_url, wait_element, cookie_name, login_type='from_local_cookie'):
+    def __init__(self, login_url, wait_element, cookie_name):
         """
         Args:db
             login_url : login url
@@ -28,7 +29,11 @@ class LoginManager(object):
         self.login_url = login_url
         self.wait_element = wait_element
         self.cookie_name = cookie_name
-        self.login_type = login_type
+        self.login_type = os.getenv("login_type") or "from_local_cookie"
+        self.cookie_file = None
+        chrome_cookie_dir = os.getenv("chrome_cookie_dir")
+        if chrome_cookie_dir:
+            self.cookie_file = os.path.expanduser(chrome_cookie_dir)
 
     def login(self):
         server = Process(target=self.__login_in_browser)
@@ -38,7 +43,8 @@ class LoginManager(object):
         cookies = {}
         if path.exists(chrome_driver_path):
             options = ChromeOptions()
-            options.add_argument("user-data-dir=~/Library/Application Support/Google/Chrome/Default")
+            options.add_argument(
+                "user-data-dir=" + os.path.expanduser("~/Library/Application Support/Google/Chrome/Default"))
             browser = webdriver.Chrome(executable_path=chrome_driver_path, options=options)
         else:
             browser = webdriver.Safari()
@@ -75,7 +81,7 @@ class LoginManager(object):
                 self.login()
                 raise RuntimeError('please login first, then retry')
         else:
-            cookies = chrome_cookies(self.login_url)
+            cookies = chrome_cookies(self.login_url, self.cookie_file)
             return ';'.join(['{0}={1}'.format(k, v) for k, v in cookies.items()])
 
     def save_cookies(self, value):
