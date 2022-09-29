@@ -8,8 +8,6 @@
 	<integer>0</integer>
 	<key>AllowClipboardAccess</key>
 	<false/>
-	<key>AutoCommandHistory</key>
-	<true/>
 	<key>AutoHideTmuxClientSession</key>
 	<true/>
 	<key>BracketedPasteMode</key>
@@ -234,7 +232,7 @@
 		</dict>
 	</dict>
 	<key>Default Bookmark Guid</key>
-	<string>9B14E53E-7926-498F-9840-D4BA591A6510</string>
+	<string>0E2F354B-A724-47B9-82C5-01267945C201</string>
 	<key>DockIconTogglesWindow</key>
 	<true/>
 	<key>DoubleClickPerformsSmartSelection</key>
@@ -562,7 +560,7 @@
 				<real>0.51372549019607838</real>
 			</dict>
 			<key>Guid</key>
-			<string>9B14E53E-7926-498F-9840-D4BA591A6510</string>
+			<string>0E2F354B-A724-47B9-82C5-01267945C201</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Idle Code</key>
@@ -1023,9 +1021,9 @@
 	<false/>
 	<key>ToolbeltTools</key>
 	<array>
+		<string>Command History</string>
 		<string>Paste History</string>
 		<string>Recent Directories</string>
-		<string>Actions</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<true/>
