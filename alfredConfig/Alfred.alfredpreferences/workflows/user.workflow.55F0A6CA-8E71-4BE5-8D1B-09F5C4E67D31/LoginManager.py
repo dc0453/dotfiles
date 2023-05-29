@@ -69,6 +69,15 @@ class LoginManager(object):
         #     raise RuntimeError('login failure !')
 
     def check_login_status(self, resp):
+        if 'dev.sankuai.com' in self.login_url:
+            if resp.status_code == 200:
+                json_resp = resp.json()
+                if 'errorMsg' in json_resp:
+                    error_msg = json_resp['errorMsg']
+                    if 'userid or username is empty' == error_msg:
+                        self.re_login()
+                        raise RuntimeError('login timeout , please login first , then retry after one minute.')
+
         if resp.status_code == 301 or resp.status_code == 401 or resp.status_code == 302:
             self.re_login()
             raise RuntimeError('login timeout , please login first , then retry after one minute.')

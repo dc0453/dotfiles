@@ -29,6 +29,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>03B65A69-0CFD-431E-9BE1-23E77898B31B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>58A43FD8-0339-4F43-8529-3A1ADA9D1010</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>083EB27E-5B36-40DF-A30A-CEC5B02EE089</key>
 		<array>
 			<dict>
@@ -60,6 +73,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4939459C-3B13-4D37-A67E-5EAED2E5A4DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>0F1653F9-FA77-4A0F-898B-64D3F8680418</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E1103257-F7AC-4A3D-A16A-3B43EC0255BD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -176,6 +202,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6AE37558-3BE4-4925-9162-347121F7999B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>360CE072-8B56-41E5-AA2C-3A5D8033B5C9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E171E17-A216-415F-9289-4BF97E8A5A09</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -321,6 +360,42 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4C135C1F-7F26-4B4A-9168-C4F6067642FC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5B652F1B-D2E3-411C-AC66-B14E0659929D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5AECADBF-4962-42A9-B1EE-407346E14B39</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6A3C3645-1B0F-4854-9B31-44D7D86247EF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>48C90377-09EB-4741-96AC-0C5C3056D9CD</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>craete pr</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>635D60AC-1A32-4451-8209-146EF4F42FF1</key>
 		<array>
 			<dict>
@@ -360,11 +435,60 @@
 				<false/>
 			</dict>
 		</array>
+		<key>71D130E7-4D11-4446-BCF0-148468269FF1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7D96A904-98DB-4693-AD49-BF5FDFFB5468</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>76BB1BC5-3311-413B-A623-ED2C0C1B2941</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8A5CF4DE-4F2A-48CB-8372-C561009D061F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>773E61DC-83BA-45DE-A243-C59A18D71B0D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>E8145BB8-DD55-4B91-B455-6B51E552F86F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>79834984-76ED-40A4-B9C2-F1DF383264D6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8EDDF737-6D30-4450-8010-4D008D051577</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>跳转集群组详情页</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>96037EAF-EF66-4673-94D9-7F01C2ABC9F0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -409,6 +533,58 @@
 				<false/>
 			</dict>
 		</array>
+		<key>81E1E418-1EE0-4286-B5AF-314EA33B4BCF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BAE81697-7764-48CC-BEB4-0D6CAB6AEA3C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>871A05EA-F4F7-4942-89CB-2657A6897B71</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>87DD8F86-CA6E-4CE1-BAAD-7FB5345E5D1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>96037EAF-EF66-4673-94D9-7F01C2ABC9F0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D816CA88-7098-41DA-9441-0C14B975F33B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>96C06ABD-BD74-42F9-AB2D-ADAA35D5DF77</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B17C7755-5E3A-4587-BAF6-CB1169582D5A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>98E3CB29-6224-4748-A5C4-BCFD1EAA04D4</key>
 		<array>
 			<dict>
@@ -424,6 +600,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>1BAAB19E-BB33-45EA-9CE7-FAF66C2FDEBC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A5FE8132-CE30-493A-93FA-7F4C79FECA35</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D27DA175-13AC-4D1F-B91A-DB497837EBFA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -546,6 +735,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>BE316E69-BDAE-42F6-9B85-98E73984E1E7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E34EBC86-F06C-4A33-9000-B9B9F200ABD2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CF597004-8B34-4D21-BC7B-CBE11EF41679</key>
 		<array>
 			<dict>
@@ -569,6 +771,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D27DA175-13AC-4D1F-B91A-DB497837EBFA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F1653F9-FA77-4A0F-898B-64D3F8680418</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D7C5A80B-37EF-418A-84A7-20076960A0A5</key>
 		<array>
 			<dict>
@@ -582,11 +797,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D816CA88-7098-41DA-9441-0C14B975F33B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>472479FB-2DA9-4C55-B3D7-8A9AB8EF6D2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D95A4BD2-6064-46C3-BF3E-334AF743BD8C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>FA8EB27F-4725-45AC-90CE-B05AF674B5B2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DCEE2A92-849D-47A2-8C34-4CC85C0CFBA0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F02C78E7-963D-4B9C-B702-816450729430</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -829,7 +1070,7 @@ fi</string>
 				<key>url</key>
 				<string>https://octo.mws.sankuai.com/service-provider-info?appkey={query}&amp;env=prod</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -902,7 +1143,7 @@ fi</string>
 				<key>url</key>
 				<string>http://octo.mws-test.sankuai.com/service-provider-info?appkey={query}&amp;env=test</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -921,7 +1162,7 @@ fi</string>
 				<key>url</key>
 				<string>https://lion.mws.sankuai.com/config/dync?appKey={query}&amp;env=prod&amp;key={var:lion_key}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1035,7 +1276,7 @@ fi</string>
 				<key>url</key>
 				<string>http://mcc.mws-test.sankuai.com/config/dync?appKey={query}&amp;env=test&amp;key={var:lion_key}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1108,7 +1349,7 @@ fi</string>
 				<key>url</key>
 				<string>https://dev.sankuai.com/services/{query}/to-deploy/deploy-group-list</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1181,7 +1422,7 @@ fi</string>
 				<key>url</key>
 				<string>https://plus.mws.sankuai.com/#/release/job/list?releaseId={query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1200,7 +1441,7 @@ fi</string>
 				<key>url</key>
 				<string>https://avatar.mws.sankuai.com/#/service/detail/host?appkey={query}&amp;env=prod</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1273,7 +1514,7 @@ fi</string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/application/hosts?domain={query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1346,7 +1587,7 @@ fi</string>
 				<key>url</key>
 				<string>http://raptor.mws-test.sankuai.com/application/hosts?domain={query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1419,7 +1660,7 @@ fi</string>
 				<key>url</key>
 				<string>http://rhino.mws-test.sankuai.com/#/overview/{query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1438,7 +1679,7 @@ fi</string>
 				<key>url</key>
 				<string>https://rhino.mws.sankuai.com/#/overview/{query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1511,7 +1752,7 @@ fi</string>
 				<key>url</key>
 				<string>{query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1530,7 +1771,7 @@ fi</string>
 				<key>url</key>
 				<string>http://mtrace.inf.dev.sankuai.com/trace/{query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1570,7 +1811,7 @@ fi</string>
 				<key>url</key>
 				<string>https://mtrace.sankuai.com/trace/{query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1578,6 +1819,25 @@ fi</string>
 			<string>09D055CA-B8AF-4706-B799-006B2BBCF479</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B7B04985-5A8B-4104-B304-7FFA5F4AC8BE</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1648,7 +1908,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>B7B04985-5A8B-4104-B304-7FFA5F4AC8BE</string>
+			<string>35E0DA2E-D322-49C6-A555-0680C7259194</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1680,25 +1940,6 @@ fi</string>
 			<string>EF0676D1-2099-4C2C-BA24-D817DFC7EF78</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>35E0DA2E-D322-49C6-A555-0680C7259194</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1757,6 +1998,27 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>clear cache success</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9E17E41E-2B90-485C-90F3-B98F264E0157</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1802,27 +2064,6 @@ fi</string>
 			<string>AEF76889-EC37-4E69-A847-BAC2CD1CD728</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>clear cache success</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>9E17E41E-2B90-485C-90F3-B98F264E0157</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1888,7 +2129,7 @@ fi</string>
 				<key>url</key>
 				<string>http://logcenter.data.sankuai.com/search/{query}/query/%7B%22model%22:%22quick%22,%22start_time%22:%22now-15m%22,%22end_time%22:%22now%22,%22keyword%22:%22%22%7D</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1961,7 +2202,7 @@ fi</string>
 				<key>url</key>
 				<string>http://ed.sankuai.com/#/ed/testApply/detail?testApplyId={query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2054,25 +2295,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>http://ed.sankuai.com/#/ed/release/onlineProgramDetail?onlineProgramId={var:onlineProgramId}&amp;childTab={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>AAE5F522-ACDC-481C-A10E-21D68EBC19D1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -2127,6 +2349,25 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>http://ed.sankuai.com/#/ed/release/onlineProgramDetail?onlineProgramId={var:onlineProgramId}&amp;childTab={query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>AAE5F522-ACDC-481C-A10E-21D68EBC19D1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -2154,7 +2395,7 @@ fi</string>
 				<key>url</key>
 				<string>http://ed.sankuai.com/#/ed/testApply/add</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2173,7 +2414,7 @@ fi</string>
 				<key>url</key>
 				<string>http://ed.sankuai.com/#/ed/testApply/TestApplyList</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2279,7 +2520,7 @@ fi</string>
 				<key>url</key>
 				<string>http://ed.sankuai.com/#/ed/release/AddReleasePlan</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2298,7 +2539,7 @@ fi</string>
 				<key>url</key>
 				<string>http://ed.sankuai.com/#/ed/release/ReleasePlanList</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2317,7 +2558,7 @@ fi</string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/application/hosts?ip=All&amp;group=&amp;domain={query}&amp;templateIds=2251</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2383,6 +2624,25 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://rds.mws.sankuai.com/dba/cluster/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0273FFA5-B0C9-44AE-9FFF-F63411FB905E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -2433,25 +2693,6 @@ fi</string>
 			<string>98E3CB29-6224-4748-A5C4-BCFD1EAA04D4</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://rds.mws.sankuai.com/dba/cluster/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>0273FFA5-B0C9-44AE-9FFF-F63411FB905E</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2515,7 +2756,7 @@ fi</string>
 				<key>url</key>
 				<string>https://rds.mws.sankuai.com/dba/sqlEditor?cluster_id={var:cluster_id}&amp;db_id={query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2541,25 +2782,6 @@ fi</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>1BAAB19E-BB33-45EA-9CE7-FAF66C2FDEBC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://rds.mws.sankuai.com/dba/db_detail/{var:cluster_id}/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>62A0F75E-B4BA-497A-9205-00790A33E655</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2616,6 +2838,25 @@ fi</string>
 			<string>429735F4-9A19-47C3-B57A-CDC7657AA06A</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://rds.mws.sankuai.com/dba/db_detail/{var:cluster_id}/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>62A0F75E-B4BA-497A-9205-00790A33E655</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2681,7 +2922,7 @@ fi</string>
 				<key>url</key>
 				<string>https://oceanus.mws.sankuai.com/site_detail?site_name={var:site_name}&amp;site_id={query}&amp;from=my_site&amp;tab=site-overview&amp;type=SiteConfig</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2700,7 +2941,7 @@ fi</string>
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"ak","arg":"ak","subtitle":"复制appkey"},{"title":"sak","arg":"sak","subtitle":"根据关键字搜索appkey，搜索后回车复制"},{"title":"akm","arg":"akm","subtitle":"根据appkey搜索负责人"},{"title":"fn+[M]embers","arg":"fn+[M]embers","subtitle":"根据剪贴板内的appkey搜索负责人，快捷键可自定义"},{"title":"oc","arg":"oc","subtitle":"octo线上环境，按住cmd到测试环境"},{"title":"rh","arg":"rh","subtitle":"rhino线上环境，按住cmd到测试环境"},{"title":"mcc","arg":"mcc","subtitle":"mcc线上环境，按住cmd到测试环境"},{"title":"git","arg":"git","subtitle":"code线上环境"},{"title":"plus","arg":"plus","subtitle":"new devops的发布\nnew devops的发布"},{"title":"pl","arg":"pl","subtitle":"现有的plus"},{"title":"rpt","arg":"rpt","subtitle":"raptor 线上环境，按住cmd到测试环境"},{"title":"avt","arg":"rpt","subtitle":"avatar"},{"title":"trace","arg":"trace","subtitle":"mtrace"},{"title":"lc","arg":"trace","subtitle":"logcenter日志列表"},{"title":"rds","arg":"rds","subtitle":"rds集群列表，直接到监控页"},{"title":"ou","arg":"ou","subtitle":"oceanus站点"},{"title":"db","arg":"ou","subtitle":"直接回车后查看集群下的db列表\n\t- 按住cmd后回车到集群监控页面\n\t- 直接回车后查看集群下的db列表\n\t\t- 按住cmd后回车到db详情页\n\t\t- 回车后到sql执行页面\nrds集群列表- 按住cmd后回车到集群监控页面- 直接回车后查看集群下的db列表"},{"title":"sdb","arg":"sdb","subtitle":"根据关键字搜索db"},{"title":"ed","arg":"ed","subtitle":"到家持续交付系统"},{"title":"edlist","arg":"edlist","subtitle":"我的迭代列表"},{"title":"edplan","arg":"edplan","subtitle":"我的上线列表"},{"title":"cc","arg":"cc","subtitle":"clear cache 清除缓存"}]</string>
+				<string>[{"title":"ak","arg":"ak","subtitle":"复制appkey"},{"title":"sak","arg":"sak","subtitle":"根据关键字搜索appkey，搜索后回车复制"},{"title":"akm","arg":"akm","subtitle":"根据appkey搜索负责人"},{"title":"fn+[M]embers","arg":"fn+[M]embers","subtitle":"根据剪贴板内的appkey搜索负责人，快捷键可自定义"},{"title":"oc","arg":"oc","subtitle":"octo线上环境，按住cmd到测试环境"},{"title":"rh","arg":"rh","subtitle":"rhino线上环境，按住cmd到测试环境"},{"title":"mcc","arg":"mcc","subtitle":"mcc线上环境，按住cmd到测试环境"},{"title":"git","arg":"git","subtitle":"code线上环境"},{"title":"plus","arg":"plus","subtitle":"new devops的发布\nnew devops的发布"},{"title":"pl","arg":"pl","subtitle":"现有的plus"},{"title":"rpt","arg":"rpt","subtitle":"raptor 线上环境，按住cmd到测试环境"},{"title":"avt","arg":"rpt","subtitle":"avatar"},{"title":"trace","arg":"trace","subtitle":"mtrace"},{"title":"lc","arg":"trace","subtitle":"logcenter日志列表"},{"title":"rds","arg":"rds","subtitle":"rds集群列表，直接到监控页"},{"title":"ou","arg":"ou","subtitle":"oceanus站点"},{"title":"db","arg":"ou","subtitle":"直接回车后查看集群下的db列表\n\t- 按住cmd后回车到集群监控页面\n\t- 直接回车后查看集群下的db列表\n\t\t- 按住cmd后回车到db详情页\n\t\t- 回车后到sql执行页面\nrds集群列表- 按住cmd后回车到集群监控页面- 直接回车后查看集群下的db列表"},{"title":"sdb","arg":"sdb","subtitle":"根据关键字搜索db"},{"title":"ed","arg":"ed","subtitle":"到家持续交付系统"},{"title":"edlist","arg":"edlist","subtitle":"我的迭代列表"},{"title":"edplan","arg":"edplan","subtitle":"我的上线列表"},{"title":"cc","arg":"cc","subtitle":"clear cache 清除缓存"},{"title":"cg","arg":"cg","subtitle":"我的个人泳道"},{"title":"scg","arg":"scg","subtitle":"根据编排关键字或泳道全程搜索"},{"title":"sq","arg":"sq","subtitle":"squirrell 集群列表"},{"title":"sqg","arg":"sqg","subtitle":"搜索squirrel 集群组列表"},{"title":"cl","arg":"cl","subtitle":"cellar集群组列表"},{"title":"tl","arg":"tl","subtitle":"tair集群列表"},{"title":"mf","arg":"mf","subtitle":"mafka topic list"},{"title":"smf","arg":"smf","subtitle":"搜索mafka topic列表"},{"title":"mfc","arg":"mfc","subtitle":"mafka消费组"},{"title":"smfc","arg":"smfc","subtitle":"搜索mafka消费组"},{"title":"rp","arg":"rp","subtitle":"git repository列表"},{"title":"dp","arg":"dp","subtitle":"部署发布项"},{"title":"prl","arg":"prl","subtitle":"pull request list"}]</string>
 				<key>keyword</key>
 				<string>tip</string>
 				<key>runningsubtext</key>
@@ -2744,7 +2985,7 @@ fi</string>
 				<key>url</key>
 				<string>mtdaxiang://www.meituan.com/chat?uid={query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2847,7 +3088,7 @@ fi
 				<key>url</key>
 				<string>https://km.sankuai.com/search?key={query}&amp;searchType=0</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2920,7 +3161,7 @@ fi</string>
 				<key>url</key>
 				<string>https://km.sankuai.com/space/~{query}</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2988,7 +3229,7 @@ fi</string>
 				<key>url</key>
 				<string>https://avatar.mws.sankuai.com/#/service/detail/host?appkey={query}&amp;env=prod</string>
 				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3212,6 +3453,25 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://digger.sankuai.com/dashboard/{query}/show</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>FA8EB27F-4725-45AC-90CE-B05AF674B5B2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -3273,26 +3533,7 @@ fi</string>
 				<key>url</key>
 				<string>https://digger.sankuai.com/dashboard/{query}/show</string>
 				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>FA8EB27F-4725-45AC-90CE-B05AF674B5B2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://digger.sankuai.com/dashboard/{query}/show</string>
-				<key>utf8</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3647,17 +3888,1150 @@ fi</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>tl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  cellarClusterDetail.py "$1"
+else
+    python  cellarClusterDetail.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>tair-cluster detail list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0F1653F9-FA77-4A0F-898B-64D3F8680418</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://cellar.mws.sankuai.com/cluster/detail/{query}/areaManage</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E1103257-F7AC-4A3D-A16A-3B43EC0255BD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  cellarAction.py "$1" "$mis" "$cache_seconds"
+else
+    python  cellarAction.py "$1" "$mis" "$cache_seconds"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>cellar-cluster list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A5FE8132-CE30-493A-93FA-7F4C79FECA35</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>remoteappkey</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D27DA175-13AC-4D1F-B91A-DB497837EBFA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://squirrel.mws.sankuai.com/cluster/detail?name={query}&amp;env=product</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E34EBC86-F06C-4A33-9000-B9B9F200ABD2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>sq</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  squirrelSearchMine.py "$1"
+else
+    python  squirrelSearchMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>my squirrel cluster list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>BE316E69-BDAE-42F6-9B85-98E73984E1E7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://squirrel.mws.sankuai.com/cluster/detail?name={query}&amp;env=product</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>8A5CF4DE-4F2A-48CB-8372-C561009D061F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ssq</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  squirrelSearch.py "$1"
+else
+    python  squirrelSearch.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>search squirrel-cluster</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>76BB1BC5-3311-413B-A623-ED2C0C1B2941</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://squirrel.mws.sankuai.com/cluster-group/detail/{query}/info?env=product&amp;page=1</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>8EDDF737-6D30-4450-8010-4D008D051577</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>sqg</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  squirrelGroupSearchMine.py "$1"
+else
+    python  squirrelGroupSearchMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>my squirrel-cluster-group</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>79834984-76ED-40A4-B9C2-F1DF383264D6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  squirrelClusterOfGroup.py "$1"
+else
+    python  squirrelClusterOfGroup.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>squirel group  detail list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D816CA88-7098-41DA-9441-0C14B975F33B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>group_name</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>96037EAF-EF66-4673-94D9-7F01C2ABC9F0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://squirrel.mws.sankuai.com/cluster/detail?name={query}&amp;env=product</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>472479FB-2DA9-4C55-B3D7-8A9AB8EF6D2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://mafka.mws.sankuai.com/topic/{query}/detail/monitor</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>7D96A904-98DB-4693-AD49-BF5FDFFB5468</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>mf</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  mafkaSearchMine.py "$1"
+else
+    python  mafkaSearchMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>search my mafka topic list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>71D130E7-4D11-4446-BCF0-148468269FF1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://mafka.mws.sankuai.com/topic/{query}/detail/monitor</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>87DD8F86-CA6E-4CE1-BAAD-7FB5345E5D1A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>smf</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  mafkaSearch.py "$1"
+else
+    python  mafkaSearch.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>search mafka topic list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>871A05EA-F4F7-4942-89CB-2657A6897B71</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://mafka.mws.sankuai.com/consumer/{query}/detail/monitor</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>7E171E17-A216-415F-9289-4BF97E8A5A09</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>mfc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  mafkaConsumerSearchMine.py "$1"
+else
+    python  mafkaConsumerSearchMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>search my mafka consumer list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>360CE072-8B56-41E5-AA2C-3A5D8033B5C9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://mafka.mws.sankuai.com/consumer/{query}/detail/monitor</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>BAE81697-7764-48CC-BEB4-0D6CAB6AEA3C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>smfc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  mafkaConsumerSearchMine.py "$1"
+else
+    python  mafkaConsumerSearchMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>search mafka consumer list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>81E1E418-1EE0-4286-B5AF-314EA33B4BCF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://dev.sankuai.com/cargo/stack/detail/{query}/build</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F02C78E7-963D-4B9C-B702-816450729430</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cg</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  cargoSearchMine.py "$1"
+else
+    python  cargoSearchMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>个人泳道列表</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DCEE2A92-849D-47A2-8C34-4CC85C0CFBA0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://dev.sankuai.com/cargo/stack/detail/{query}/build</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>58A43FD8-0339-4F43-8529-3A1ADA9D1010</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>scg</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  cargoSearch.py "$1"
+else
+    python  cargoSearch.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>根据编排关键字或泳道全程搜索</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>03B65A69-0CFD-431E-9BE1-23E77898B31B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://dev.sankuai.com/code/repo-detail{query}/file/list</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6A3C3645-1B0F-4854-9B31-44D7D86247EF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gs</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  gitSearchMine.py "$1"
+else
+    python  gitSearchMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>search my git repo list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5AECADBF-4962-42A9-B1EE-407346E14B39</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://dev.sankuai.com/code/repo-detail{query}/pr/create</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>48C90377-09EB-4741-96AC-0C5C3056D9CD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>dp</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  gitDeploy.py "$1"
+else
+    python  gitDeploy.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>deploy service or jar</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>96C06ABD-BD74-42F9-AB2D-ADAA35D5DF77</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B17C7755-5E3A-4587-BAF6-CB1169582D5A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>prl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  gitPRMine.py "$1"
+else
+    python  gitPRMine.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>my pr list</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4C135C1F-7F26-4B4A-9168-C4F6067642FC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5B652F1B-D2E3-411C-AC66-B14E0659929D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>美团内部链接快捷方式：支持octo，mcc、rhino、raptor、avatar、trace、devops、trace
+	<string>美团内部链接快捷方式：支持octo，mcc、rhino、raptor、avatar、trace、devops、trace、redis、cellar、mafka、git等
 appkey根据计算机名为misid自动获取，检查计算机名（shell命令：whoami）是否跟mis一致，不一致需要在alfred中修改环境变量mis，修改后为正确mis后，alfred运行cc命令后重试。特性：
 1. appkey自动根据mis id获取
 2. appkey支持模糊匹配，如不存在，默认搜索关键字为appkey
-
+指令列表：
 - ak - 复制appkey
-- sak（search appkey） - 根据关键字搜索appkey，搜索后回车复制
-- akm (appkey members) - 根据appkey搜索负责人
-- fn+[M]embers - 根据剪贴板内的appkey搜索负责人，快捷键可自定义
+- sak（[s]earch [a]pp[k]ey） - 根据关键字搜索appkey，回车复制appkey
+- akm ([a]pp[k]ey [m]embers) - 根据appkey搜索负责人，回车复制mis
+- option +[M]embers - 根据剪贴板内的appkey搜索负责人，快捷键可自定义，回车复制mis
 
 - oc - octo线上环境，按住cmd到线下环境
 - rh - rhino线上环境，按住cmd到线下环境
@@ -3669,28 +5043,64 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 - avt - avatar
 - trace - mtrace
 
-【需登录SSO - 需安装chrome】
-根据文档：https://km.sankuai.com/page/1202053621 配置
-- lc - logcenter我的日志列表
-- lca - logcenter所有日志列表
-- rds - rds集群列表，直接到监控页
-- ou - oceanus站点
+
 - db - rds集群列表
     - 直接回车后查看集群下的db列表
         - 按住cmd后回车到db详情页
         - 回车后到sql执行页面
     - 按住cmd跳转到rds集群信息页面
-- sdb - 根据关键字搜索db
+- sdb ([S]earch db) 根据关键字搜索db
+- rds - rds集群列表，直接到监控页
+
+- cl - [C]ellar [L]ist集群组列表
+    - 回车查看集群组下集群，再回车查看集群
+- tl - [T]air cluster [L]ist 列表，跳转集群详情页
+
+- sq - squirrel集群列表，跳转集群详情页
+- ssq - [S]earch [Sq]uirrel 搜索集群
+- ssg - [sq]uirrel  [g]roup 集群组
+    - 直接回车后查看集群组下集群列表
+        - 按住cmd后回车到集群组详情页
+        - 回车后直接到集群详情页
+
+- mf - [Ma]fka topic列表，回车跳转详情页
+- smf - [S]earch [M]a[f]ka topic，回车跳转详情页
+- mfc - [M]a[f]ka [C]onsumer group ,消费组列表，跳转详情页
+- smfc - [S]earch  [m]a[f]ka [c]onsumer 搜索消费组，跳转详情页
+
+
+- cg - cargo 个人泳道列表
+- scg  -  [s]earch [c]ar[g]o 根据编排名称或泳道搜索，跳转泳道详情。
+
+- rp - git [r]e[p]ository  我的仓库列表，跳转代码仓库详情。
+    - 按住cmd创建PR
+- dp - [d]e[p]loy 跳转发布页
+- prl - [p]ull [r]equest [l]ist  代码评审列表
+
+
+
+- lc - logcenter我的日志列表
+- lca - logcenter所有日志列表
+
+- km -学城搜索，默认显示搜索历史，输入关键字会自动提示。
+- mykm -打开我的学城空间
+
+【其他 - 需SSO登录】
+- ou - oceanus站点
 - mis - 查询mis，回车后打开大象聊天框
 - srv - 查询avatar服务，可以根据ip或主机名查询
 - host - 根据ip或主机，查询主机名和ip
-- km -学城搜索，默认显示搜索历史，输入关键字会自动提示
-- mykm -打开我的学城空间
 - jp - jumper免密登录，需wiki配置：https://km.sankuai.com/page/545430795
 
 到家digger【需登录SSO - 需安装chrome】
 - dg - 查询收藏的监控大盘
 - sdg - 关键字搜索大盘
+
+实用工具
+- ts -日期转为时间戳，并复制到剪贴板
+- tsnow -当前时间的时间戳，并复制到剪贴板
+- tstoday - 当天的时间戳，并复制到剪贴板
+- fts  -时间戳转为日期，并复制到剪贴板
 
 
 到家持续交付系统【需登录SSO - 需安装chrome】
@@ -3699,663 +5109,883 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
     - 2、迭代申请列表
     - 3、新建上线计划
     - 4、上线计划列表
-edlist - 我的迭代列表
-edplan - 我的上线列表
-
-实用工具
--ts -日期转为时间戳，并复制到剪贴板
--tsnow -当前时间的时间戳，并复制到剪贴板
--tstoday - 当天的时间戳，并复制到剪贴板
--fts  -时间戳转为日期，并复制到剪贴板
+- edlist - 我的迭代列表
+- edplan - 我的上线列表
 
 系统指令：
-- cc - clear cache 清除缓存</string>
+- cc - clear cache 清除缓存：如发现数据不是最新，可尝试清除缓存。</string>
 	<key>uidata</key>
 	<dict>
 		<key>0273FFA5-B0C9-44AE-9FFF-F63411FB905E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>690</integer>
+			<real>690</real>
 			<key>ypos</key>
-			<integer>3245</integer>
+			<real>3245</real>
 		</dict>
 		<key>0318B2FD-E0E7-4323-B4DA-76A085EF4F88</key>
 		<dict>
 			<key>xpos</key>
-			<integer>305</integer>
+			<real>305</real>
 			<key>ypos</key>
-			<integer>300</integer>
+			<real>300</real>
+		</dict>
+		<key>03B65A69-0CFD-431E-9BE1-23E77898B31B</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>6590</real>
 		</dict>
 		<key>083EB27E-5B36-40DF-A30A-CEC5B02EE089</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>1355</integer>
+			<real>1355</real>
 		</dict>
 		<key>09D055CA-B8AF-4706-B799-006B2BBCF479</key>
 		<dict>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>1595</integer>
+			<real>1595</real>
 		</dict>
 		<key>0A9D4138-C4BA-4618-96D1-BEDC7EF66D7C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>125</integer>
+			<real>125</real>
 			<key>ypos</key>
-			<integer>5025</integer>
+			<real>5025</real>
 		</dict>
 		<key>0ABDADCA-60F3-4A2C-82D9-208A87A45E1A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>3940</integer>
+			<real>3940</real>
+		</dict>
+		<key>0F1653F9-FA77-4A0F-898B-64D3F8680418</key>
+		<dict>
+			<key>xpos</key>
+			<real>395</real>
+			<key>ypos</key>
+			<real>5380</real>
 		</dict>
 		<key>16CC0A7A-BAB2-4AEA-B6AC-347013DA214D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>545</integer>
+			<real>545</real>
 			<key>ypos</key>
-			<integer>395</integer>
+			<real>395</real>
 		</dict>
 		<key>17941CA1-88ED-45FA-9A6A-B8D4A5BB34BB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>3050</integer>
+			<real>3050</real>
 		</dict>
 		<key>1800041C-F6A6-4EDF-A228-D94EF2830517</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<real>140</real>
 			<key>ypos</key>
-			<integer>800</integer>
+			<real>800</real>
 		</dict>
 		<key>19BC893A-EEA6-4156-BF06-6171C9C1D674</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>5245</integer>
+			<real>5245</real>
 		</dict>
 		<key>1B20BACB-69D3-42D7-BE55-1B8270F55F51</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>430</integer>
+			<real>430</real>
 		</dict>
 		<key>1BAAB19E-BB33-45EA-9CE7-FAF66C2FDEBC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>315</integer>
+			<real>315</real>
 			<key>ypos</key>
-			<integer>3385</integer>
+			<real>3385</real>
 		</dict>
 		<key>225ED620-9397-43F9-814D-42470BFB6C85</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>4405</integer>
+			<real>4405</real>
 		</dict>
 		<key>26C6D7E6-A5CC-4C6F-B01E-7034F3C07E25</key>
 		<dict>
 			<key>xpos</key>
-			<integer>120</integer>
+			<real>120</real>
 			<key>ypos</key>
-			<integer>4545</integer>
+			<real>4545</real>
 		</dict>
 		<key>26F0CFA4-2B06-4D43-B4DC-7B0C3FEA7A61</key>
 		<dict>
 			<key>xpos</key>
-			<integer>645</integer>
+			<real>645</real>
 			<key>ypos</key>
-			<integer>4535</integer>
+			<real>4535</real>
 		</dict>
 		<key>297E7A34-C340-4C03-A82F-19FD94B7B22C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>2680</integer>
+			<real>2680</real>
 		</dict>
 		<key>29E9287A-5F01-4C15-BFB0-9639970E18B2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<real>625</real>
 			<key>ypos</key>
-			<integer>4790</integer>
+			<real>4790</real>
 		</dict>
 		<key>2B35EA77-BE76-4FD7-B3E9-12C740537ADC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>285</integer>
+			<real>285</real>
 		</dict>
 		<key>35E0DA2E-D322-49C6-A555-0680C7259194</key>
 		<dict>
 			<key>xpos</key>
-			<integer>545</integer>
+			<real>545</real>
 			<key>ypos</key>
-			<integer>1850</integer>
+			<real>1850</real>
+		</dict>
+		<key>360CE072-8B56-41E5-AA2C-3A5D8033B5C9</key>
+		<dict>
+			<key>xpos</key>
+			<real>65</real>
+			<key>ypos</key>
+			<real>6190</real>
 		</dict>
 		<key>375331AA-2991-4D76-84C4-A723606A05D0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<real>140</real>
 			<key>ypos</key>
-			<integer>3645</integer>
+			<real>3645</real>
 		</dict>
 		<key>37CD79EE-A889-4B1A-ACFE-24A5D19B1390</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<real>310</real>
 			<key>ypos</key>
-			<integer>4570</integer>
+			<real>4570</real>
 		</dict>
 		<key>3AC1A9EE-40C9-4B4D-9859-6080321535A5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<real>700</real>
 			<key>ypos</key>
-			<integer>3365</integer>
+			<real>3365</real>
 		</dict>
 		<key>3B13D5AA-AF94-4B6E-9BE2-1F7DF9079730</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>5135</integer>
+			<real>5135</real>
 		</dict>
 		<key>3FF434F1-4C85-4764-87B1-FAAFB1BAED24</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<real>140</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>4124D77D-4649-4106-84C2-E3F65ABDF6F0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>365</integer>
+			<real>365</real>
 			<key>ypos</key>
-			<integer>4165</integer>
+			<real>4165</real>
 		</dict>
 		<key>429735F4-9A19-47C3-B57A-CDC7657AA06A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<real>140</real>
 			<key>ypos</key>
-			<integer>3500</integer>
+			<real>3500</real>
 		</dict>
 		<key>4447AB11-6DEF-4E8F-BEC7-65D05E2ED792</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<real>410</real>
 			<key>ypos</key>
-			<integer>4540</integer>
+			<real>4540</real>
 		</dict>
 		<key>471D5F20-CE7F-40DC-A0ED-057C7F54CF9C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<real>340</real>
 			<key>ypos</key>
-			<integer>2460</integer>
+			<real>2460</real>
+		</dict>
+		<key>472479FB-2DA9-4C55-B3D7-8A9AB8EF6D2D</key>
+		<dict>
+			<key>xpos</key>
+			<real>545</real>
+			<key>ypos</key>
+			<real>5840</real>
 		</dict>
 		<key>4882059A-B62F-484E-98EF-5473E3684CD9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>530</integer>
+			<integer>545</integer>
 			<key>ypos</key>
 			<integer>800</integer>
+		</dict>
+		<key>48C90377-09EB-4741-96AC-0C5C3056D9CD</key>
+		<dict>
+			<key>xpos</key>
+			<real>470</real>
+			<key>ypos</key>
+			<real>6855</real>
 		</dict>
 		<key>4939459C-3B13-4D37-A67E-5EAED2E5A4DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<real>410</real>
 			<key>ypos</key>
-			<integer>3935</integer>
+			<real>3935</real>
 		</dict>
 		<key>49B37A6D-726D-4D8F-9406-ED68A8DDCFCB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<real>540</real>
 			<key>ypos</key>
-			<integer>465</integer>
+			<real>465</real>
+		</dict>
+		<key>4C135C1F-7F26-4B4A-9168-C4F6067642FC</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>7070</real>
+		</dict>
+		<key>58A43FD8-0339-4F43-8529-3A1ADA9D1010</key>
+		<dict>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>6585</real>
+		</dict>
+		<key>5AECADBF-4962-42A9-B1EE-407346E14B39</key>
+		<dict>
+			<key>xpos</key>
+			<real>45</real>
+			<key>ypos</key>
+			<real>6730</real>
+		</dict>
+		<key>5B652F1B-D2E3-411C-AC66-B14E0659929D</key>
+		<dict>
+			<key>xpos</key>
+			<real>460</real>
+			<key>ypos</key>
+			<real>7085</real>
 		</dict>
 		<key>6236A276-6193-46F9-9450-A637E6488831</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<real>670</real>
 			<key>ypos</key>
-			<integer>2565</integer>
+			<real>2565</real>
 		</dict>
 		<key>62A0F75E-B4BA-497A-9205-00790A33E655</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<real>700</real>
 			<key>ypos</key>
-			<integer>3500</integer>
+			<real>3500</real>
 		</dict>
 		<key>635D60AC-1A32-4451-8209-146EF4F42FF1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<real>330</real>
 			<key>ypos</key>
-			<integer>1850</integer>
+			<real>1850</real>
 		</dict>
 		<key>67959538-D5D2-4FFC-8A71-AAE4DD46C1DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>115</integer>
+			<real>115</real>
 			<key>ypos</key>
-			<integer>2715</integer>
+			<real>2715</real>
 		</dict>
 		<key>6863186B-11A6-487A-B83B-11F53C50B21F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>545</integer>
+			<real>545</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
+		</dict>
+		<key>6A3C3645-1B0F-4854-9B31-44D7D86247EF</key>
+		<dict>
+			<key>xpos</key>
+			<real>470</real>
+			<key>ypos</key>
+			<real>6725</real>
 		</dict>
 		<key>6AE37558-3BE4-4925-9162-347121F7999B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>205</integer>
+			<real>205</real>
 			<key>ypos</key>
-			<integer>330</integer>
+			<real>330</real>
+		</dict>
+		<key>71D130E7-4D11-4446-BCF0-148468269FF1</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>5960</real>
 		</dict>
 		<key>74A4E7E9-8026-44E2-A717-D7A7BE32DF39</key>
 		<dict>
 			<key>xpos</key>
-			<integer>705</integer>
+			<real>705</real>
 			<key>ypos</key>
-			<integer>3655</integer>
+			<real>3655</real>
+		</dict>
+		<key>76BB1BC5-3311-413B-A623-ED2C0C1B2941</key>
+		<dict>
+			<key>xpos</key>
+			<real>130</real>
+			<key>ypos</key>
+			<real>5620</real>
 		</dict>
 		<key>773E61DC-83BA-45DE-A243-C59A18D71B0D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>125</integer>
+			<real>125</real>
 			<key>ypos</key>
-			<integer>2215</integer>
+			<real>2215</real>
 		</dict>
 		<key>7825B10B-46D4-4D11-AC91-CA7678727871</key>
 		<dict>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>5020</integer>
+			<real>5020</real>
+		</dict>
+		<key>79834984-76ED-40A4-B9C2-F1DF383264D6</key>
+		<dict>
+			<key>xpos</key>
+			<real>120</real>
+			<key>ypos</key>
+			<real>5750</real>
 		</dict>
 		<key>7A6BF930-F03E-4996-A99B-630C91BCC792</key>
 		<dict>
 			<key>xpos</key>
-			<integer>400</integer>
+			<real>400</real>
 			<key>ypos</key>
-			<integer>3360</integer>
+			<real>3360</real>
 		</dict>
 		<key>7B566223-71FC-49C6-B55E-FDF2ADD5AC29</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<real>670</real>
 			<key>ypos</key>
-			<integer>2905</integer>
+			<real>2905</real>
+		</dict>
+		<key>7D96A904-98DB-4693-AD49-BF5FDFFB5468</key>
+		<dict>
+			<key>xpos</key>
+			<real>525</real>
+			<key>ypos</key>
+			<real>5955</real>
+		</dict>
+		<key>7E171E17-A216-415F-9289-4BF97E8A5A09</key>
+		<dict>
+			<key>xpos</key>
+			<real>490</real>
+			<key>ypos</key>
+			<real>6185</real>
 		</dict>
 		<key>8061EF94-142D-4976-9A29-4297A16D0629</key>
 		<dict>
 			<key>xpos</key>
-			<integer>455</integer>
+			<real>455</real>
 			<key>ypos</key>
-			<integer>2430</integer>
+			<real>2430</real>
+		</dict>
+		<key>81E1E418-1EE0-4286-B5AF-314EA33B4BCF</key>
+		<dict>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>6310</real>
+		</dict>
+		<key>871A05EA-F4F7-4942-89CB-2657A6897B71</key>
+		<dict>
+			<key>xpos</key>
+			<real>85</real>
+			<key>ypos</key>
+			<real>6075</real>
 		</dict>
 		<key>87610FCC-8289-4A00-A7F9-6E62A1EAAE86</key>
 		<dict>
 			<key>xpos</key>
-			<integer>545</integer>
+			<real>545</real>
 			<key>ypos</key>
-			<integer>85</integer>
+			<real>85</real>
+		</dict>
+		<key>87DD8F86-CA6E-4CE1-BAAD-7FB5345E5D1A</key>
+		<dict>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>6070</real>
+		</dict>
+		<key>8A5CF4DE-4F2A-48CB-8372-C561009D061F</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>5615</real>
 		</dict>
 		<key>8D0C5D78-C1EB-4310-867B-C6840CBCC497</key>
 		<dict>
 			<key>xpos</key>
-			<integer>550</integer>
+			<real>550</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>8E5EEA56-C5C1-424E-B51A-743D35AA8B67</key>
 		<dict>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>675</integer>
+			<real>675</real>
+		</dict>
+		<key>8EDDF737-6D30-4450-8010-4D008D051577</key>
+		<dict>
+			<key>xpos</key>
+			<real>550</real>
+			<key>ypos</key>
+			<real>5725</real>
+		</dict>
+		<key>96037EAF-EF66-4673-94D9-7F01C2ABC9F0</key>
+		<dict>
+			<key>xpos</key>
+			<real>275</real>
+			<key>ypos</key>
+			<real>5830</real>
+		</dict>
+		<key>96C06ABD-BD74-42F9-AB2D-ADAA35D5DF77</key>
+		<dict>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>6955</real>
 		</dict>
 		<key>97DDE24A-5269-43CC-AD33-A56E8F7BD2BF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>545</integer>
+			<real>545</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 		<key>98E3CB29-6224-4748-A5C4-BCFD1EAA04D4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>145</real>
 			<key>ypos</key>
-			<integer>3245</integer>
+			<real>3335</real>
 		</dict>
 		<key>9927142E-17FC-4C82-8C6A-815EA178B0AD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>3045</integer>
+			<real>3045</real>
 		</dict>
 		<key>9E17E41E-2B90-485C-90F3-B98F264E0157</key>
 		<dict>
 			<key>xpos</key>
-			<integer>390</integer>
+			<real>390</real>
 			<key>ypos</key>
-			<integer>2000</integer>
+			<real>2000</real>
 		</dict>
 		<key>A4B78E1D-77F2-4895-A19A-92A2E8653710</key>
 		<dict>
 			<key>xpos</key>
-			<integer>640</integer>
+			<real>640</real>
 			<key>ypos</key>
-			<integer>5130</integer>
+			<real>5130</real>
+		</dict>
+		<key>A5FE8132-CE30-493A-93FA-7F4C79FECA35</key>
+		<dict>
+			<key>xpos</key>
+			<real>120</real>
+			<key>ypos</key>
+			<real>5380</real>
 		</dict>
 		<key>A6400700-2159-4723-B5CD-4D68F8C574D6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<real>540</real>
 			<key>ypos</key>
-			<integer>930</integer>
+			<real>930</real>
 		</dict>
 		<key>A73FA46D-18B5-41EE-B3B6-BB5FE2204222</key>
 		<dict>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>1355</integer>
+			<real>1355</real>
 		</dict>
 		<key>AAE5F522-ACDC-481C-A10E-21D68EBC19D1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>2430</integer>
+			<real>2430</real>
 		</dict>
 		<key>AB241720-885D-47CD-A9E3-2B1F322F4973</key>
 		<dict>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>335</real>
 			<key>ypos</key>
-			<integer>2700</integer>
+			<real>2700</real>
 		</dict>
 		<key>AEF76889-EC37-4E69-A847-BAC2CD1CD728</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>2000</integer>
+			<real>2000</real>
 		</dict>
 		<key>AF3138CE-F5EC-46CD-AD9B-8EAFB3D0ED2A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>4055</integer>
+			<real>4055</real>
+		</dict>
+		<key>B17C7755-5E3A-4587-BAF6-CB1169582D5A</key>
+		<dict>
+			<key>xpos</key>
+			<real>465</real>
+			<key>ypos</key>
+			<real>6970</real>
 		</dict>
 		<key>B2A7CA2B-F3B5-4CB0-9F77-B65DF90AF5AE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>120</integer>
+			<real>120</real>
 			<key>ypos</key>
-			<integer>4910</integer>
+			<real>4910</real>
 		</dict>
 		<key>B3A825B6-6DB8-46FC-B604-DE57EDB3D400</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>1725</integer>
+			<real>1725</real>
 		</dict>
 		<key>B5DF50A0-AC21-4ED0-9A4B-44A8DAFC56A7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>125</integer>
+			<real>125</real>
 			<key>ypos</key>
-			<integer>2120</integer>
+			<real>2120</real>
 		</dict>
 		<key>B7B04985-5A8B-4104-B304-7FFA5F4AC8BE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>1725</integer>
+			<real>1725</real>
+		</dict>
+		<key>BAE81697-7764-48CC-BEB4-0D6CAB6AEA3C</key>
+		<dict>
+			<key>xpos</key>
+			<real>480</real>
+			<key>ypos</key>
+			<real>6305</real>
 		</dict>
 		<key>BCBA1FF0-F650-4667-A219-351BF58DF746</key>
 		<dict>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>5245</integer>
+			<real>5245</real>
 		</dict>
 		<key>BDED95CE-1C6C-4F6D-BA99-2DDA72619D0C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>630</integer>
+			<real>630</real>
 			<key>ypos</key>
-			<integer>4905</integer>
+			<real>4905</real>
+		</dict>
+		<key>BE316E69-BDAE-42F6-9B85-98E73984E1E7</key>
+		<dict>
+			<key>xpos</key>
+			<real>120</real>
+			<key>ypos</key>
+			<real>5500</real>
 		</dict>
 		<key>C0DF949F-E454-4E21-BEDC-AEE6A97BF483</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<real>540</real>
 			<key>ypos</key>
-			<integer>1115</integer>
+			<real>1115</real>
 		</dict>
 		<key>C90B6E23-1BA5-439C-8ABE-44C915B17D47</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>4165</integer>
+			<real>4165</real>
 		</dict>
 		<key>CC1E4B29-3DC3-4DAF-A5C5-1300E79E4DB4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>680</integer>
+			<real>680</real>
 			<key>ypos</key>
-			<integer>3820</integer>
+			<real>3820</real>
 		</dict>
 		<key>CC72C1BE-9CB6-4BEE-88C9-D4CC9990B1B7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>535</integer>
+			<real>535</real>
 			<key>ypos</key>
-			<integer>1475</integer>
+			<real>1475</real>
 		</dict>
 		<key>CF597004-8B34-4D21-BC7B-CBE11EF41679</key>
 		<dict>
 			<key>xpos</key>
-			<integer>145</integer>
+			<real>145</real>
 			<key>ypos</key>
-			<integer>1020</integer>
+			<real>1020</real>
 		</dict>
 		<key>CF6DA80A-44D7-4DA4-9D3D-0944A22F0430</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>4280</integer>
+			<real>4280</real>
+		</dict>
+		<key>D27DA175-13AC-4D1F-B91A-DB497837EBFA</key>
+		<dict>
+			<key>xpos</key>
+			<real>290</real>
+			<key>ypos</key>
+			<real>5410</real>
 		</dict>
 		<key>D74A8378-6C82-4B45-BD31-EC387912713E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>3930</integer>
+			<real>3930</real>
 		</dict>
 		<key>D7C5A80B-37EF-418A-84A7-20076960A0A5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>2310</integer>
+			<real>2310</real>
+		</dict>
+		<key>D816CA88-7098-41DA-9441-0C14B975F33B</key>
+		<dict>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>5825</real>
 		</dict>
 		<key>D95A4BD2-6064-46C3-BF3E-334AF743BD8C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>120</integer>
+			<real>120</real>
 			<key>ypos</key>
-			<integer>4675</integer>
+			<real>4675</real>
+		</dict>
+		<key>DCEE2A92-849D-47A2-8C34-4CC85C0CFBA0</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>6450</real>
+		</dict>
+		<key>E1103257-F7AC-4A3D-A16A-3B43EC0255BD</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>5380</real>
 		</dict>
 		<key>E15CE85B-9750-4C49-9FA4-82C6CA881A3F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>125</integer>
+			<real>125</real>
 			<key>ypos</key>
-			<integer>4170</integer>
+			<real>4170</real>
+		</dict>
+		<key>E34EBC86-F06C-4A33-9000-B9B9F200ABD2</key>
+		<dict>
+			<key>xpos</key>
+			<real>550</real>
+			<key>ypos</key>
+			<real>5500</real>
 		</dict>
 		<key>E350B284-1346-46D1-8705-7BEA6F1E701E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>1535</integer>
+			<real>1535</real>
 		</dict>
 		<key>E7C58FDA-8F31-4AC6-B46F-95C5B11BD1B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>550</integer>
+			<real>550</real>
 		</dict>
 		<key>E810F997-590A-4AFF-9EBF-64B1E14E7059</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<real>140</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>E8145BB8-DD55-4B91-B455-6B51E552F86F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>2145</integer>
+			<real>2145</real>
 		</dict>
 		<key>EA4BCBC1-EAFC-4850-ABCA-4373314F143D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>4290</integer>
+			<real>4290</real>
 		</dict>
 		<key>EC56F869-91FC-4742-AE8E-B2779DE9F7C3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<real>670</real>
 			<key>ypos</key>
-			<integer>2795</integer>
+			<real>2795</real>
 		</dict>
 		<key>EE69CC3B-AC29-404B-B374-5755CD94122F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>4045</integer>
+			<real>4045</real>
 		</dict>
 		<key>EE74364B-ADC9-4D9C-86A2-9B2786EF1C0C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>600</integer>
+			<real>600</real>
 			<key>ypos</key>
-			<integer>4400</integer>
+			<real>4400</real>
 		</dict>
 		<key>EF0676D1-2099-4C2C-BA24-D817DFC7EF78</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<real>130</real>
 			<key>ypos</key>
-			<integer>1850</integer>
+			<real>1850</real>
+		</dict>
+		<key>F02C78E7-963D-4B9C-B702-816450729430</key>
+		<dict>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>6445</real>
 		</dict>
 		<key>F1C3637B-A2B6-4039-862D-0F86902AF956</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>2430</integer>
+			<real>2430</real>
 		</dict>
 		<key>F2CD2C14-B1FB-48E9-B089-5F7E00C28198</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<real>540</real>
 			<key>ypos</key>
-			<integer>570</integer>
+			<real>570</real>
 		</dict>
 		<key>F757E484-F98E-4A34-BB55-8997969C066A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<real>540</real>
 			<key>ypos</key>
-			<integer>1235</integer>
+			<real>1235</real>
 		</dict>
 		<key>F88C3B71-047C-4F18-8F8A-7CC5874F0C14</key>
 		<dict>
 			<key>xpos</key>
-			<integer>120</integer>
+			<real>120</real>
 			<key>ypos</key>
-			<integer>4790</integer>
+			<real>4790</real>
 		</dict>
 		<key>FA1392BE-D092-434B-9371-E4D0CE1D6C74</key>
 		<dict>
 			<key>xpos</key>
-			<integer>525</integer>
+			<real>525</real>
 			<key>ypos</key>
-			<integer>2280</integer>
+			<real>2280</real>
 		</dict>
 		<key>FA384344-A43B-47E9-8EB9-58E34C2B25DE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<real>135</real>
 			<key>ypos</key>
-			<integer>675</integer>
+			<real>675</real>
 		</dict>
 		<key>FA8EB27F-4725-45AC-90CE-B05AF674B5B2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>625</integer>
+			<real>625</real>
 			<key>ypos</key>
-			<integer>4675</integer>
+			<real>4675</real>
 		</dict>
 		<key>FBDAFC18-97A4-4BF8-B729-3B8B98FDBFBF</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>140</integer>
+			<real>140</real>
 			<key>ypos</key>
-			<integer>3800</integer>
+			<real>3800</real>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>cache_seconds</key>
 		<string>28800</string>
+		<key>login_type</key>
+		<string>from_local_cookie</string>
 		<key>mis</key>
 		<string>diwenchen</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>meituan.com</string>
 </dict>
