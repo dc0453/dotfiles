@@ -1,5 +1,8 @@
 # !/bin/sh
 
+script_dir="$(dirname "$0")"
+base_dir=`cd $script_dir && pwd`
+
 plugins=${HOME}/.plugins
 
 echo "[start] installing tmux config"
@@ -21,11 +24,8 @@ if [[ ! -d ${plugins}/.tmux ]]; then
     ln -s -f ${plugins}/.tmux/.tmux.conf ~/.tmux.conf
 fi
 
-script_dir="$(dirname "$0")"
-base_dir=`cd $script_dir && pwd`
-
 # link my customized configuration
-ln -s -f ${base_dir}/.tmux/.tmux.conf.local ~/.tmux.conf.local
+#ln -s -f ${base_dir}/tmux.conf.local.symlink ~/.tmux.conf.local
 echo "[done] install tmux config"
 
 exit 0
