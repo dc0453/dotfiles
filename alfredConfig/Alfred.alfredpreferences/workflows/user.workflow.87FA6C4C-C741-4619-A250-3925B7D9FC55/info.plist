@@ -165,27 +165,7 @@ end alfred_script</string>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>on run
-	tell application "zoom.us" to activate
-	tell application "zoom.us" to reopen
-	delay 2
-	tell application "System Events"
-		tell process "zoom.us"
-			keystroke "j" using command down
-			delay 1
-			set roomNum to "{query}"
-        		set windowName to name of window 1
-        		if windowName is not equal to "" then
-            		set value of text field 1 of sheet 1 of window "Zoom" to roomNum
-	        		click button 2 of sheet 1 of window 1
-        		else
-            		set value of text field 1 of window 1 to roomNum
-	        		click button 2 of window 1
-        		end if
-
-		end tell
-	end tell
-end run</string>
+				<string>on run	tell application "zoom.us" to activate	tell application "zoom.us" to reopen	delay 2	tell application "System Events"		tell process "zoom.us"			keystroke "j" using command down			delay 1			set roomNum to "{query}"			set windowName to name of window 1			-- get windowName			set value of text field 1 of window 1 to roomNum			click button 2 of window 1			-- if windowName is not equal to "" then			-- get entire contents of window 1			-- set value of text field 1 of window "Join Meeting" to roomNum			-- click button 2 of window "Join Meeting"			-- else			-- set value of text field 1 of window 1 to roomNum			-- click button 2 of window 1			-- end if					end tell	end tellend run</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
