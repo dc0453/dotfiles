@@ -8,6 +8,19 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>02AD1BE6-CED4-4142-8982-9D868FCEBC9C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4EF82BDA-6F37-4883-A060-19946D69782A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0318B2FD-E0E7-4323-B4DA-76A085EF4F88</key>
 		<array>
 			<dict>
@@ -36,6 +49,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>58A43FD8-0339-4F43-8529-3A1ADA9D1010</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>06F66747-9D09-426B-9721-50D03CF576CC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F11EF754-02C3-4D8C-9EF0-B66CBD0190B6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -88,6 +114,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E1103257-F7AC-4A3D-A16A-3B43EC0255BD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1457C1F4-CD93-4735-B80C-75EAC36B3782</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0F3A1B7A-40E3-45CF-804D-E6AD3A0B3EF4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>14F4D328-A131-41B6-A066-4360575F0C74</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B57D1E4B-4EBD-4D0A-A273-3D3103A4C86E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -184,6 +236,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>23A64902-92C8-4A93-9936-D7CF51B41A59</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F136EA58-01ED-4F12-A4F9-62B48E602CDF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>26C6D7E6-A5CC-4C6F-B01E-7034F3C07E25</key>
 		<array>
 			<dict>
@@ -204,6 +269,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6AE37558-3BE4-4925-9162-347121F7999B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2CC13C80-64B3-4E10-AB5F-A4F79DE64627</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>22566001-477B-470D-8B42-F15E15E5AD09</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -243,6 +321,29 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4447AB11-6DEF-4E8F-BEC7-65D05E2ED792</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3AC88031-5304-4B19-BBAE-685AAAFADC5A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D8D35FA5-706D-4604-BC17-74F75566B039</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>按住cmd回车直接跳转大盘，否则显示大盘下图表</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>23A64902-92C8-4A93-9936-D7CF51B41A59</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -336,19 +437,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>471D5F20-CE7F-40DC-A0ED-057C7F54CF9C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8061EF94-142D-4976-9A29-4297A16D0629</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4939459C-3B13-4D37-A67E-5EAED2E5A4DD</key>
 		<array>
 			<dict>
@@ -367,6 +455,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>5B652F1B-D2E3-411C-AC66-B14E0659929D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4EF82BDA-6F37-4883-A060-19946D69782A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>14F4D328-A131-41B6-A066-4360575F0C74</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -403,19 +504,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>35E0DA2E-D322-49C6-A555-0680C7259194</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>67959538-D5D2-4FFC-8A71-AAE4DD46C1DD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>AB241720-885D-47CD-A9E3-2B1F322F4973</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -522,11 +610,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8061EF94-142D-4976-9A29-4297A16D0629</key>
+		<key>7D5FB672-F213-4E13-B9EF-1CA06D86CF58</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>AAE5F522-ACDC-481C-A10E-21D68EBC19D1</string>
+				<string>EB989A0C-984B-4940-AFB1-72AB39B96C05</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -561,6 +649,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>883D9F92-D217-44DB-BA6B-46DBE5922FDB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E1B54F3E-26E8-4C00-8615-3A8CA797431F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>96037EAF-EF66-4673-94D9-7F01C2ABC9F0</key>
 		<array>
 			<dict>
@@ -579,6 +680,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B17C7755-5E3A-4587-BAF6-CB1169582D5A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>98DFC833-C293-47B7-9593-ED005539D3D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>53F04963-3179-408C-882C-0CC90EB1B375</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -623,47 +737,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>AB241720-885D-47CD-A9E3-2B1F322F4973</key>
+		<key>ADD608F9-99A0-4776-A0C9-643A590E7319</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6236A276-6193-46F9-9450-A637E6488831</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>63CA7E32-ACA6-4FA8-8D0E-38719C0A35F8</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>297E7A34-C340-4C03-A82F-19FD94B7B22C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>658CFD4E-B758-4D03-8A0F-A8DE727DDC15</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>EC56F869-91FC-4742-AE8E-B2779DE9F7C3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>1DB4FBB0-0000-451B-AF93-05078ABFD2B3</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>7B566223-71FC-49C6-B55E-FDF2ADD5AC29</string>
+				<string>277C9181-45ED-400A-B6FB-83B02AE149D1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -690,6 +768,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>EE69CC3B-AC29-404B-B374-5755CD94122F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AF9906AB-992E-4F25-AC7B-133F03E3D557</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA71E563-C665-48F3-AFA1-C8A099CA0868</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -778,6 +869,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0F1653F9-FA77-4A0F-898B-64D3F8680418</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D6FD2A6B-F026-4C30-9893-ED5F35C89798</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98DFC833-C293-47B7-9593-ED005539D3D7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -926,11 +1030,60 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F136EA58-01ED-4F12-A4F9-62B48E602CDF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9C503A8C-42E5-49FF-8F07-35E727A3719A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F1C3637B-A2B6-4039-862D-0F86902AF956</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>471D5F20-CE7F-40DC-A0ED-057C7F54CF9C</string>
+				<string>AAE5F522-ACDC-481C-A10E-21D68EBC19D1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1E86C7D-7696-4BE1-8AA2-E7E9FF00441E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9A240CA0-513B-4296-9279-79D95EC7320D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F463A90E-55B2-4A3B-804A-FB77299C39C9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>23DA2E5B-A8E3-494B-AD6B-7C9BC0E151FB</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>按住cmd回车直接跳转大盘</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D6FD2A6B-F026-4C30-9893-ED5F35C89798</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2202,7 +2355,7 @@ fi</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>http://ed.sankuai.com/#/ed/testApply/detail?testApplyId={query}</string>
+				<string>https://fsd.sankuai.com/{query}</string>
 				<key>utf8</key>
 				<false/>
 			</dict>
@@ -2229,7 +2382,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>edlist</string>
+				<string>fsdlist</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -2243,9 +2396,9 @@ fi</string>
 				<key>script</key>
 				<string>if [ -f /usr/local/bin/python ]
 then
-    /usr/local/bin/python  edTestApplyList.py "$1" "$mis" "$cache_seconds"
+    /usr/local/bin/python  fsdTestApplyList.py "$1" "$mis" "$cache_seconds"
 else
-    python  edTestApplyList.py "$1" "$mis" "$cache_seconds"
+    python  fsdTestApplyList.py "$1" "$mis" "$cache_seconds"
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -2254,7 +2407,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>申请提测列表[test list]</string>
+				<string>我的交付列表</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -2266,33 +2419,6 @@ fi</string>
 			<string>D7C5A80B-37EF-418A-84A7-20076960A0A5</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"1.合并代码","arg":"confirm"},{"title":"2.预发部署","arg":"stagDeploy"},{"title":"3.预发验证","arg":"stagCheck"},{"title":"4.合并主干","arg":"merge"},{"title":"5.线上部署","arg":"deploy"},{"title":"6.线上验证","arg":"check"}]</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>8061EF94-142D-4976-9A29-4297A16D0629</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2310,7 +2436,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>edplan</string>
+				<string>fsdplan</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -2324,9 +2450,9 @@ fi</string>
 				<key>script</key>
 				<string>if [ -f /usr/local/bin/python ]
 then
-    /usr/local/bin/python  edOnlionPlanList.py "$1" "$mis" "$cache_seconds"
+    /usr/local/bin/python  fsdOnlionPlanList.py "$1" "$mis" "$cache_seconds"
 else
-    python  edOnlionPlanList.py "$1" "$mis" "$cache_seconds"
+    python  fsdOnlionPlanList.py "$1" "$mis" "$cache_seconds"
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -2356,7 +2482,7 @@ fi</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>http://ed.sankuai.com/#/ed/release/onlineProgramDetail?onlineProgramId={var:onlineProgramId}&amp;childTab={query}</string>
+				<string>https://fsd.sankuai.com/releaseDetail/v1/{query}</string>
 				<key>utf8</key>
 				<false/>
 			</dict>
@@ -2370,145 +2496,21 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>onlineProgramId</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>471D5F20-CE7F-40DC-A0ED-057C7F54CF9C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>http://ed.sankuai.com/#/ed/testApply/add</string>
-				<key>utf8</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6236A276-6193-46F9-9450-A637E6488831</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>http://ed.sankuai.com/#/ed/testApply/TestApplyList</string>
-				<key>utf8</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>297E7A34-C340-4C03-A82F-19FD94B7B22C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{query}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>1</string>
-						<key>outputlabel</key>
-						<string>新建迭代申请</string>
-						<key>uid</key>
-						<string>63CA7E32-ACA6-4FA8-8D0E-38719C0A35F8</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{query}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>2</string>
-						<key>outputlabel</key>
-						<string>迭代申请列表</string>
-						<key>uid</key>
-						<string>658CFD4E-B758-4D03-8A0F-A8DE727DDC15</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{query}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>3</string>
-						<key>outputlabel</key>
-						<string>新建上线计划</string>
-						<key>uid</key>
-						<string>1DB4FBB0-0000-451B-AF93-05078ABFD2B3</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>上线计划列表</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>AB241720-885D-47CD-A9E3-2B1F322F4973</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"1、新建迭代申请","arg":"1"},{"title":"2、迭代申请列表","arg":"2"},{"title":"3、创建上线计划","arg":"3"},{"title":"4、上线计划列表","arg":"4"}]</string>
+				<integer>2</integer>
 				<key>keyword</key>
-				<string>ed</string>
-				<key>runningsubtext</key>
-				<string></string>
+				<string>fsd</string>
 				<key>subtext</key>
 				<string></string>
-				<key>title</key>
-				<string>goto ed</string>
+				<key>text</key>
+				<string>新建交付/上线计划</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>67959538-D5D2-4FFC-8A71-AAE4DD46C1DD</string>
+			<string>883D9F92-D217-44DB-BA6B-46DBE5922FDB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2520,33 +2522,14 @@ fi</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>http://ed.sankuai.com/#/ed/release/AddReleasePlan</string>
+				<string>https://fsd.sankuai.com/delivery?tab=delivery</string>
 				<key>utf8</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>EC56F869-91FC-4742-AE8E-B2779DE9F7C3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>http://ed.sankuai.com/#/ed/release/ReleasePlanList</string>
-				<key>utf8</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>7B566223-71FC-49C6-B55E-FDF2ADD5AC29</string>
+			<string>E1B54F3E-26E8-4C00-8615-3A8CA797431F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2771,7 +2754,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>{query}</string>
+				<string></string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -4004,7 +3987,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>cellar-cluster group list</string>
+				<string>cellar-cluster list</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -4382,7 +4365,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>mf</string>
+				<string>mq</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4455,7 +4438,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>smf</string>
+				<string>smq</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4528,7 +4511,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>mfc</string>
+				<string>mqc</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4601,7 +4584,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>smfc</string>
+				<string>smqc</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4772,7 +4755,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>根据编排关键字或泳道全称搜索泳道</string>
+				<string>根据编排关键字或泳道全程搜索</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -4820,7 +4803,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>rp</string>
+				<string>repo</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -4845,7 +4828,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>我的git仓库列表</string>
+				<string>search my git repo list</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -4918,7 +4901,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>部署服务</string>
+				<string>deploy service or jar</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -4991,7 +4974,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>我的待PR列表</string>
+				<string>my pr list</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -5023,6 +5006,992 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://raptor.mws.sankuai.com/dashboard/list?{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D8D35FA5-706D-4604-BC17-74F75566B039</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>rpd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  raptor_favorate.py "$1" "$mis" "$cache_seconds"
+else
+    python  raptor_favorate.py "$1" "$mis" "$cache_seconds"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>rpator dashboard: 打开raptor收藏的大盘</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3AC88031-5304-4B19-BBAE-685AAAFADC5A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>rpt_dashboard_id_iscore</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>23A64902-92C8-4A93-9936-D7CF51B41A59</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  raptor_charts.py "$1"
+else
+    python raptor_charts.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F136EA58-01ED-4F12-A4F9-62B48E602CDF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://raptor.mws.sankuai.com/dashboard/chart?{var:rpt_dashboard_id_iscore}&amp;chartId={query}&amp;tabName=data</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9C503A8C-42E5-49FF-8F07-35E727A3719A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>srpd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  raptor_search_dashboard.py "$1" "$mis" "$cache_seconds"
+else
+    python  raptor_search_dashboard.py "$1" "$mis" "$cache_seconds"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>rpator dashboard: 搜索raptor大盘</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F463A90E-55B2-4A3B-804A-FB77299C39C9</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://raptor.mws.sankuai.com/dashboard/list?{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>23DA2E5B-A8E3-494B-AD6B-7C9BC0E151FB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>rpt_dashboard_id_iscore</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D6FD2A6B-F026-4C30-9893-ED5F35C89798</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  raptor_charts.py "$1"
+else
+    python raptor_charts.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>98DFC833-C293-47B7-9593-ED005539D3D7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://raptor.mws.sankuai.com/dashboard/chart?{var:rpt_dashboard_id_iscore}&amp;chartId={query}&amp;tabName=data</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>53F04963-3179-408C-882C-0CC90EB1B375</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cfp</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  raptor_select_project.py "$1" "$mis" "$cache_seconds"
+else
+    python  raptor_select_project.py "$1" "$mis" "$cache_seconds"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>[C]hange current raptor [F]ront [P]roject</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>02AD1BE6-CED4-4142-8982-9D868FCEBC9C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  raptor_save_select_project.py "$1"
+else
+    python raptor_save_select_project.py "$1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>14F4D328-A131-41B6-A066-4360575F0C74</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>raptor前端项目设置成功</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>B57D1E4B-4EBD-4D0A-A273-3D3103A4C86E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>current_front_project</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4EF82BDA-6F37-4883-A060-19946D69782A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://raptor.mws.sankuai.com/client/perf/trend?view=project&amp;{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>FA71E563-C665-48F3-AFA1-C8A099CA0868</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>rfd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  raptor_front_api_dashboard.py "$1" "$mis" "$cache_seconds"
+else
+    python  raptor_front_api_dashboard.py "$1" "$mis" "$cache_seconds"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>raptor前端api监控大盘</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AF9906AB-992E-4F25-AC7B-133F03E3D557</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://coe.mws.sankuai.com/detail/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>277C9181-45ED-400A-B6FB-83B02AE149D1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>coef</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  coeAction.py "$1" "$mis" "$cache_seconds"
+else
+    python  coeAction.py "$1" "$mis" "$cache_seconds"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>关注的coe(favorate)</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>ADD608F9-99A0-4776-A0C9-643A590E7319</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://coe.mws.sankuai.com/detail/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9A240CA0-513B-4296-9279-79D95EC7320D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>scoe</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  coe_search.py "$1" "$mis" "$cache_seconds"
+else
+    python  coe_search.py "$1" "$mis" "$cache_seconds"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>搜索coe</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F1E86C7D-7696-4BE1-8AA2-E7E9FF00441E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://km.sankuai.com/page/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0F3A1B7A-40E3-45CF-804D-E6AD3A0B3EF4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>kmf</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  kmCollectionSearch.py "$1" "$mis" "$cache_seconds" "1"
+else
+    python  kmCollectionSearch.py "$1" "$mis" "$cache_seconds" "1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>学城常用收藏夹</string>
+				<key>title</key>
+				<string>km favorate</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1457C1F4-CD93-4735-B80C-75EAC36B3782</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://km.sankuai.com/page/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>EB989A0C-984B-4940-AFB1-72AB39B96C05</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>kmo</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  kmCollectionSearch.py "$1" "$mis" "$cache_seconds" "0"
+else
+    python  kmCollectionSearch.py "$1" "$mis" "$cache_seconds" "0"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>学城其他收藏夹</string>
+				<key>title</key>
+				<string>km other collection</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7D5FB672-F213-4E13-B9EF-1CA06D86CF58</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://km.sankuai.com/page/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F11EF754-02C3-4D8C-9EF0-B66CBD0190B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>kmh</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  kmHistory.py "$1" "$mis" "$cache_seconds" "1"
+else
+    python  kmHistory.py "$1" "$mis" "$cache_seconds" "1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>学城浏览历史</string>
+				<key>title</key>
+				<string>km history</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>06F66747-9D09-426B-9721-50D03CF576CC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://km.sankuai.com/page/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>22566001-477B-470D-8B42-F15E15E5AD09</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>kme</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>2</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>please wait</string>
+				<key>script</key>
+				<string>if [ -f /usr/local/bin/python ]
+then
+    /usr/local/bin/python  kmEditHistory.py "$1" "$mis" "$cache_seconds" "1"
+else
+    python  kmEditHistory.py "$1" "$mis" "$cache_seconds" "1"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>学城编辑历史</string>
+				<key>title</key>
+				<string>km edit history</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2CC13C80-64B3-4E10-AB5F-A4F79DE64627</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>美团内部链接快捷方式：支持octo，mcc、rhino、raptor、avatar、trace、devops、trace、redis、cellar、mafka、git等
@@ -5037,16 +6006,24 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 
 - oc - octo线上环境，按住cmd到线下环境
 - rh - rhino线上环境，按住cmd到线下环境
-- lion - lion线上环境，按住cmd到线下环境
-	- lk - [L]ion [K]ey 先输入lion key，再选择appkey，lion中查看制定key
+- mcc - mcc线上环境，按住cmd到线下环境
 - git - code线上环境
 - plus - new devops的发布
 - pl - 现有的plus
-- rpt - raptor 线上环境，按住cmd到测试环境
-- avt - avatar
-- trace - mtrace
+- rpt - [r]a[p][t]or 线上环境，按住cmd到测试环境
+- avt - [a][v]a[t]ar
+- trace - mtrace，输入traceid跳转， 按住cmd到线下环境
 
+Raptor监控：
+-rpd raptor dashboard 收藏的raptor大盘
+    - 回车显示图表，跳转图表详情页
+    - 按住cmd跳转大盘页面。
+-srpd 搜索大盘
+    - 回车显示图表，跳转图表详情页
+    - 按住cmd跳转大盘页面。
+- rfd raptor front dashboard 前端监控大盘，使用前需使用cfp(change front project)指令选择前端项目。
 
+RDS：
 - db - rds集群列表
     - 直接回车后查看集群下的db列表
         - 按住cmd后回车到db详情页
@@ -5055,49 +6032,68 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 - sdb ([S]earch db) 根据关键字搜索db
 - rds - rds集群列表，直接到监控页
 
+Cellar：
 - cl - [C]ellar [L]ist集群组列表
     - 回车查看集群组下集群，再回车查看集群
 - tl - [T]air cluster [L]ist 列表，跳转集群详情页
 
-- sq - squirrel集群列表，跳转集群详情页
+squirrel：
+- sq - squirrel集群列表，跳转集群详情页 【本地缓存】
 - ssq - [S]earch [Sq]uirrel 搜索集群
-- sqg - [sq]uirrel  [g]roup 集群组
+- ssg - [sq]uirrel  [g]roup 集群组
     - 直接回车后查看集群组下集群列表
         - 按住cmd后回车到集群组详情页
         - 回车后直接到集群详情页
 
-- mf - [Ma]fka topic列表，回车跳转详情页
-- smf - [S]earch [M]a[f]ka topic，回车跳转详情页
-- mfc - [M]a[f]ka [C]onsumer group ,消费组列表，跳转详情页
-- smfc - [S]earch  [m]a[f]ka [c]onsumer 搜索消费组，跳转详情页
+mq
+- mq - Mafka queue topic列表，回车跳转详情页 【本地缓存】
+- smf - [S]earch [M]afka [q]ueue topic，回车跳转详情页
+- mqc - [M]afka [q]ueue [C]onsumer group ,消费组列表，跳转详情页 【本地缓存】
+- smqc - [S]earch [M]afka [q]ueue [c]onsumer 搜索消费组，跳转详情页
 
 
-- cg - cargo 个人泳道列表
+DEVOPS：
+- cg - cargo 个人泳道列表 【本地缓存】
 - scg  -  [s]earch [c]ar[g]o 根据编排名称或泳道搜索，跳转泳道详情。
 
-- rp - git [r]e[p]ository  我的仓库列表，跳转代码仓库详情。
+- repo - git [repo]sitory  我的仓库列表，跳转代码仓库详情。 【本地缓存】
     - 按住cmd创建PR
-- dp - [d]e[p]loy 跳转发布页
-- prl - [p]ull [r]equest [l]ist  代码评审列表
+- dp - [d]e[p]loy 跳转发布页 【本地缓存】
+- prl - [p]ull [r]equest [l]ist  代码评审列表 【本地缓存】
 
 
+日志中心：
+- lc - logcenter我的日志列表 【本地缓存】
+- lca - logcenter所有日志列表 【本地缓存】
 
-- lc - logcenter我的日志列表
-- lca - logcenter所有日志列表
-
+学城
 - km -学城搜索，默认显示搜索历史，输入关键字会自动提示。
 - mykm -打开我的学城空间
+- kmh  [h]istory 最近浏览文档
+- kme  last [e]dit 最近编辑文档
+- kmf  [f]avorate 我的收藏夹 【本地缓存】
+- kmo  [o]ther 我的其他收藏 【本地缓存】
 
-【其他 - 需SSO登录】
+Oceanus：
 - ou - oceanus站点
-- mis - 查询mis，回车后打开大象聊天框
-- srv - 查询avatar服务，可以根据ip或主机名查询
-- host - 根据ip或主机，查询主机名和ip
-- jp - jumper免密登录，需wiki配置：https://km.sankuai.com/page/545430795
 
-到家digger【需登录SSO - 需安装chrome】
-- dg - 查询收藏的监控大盘
+监控：
+到家digger
+- dg - 查询收藏的监控大盘 【本地缓存】
 - sdg - 关键字搜索大盘
+
+COE:
+- coef 收藏的COE  【本地缓存】
+- scoe 搜索COE
+
+
+外卖FSD
+-fsd 打开fsd新建交付页面
+-fsdlist 跟我相关的交付计划 
+-fsdplan 跟我相关的上线计划
+
+系统指令：
+- cc - clear cache 清除缓存：如发现数据不是最新，可尝试清除缓存。
 
 实用工具
 - ts -日期转为时间戳，并复制到剪贴板
@@ -5105,26 +6101,26 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 - tstoday - 当天的时间戳，并复制到剪贴板
 - fts  -时间戳转为日期，并复制到剪贴板
 
-
-到家持续交付系统【需登录SSO - 需安装chrome】
-- ed
-    - 1、新建迭代申请
-    - 2、迭代申请列表
-    - 3、新建上线计划
-    - 4、上线计划列表
-- edlist - 我的迭代列表
-- edplan - 我的上线列表
-
-系统指令：
-- cc - clear cache 清除缓存：如发现数据不是最新，可尝试清除缓存。</string>
+其他
+- mis - 查询mis，回车后打开大象聊天框
+- srv - 查询avatar服务，可以根据ip或主机名查询
+- host - 根据ip或主机，查询主机名和ip
+- jp - jumper免密登录，需wiki配置：https://km.sankuai.com/page/545430795</string>
 	<key>uidata</key>
 	<dict>
 		<key>0273FFA5-B0C9-44AE-9FFF-F63411FB905E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>630</real>
 			<key>ypos</key>
-			<integer>3185</integer>
+			<real>3200</real>
+		</dict>
+		<key>02AD1BE6-CED4-4142-8982-9D868FCEBC9C</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>7720</real>
 		</dict>
 		<key>0318B2FD-E0E7-4323-B4DA-76A085EF4F88</key>
 		<dict>
@@ -5139,6 +6135,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>50</real>
 			<key>ypos</key>
 			<real>6590</real>
+		</dict>
+		<key>06F66747-9D09-426B-9721-50D03CF576CC</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>8495</real>
 		</dict>
 		<key>083EB27E-5B36-40DF-A30A-CEC5B02EE089</key>
 		<dict>
@@ -5174,6 +6177,27 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>395</real>
 			<key>ypos</key>
 			<real>5380</real>
+		</dict>
+		<key>0F3A1B7A-40E3-45CF-804D-E6AD3A0B3EF4</key>
+		<dict>
+			<key>xpos</key>
+			<real>430</real>
+			<key>ypos</key>
+			<real>8240</real>
+		</dict>
+		<key>1457C1F4-CD93-4735-B80C-75EAC36B3782</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>8245</real>
+		</dict>
+		<key>14F4D328-A131-41B6-A066-4360575F0C74</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>7735</real>
 		</dict>
 		<key>16CC0A7A-BAB2-4AEA-B6AC-347013DA214D</key>
 		<dict>
@@ -5217,12 +6241,33 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>3385</real>
 		</dict>
+		<key>22566001-477B-470D-8B42-F15E15E5AD09</key>
+		<dict>
+			<key>xpos</key>
+			<real>425</real>
+			<key>ypos</key>
+			<real>8605</real>
+		</dict>
 		<key>225ED620-9397-43F9-814D-42470BFB6C85</key>
 		<dict>
 			<key>xpos</key>
 			<real>130</real>
 			<key>ypos</key>
 			<real>4405</real>
+		</dict>
+		<key>23A64902-92C8-4A93-9936-D7CF51B41A59</key>
+		<dict>
+			<key>xpos</key>
+			<real>205</real>
+			<key>ypos</key>
+			<real>7325</real>
+		</dict>
+		<key>23DA2E5B-A8E3-494B-AD6B-7C9BC0E151FB</key>
+		<dict>
+			<key>xpos</key>
+			<real>520</real>
+			<key>ypos</key>
+			<real>7465</real>
 		</dict>
 		<key>26C6D7E6-A5CC-4C6F-B01E-7034F3C07E25</key>
 		<dict>
@@ -5238,12 +6283,12 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>4535</real>
 		</dict>
-		<key>297E7A34-C340-4C03-A82F-19FD94B7B22C</key>
+		<key>277C9181-45ED-400A-B6FB-83B02AE149D1</key>
 		<dict>
 			<key>xpos</key>
-			<real>675</real>
+			<real>430</real>
 			<key>ypos</key>
-			<real>2680</real>
+			<real>8000</real>
 		</dict>
 		<key>29E9287A-5F01-4C15-BFB0-9639970E18B2</key>
 		<dict>
@@ -5258,6 +6303,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>30</real>
 			<key>ypos</key>
 			<real>285</real>
+		</dict>
+		<key>2CC13C80-64B3-4E10-AB5F-A4F79DE64627</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>8610</real>
 		</dict>
 		<key>35E0DA2E-D322-49C6-A555-0680C7259194</key>
 		<dict>
@@ -5294,6 +6346,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>3365</real>
 		</dict>
+		<key>3AC88031-5304-4B19-BBAE-685AAAFADC5A</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>7195</real>
+		</dict>
 		<key>3B13D5AA-AF94-4B6E-9BE2-1F7DF9079730</key>
 		<dict>
 			<key>xpos</key>
@@ -5328,13 +6387,6 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>410</real>
 			<key>ypos</key>
 			<real>4540</real>
-		</dict>
-		<key>471D5F20-CE7F-40DC-A0ED-057C7F54CF9C</key>
-		<dict>
-			<key>xpos</key>
-			<real>340</real>
-			<key>ypos</key>
-			<real>2460</real>
 		</dict>
 		<key>472479FB-2DA9-4C55-B3D7-8A9AB8EF6D2D</key>
 		<dict>
@@ -5378,6 +6430,20 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>7070</real>
 		</dict>
+		<key>4EF82BDA-6F37-4883-A060-19946D69782A</key>
+		<dict>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>7760</real>
+		</dict>
+		<key>53F04963-3179-408C-882C-0CC90EB1B375</key>
+		<dict>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>7615</real>
+		</dict>
 		<key>58A43FD8-0339-4F43-8529-3A1ADA9D1010</key>
 		<dict>
 			<key>xpos</key>
@@ -5399,13 +6465,6 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>7085</real>
 		</dict>
-		<key>6236A276-6193-46F9-9450-A637E6488831</key>
-		<dict>
-			<key>xpos</key>
-			<real>670</real>
-			<key>ypos</key>
-			<real>2565</real>
-		</dict>
 		<key>62A0F75E-B4BA-497A-9205-00790A33E655</key>
 		<dict>
 			<key>xpos</key>
@@ -5419,13 +6478,6 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>330</real>
 			<key>ypos</key>
 			<real>1850</real>
-		</dict>
-		<key>67959538-D5D2-4FFC-8A71-AAE4DD46C1DD</key>
-		<dict>
-			<key>xpos</key>
-			<real>115</real>
-			<key>ypos</key>
-			<real>2715</real>
 		</dict>
 		<key>6863186B-11A6-487A-B83B-11F53C50B21F</key>
 		<dict>
@@ -5497,12 +6549,12 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>3360</real>
 		</dict>
-		<key>7B566223-71FC-49C6-B55E-FDF2ADD5AC29</key>
+		<key>7D5FB672-F213-4E13-B9EF-1CA06D86CF58</key>
 		<dict>
 			<key>xpos</key>
-			<real>670</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>2905</real>
+			<real>8380</real>
 		</dict>
 		<key>7D96A904-98DB-4693-AD49-BF5FDFFB5468</key>
 		<dict>
@@ -5517,13 +6569,6 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>490</real>
 			<key>ypos</key>
 			<real>6185</real>
-		</dict>
-		<key>8061EF94-142D-4976-9A29-4297A16D0629</key>
-		<dict>
-			<key>xpos</key>
-			<real>455</real>
-			<key>ypos</key>
-			<real>2430</real>
 		</dict>
 		<key>81E1E418-1EE0-4286-B5AF-314EA33B4BCF</key>
 		<dict>
@@ -5552,6 +6597,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>510</real>
 			<key>ypos</key>
 			<real>6070</real>
+		</dict>
+		<key>883D9F92-D217-44DB-BA6B-46DBE5922FDB</key>
+		<dict>
+			<key>xpos</key>
+			<real>130</real>
+			<key>ypos</key>
+			<real>2595</real>
 		</dict>
 		<key>8A5CF4DE-4F2A-48CB-8372-C561009D061F</key>
 		<dict>
@@ -5602,12 +6654,19 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
+		<key>98DFC833-C293-47B7-9593-ED005539D3D7</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>7610</real>
+		</dict>
 		<key>98E3CB29-6224-4748-A5C4-BCFD1EAA04D4</key>
 		<dict>
 			<key>xpos</key>
-			<real>145</real>
+			<real>135</real>
 			<key>ypos</key>
-			<real>3335</real>
+			<real>3295</real>
 		</dict>
 		<key>9927142E-17FC-4C82-8C6A-815EA178B0AD</key>
 		<dict>
@@ -5615,6 +6674,20 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>685</real>
 			<key>ypos</key>
 			<real>3045</real>
+		</dict>
+		<key>9A240CA0-513B-4296-9279-79D95EC7320D</key>
+		<dict>
+			<key>xpos</key>
+			<real>430</real>
+			<key>ypos</key>
+			<real>8120</real>
+		</dict>
+		<key>9C503A8C-42E5-49FF-8F07-35E727A3719A</key>
+		<dict>
+			<key>xpos</key>
+			<real>525</real>
+			<key>ypos</key>
+			<real>7350</real>
 		</dict>
 		<key>9E17E41E-2B90-485C-90F3-B98F264E0157</key>
 		<dict>
@@ -5654,16 +6727,16 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 		<key>AAE5F522-ACDC-481C-A10E-21D68EBC19D1</key>
 		<dict>
 			<key>xpos</key>
-			<real>680</real>
+			<real>465</real>
 			<key>ypos</key>
-			<real>2430</real>
+			<real>2475</real>
 		</dict>
-		<key>AB241720-885D-47CD-A9E3-2B1F322F4973</key>
+		<key>ADD608F9-99A0-4776-A0C9-643A590E7319</key>
 		<dict>
 			<key>xpos</key>
-			<real>335</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>2700</real>
+			<real>8005</real>
 		</dict>
 		<key>AEF76889-EC37-4E69-A847-BAC2CD1CD728</key>
 		<dict>
@@ -5678,6 +6751,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>130</real>
 			<key>ypos</key>
 			<real>4055</real>
+		</dict>
+		<key>AF9906AB-992E-4F25-AC7B-133F03E3D557</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>7870</real>
 		</dict>
 		<key>B17C7755-5E3A-4587-BAF6-CB1169582D5A</key>
 		<dict>
@@ -5699,6 +6779,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>135</real>
 			<key>ypos</key>
 			<real>1725</real>
+		</dict>
+		<key>B57D1E4B-4EBD-4D0A-A273-3D3103A4C86E</key>
+		<dict>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>7735</real>
 		</dict>
 		<key>B5DF50A0-AC21-4ED0-9A4B-44A8DAFC56A7</key>
 		<dict>
@@ -5791,6 +6878,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>5410</real>
 		</dict>
+		<key>D6FD2A6B-F026-4C30-9893-ED5F35C89798</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>7590</real>
+		</dict>
 		<key>D74A8378-6C82-4B45-BD31-EC387912713E</key>
 		<dict>
 			<key>xpos</key>
@@ -5801,9 +6895,9 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 		<key>D7C5A80B-37EF-418A-84A7-20076960A0A5</key>
 		<dict>
 			<key>xpos</key>
-			<real>130</real>
+			<real>125</real>
 			<key>ypos</key>
-			<real>2310</real>
+			<real>2350</real>
 		</dict>
 		<key>D816CA88-7098-41DA-9441-0C14B975F33B</key>
 		<dict>
@@ -5811,6 +6905,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>355</real>
 			<key>ypos</key>
 			<real>5825</real>
+		</dict>
+		<key>D8D35FA5-706D-4604-BC17-74F75566B039</key>
+		<dict>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>7195</real>
 		</dict>
 		<key>D95A4BD2-6064-46C3-BF3E-334AF743BD8C</key>
 		<dict>
@@ -5839,6 +6940,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>125</real>
 			<key>ypos</key>
 			<real>4170</real>
+		</dict>
+		<key>E1B54F3E-26E8-4C00-8615-3A8CA797431F</key>
+		<dict>
+			<key>xpos</key>
+			<real>460</real>
+			<key>ypos</key>
+			<real>2605</real>
 		</dict>
 		<key>E34EBC86-F06C-4A33-9000-B9B9F200ABD2</key>
 		<dict>
@@ -5882,12 +6990,12 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>4290</real>
 		</dict>
-		<key>EC56F869-91FC-4742-AE8E-B2779DE9F7C3</key>
+		<key>EB989A0C-984B-4940-AFB1-72AB39B96C05</key>
 		<dict>
 			<key>xpos</key>
-			<real>670</real>
+			<real>430</real>
 			<key>ypos</key>
-			<real>2795</real>
+			<real>8375</real>
 		</dict>
 		<key>EE69CC3B-AC29-404B-B374-5755CD94122F</key>
 		<dict>
@@ -5917,12 +7025,33 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<key>ypos</key>
 			<real>6445</real>
 		</dict>
+		<key>F11EF754-02C3-4D8C-9EF0-B66CBD0190B6</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>8490</real>
+		</dict>
+		<key>F136EA58-01ED-4F12-A4F9-62B48E602CDF</key>
+		<dict>
+			<key>xpos</key>
+			<real>295</real>
+			<key>ypos</key>
+			<real>7345</real>
+		</dict>
 		<key>F1C3637B-A2B6-4039-862D-0F86902AF956</key>
 		<dict>
 			<key>xpos</key>
-			<real>135</real>
+			<real>125</real>
 			<key>ypos</key>
-			<real>2430</real>
+			<real>2470</real>
+		</dict>
+		<key>F1E86C7D-7696-4BE1-8AA2-E7E9FF00441E</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>8125</real>
 		</dict>
 		<key>F2CD2C14-B1FB-48E9-B089-5F7E00C28198</key>
 		<dict>
@@ -5930,6 +7059,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>540</real>
 			<key>ypos</key>
 			<real>570</real>
+		</dict>
+		<key>F463A90E-55B2-4A3B-804A-FB77299C39C9</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>7460</real>
 		</dict>
 		<key>F757E484-F98E-4A34-BB55-8997969C066A</key>
 		<dict>
@@ -5948,9 +7084,9 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 		<key>FA1392BE-D092-434B-9371-E4D0CE1D6C74</key>
 		<dict>
 			<key>xpos</key>
-			<real>525</real>
+			<real>465</real>
 			<key>ypos</key>
-			<real>2280</real>
+			<real>2345</real>
 		</dict>
 		<key>FA384344-A43B-47E9-8EB9-58E34C2B25DE</key>
 		<dict>
@@ -5958,6 +7094,13 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 			<real>135</real>
 			<key>ypos</key>
 			<real>675</real>
+		</dict>
+		<key>FA71E563-C665-48F3-AFA1-C8A099CA0868</key>
+		<dict>
+			<key>xpos</key>
+			<real>430</real>
+			<key>ypos</key>
+			<real>7865</real>
 		</dict>
 		<key>FA8EB27F-4725-45AC-90CE-B05AF674B5B2</key>
 		<dict>
@@ -5985,10 +7128,8 @@ appkey根据计算机名为misid自动获取，检查计算机名（shell命令�
 		<key>mis</key>
 		<string>diwenchen</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>meituan.com</string>
 </dict>

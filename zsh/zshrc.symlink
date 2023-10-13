@@ -168,3 +168,4 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 eval "$(jenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export HOMEBREW_GITHUB_API_TOKEN=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

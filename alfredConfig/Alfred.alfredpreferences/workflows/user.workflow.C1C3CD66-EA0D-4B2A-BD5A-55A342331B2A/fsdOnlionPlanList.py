@@ -2,7 +2,8 @@
 # encoding: utf-8
 import sys
 
-from edAction import query_all_release_plan_list
+import fsdAction
+from fsdAction import query_all_release_plan_list
 from utils import wf, get_args, from_time_stamp
 
 
@@ -16,9 +17,9 @@ def main(workflow):
     online_plan_list = wf().filter(query, online_plan_list, key_for_record, min_score=20)
     if online_plan_list:
         for online_plan in online_plan_list:
-            wf().add_item(online_plan['name'],
-                          u'预计上线时间:{}'.format(from_time_stamp(online_plan['projectOnlineTime'] / 1000)),
-                          online_plan['id'], valid=True)
+            wf().add_item(online_plan[fsdAction.FSD_FILED_NAME],
+                          u'上线时间:{}'.format(from_time_stamp(online_plan[fsdAction.FSD_FILED_ONLINE_TIME] / 1000)),
+                          online_plan[fsdAction.FSD_FILED_ONLINE_ID], valid=True)
     else:
         wf().add_item('no result', valid=False)
     wf().send_feedback()

@@ -60,7 +60,7 @@ def query_my_pr_list():
     result = resp.json()['result']['values']
     if result:
         return [filter_pull_request_fields(r) for r in result]
-    return None
+    return resp.json()
 
 
 def search_cargos(keywords, type='swimlane'):

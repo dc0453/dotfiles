@@ -1,6 +1,6 @@
 import getpass
 import urllib
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 from dateutil.parser import parse
 from workflow import Workflow3
@@ -54,13 +54,31 @@ def to_unix_timestamp(date_str):
     return int(time.mktime(date.timetuple()))
 
 
+def today_YYHHMM():
+    return datetime.today().strftime('%Y-%m-%d')
+
+
+def days_ago_YYHHMM(days):
+    today = datetime.now()
+    n_days_ago = today - timedelta(days=days)
+    return n_days_ago.strftime('%Y-%m-%d')
+
+
 def from_unix_timestamp(timestamp):
     return datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d %H:%M:%S")
 
 
 if __name__ == '__main__':
-    print to_unix_timestamp('2022-05-17 18')
-    print from_unix_timestamp(1652716800)
-    print datetime.now()
-    print to_unix_timestamp(datetime.today().strftime("%Y-%m-%d"))
-    print to_unix_timestamp(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    print
+    to_unix_timestamp('2022-05-17 18')
+    print
+    from_unix_timestamp(1652716800)
+    print
+    datetime.now()
+    print
+    to_unix_timestamp(datetime.today().strftime("%Y-%m-%d"))
+    print
+    to_unix_timestamp(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+
+    print today_YYHHMM()
+    print days_ago_YYHHMM(30)
