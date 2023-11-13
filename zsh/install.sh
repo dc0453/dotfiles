@@ -18,10 +18,12 @@ script_dir="$(dirname "$0")"
 base_dir=`cd $script_dir && pwd`
 
 # copy my themes to custom dir
-rm -rf $ZSH/custom/plugins
-rm -rf $ZSH/custom/themes
-ln -s $base_dir/custom/plugins $ZSH/custom/plugins
-ln -s $base_dir/custom/themes $ZSH/custom/themes
+#rm -rf $ZSH/custom/plugins
+#rm -rf $ZSH/custom/themes
+#ln -s $base_dir/custom/plugins $ZSH/custom/plugins
+#ln -s $base_dir/custom/themes $ZSH/custom/themes
+cp -R $base_dir/custom/plugins/* $ZSH/custom/plugins/
+cp -R $base_dir/custom/themes/* $ZSH/custom/themes/
 #source ${HOME}/.zshrc
 
 echo "install oh-my-zsh done"
