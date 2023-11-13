@@ -1220,12 +1220,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://octo.mws.sankuai.com/service-provider-info?appkey={query}&amp;env=prod</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1293,12 +1295,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>http://octo.mws-test.sankuai.com/service-provider-info?appkey={query}&amp;env=test</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1312,12 +1316,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://lion.mws.sankuai.com/config/dync?appKey={query}&amp;env=prod&amp;key={var:lion_key}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1426,12 +1432,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>http://mcc.mws-test.sankuai.com/config/dync?appKey={query}&amp;env=test&amp;key={var:lion_key}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1499,12 +1507,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://dev.sankuai.com/services/{query}/to-deploy/deploy-group-list</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1572,12 +1582,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://plus.mws.sankuai.com/#/release/job/list?releaseId={query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1591,12 +1603,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://avatar.mws.sankuai.com/#/service/detail/host?appkey={query}&amp;env=prod</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1664,12 +1678,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/application/hosts?domain={query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1737,12 +1753,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>http://raptor.mws-test.sankuai.com/application/hosts?domain={query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1810,12 +1828,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>http://rhino.mws-test.sankuai.com/#/overview/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1829,12 +1849,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://rhino.mws.sankuai.com/#/overview/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1902,12 +1924,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1921,12 +1945,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>http://mtrace.inf.dev.sankuai.com/trace/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -1961,12 +1987,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://mtrace.sankuai.com/trace/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2279,12 +2307,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>http://logcenter.data.sankuai.com/search/{query}/query/%7B%22model%22:%22quick%22,%22start_time%22:%22now-15m%22,%22end_time%22:%22now%22,%22keyword%22:%22%22%7D</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2352,12 +2382,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://fsd.sankuai.com/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2479,12 +2511,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://fsd.sankuai.com/releaseDetail/v1/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2519,12 +2553,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://fsd.sankuai.com/delivery?tab=delivery</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2538,12 +2574,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/application/hosts?ip=All&amp;group=&amp;domain={query}&amp;templateIds=2251</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2611,12 +2649,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://rds.mws.sankuai.com/dba/cluster/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2736,12 +2776,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://rds.mws.sankuai.com/dba/sqlEditor?cluster_id={var:cluster_id}&amp;db_id={query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2829,12 +2871,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://rds.mws.sankuai.com/dba/db_detail/{var:cluster_id}/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2902,12 +2946,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://oceanus.mws.sankuai.com/site_detail?site_name={var:site_name}&amp;site_id={query}&amp;from=my_site&amp;tab=site-overview&amp;type=SiteConfig</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -2929,6 +2975,8 @@ fi</string>
 				<string>[{"title":"ak","arg":"ak","subtitle":"复制appkey"},{"title":"sak","arg":"sak","subtitle":"根据关键字搜索appkey，搜索后回车复制"},{"title":"akm","arg":"akm","subtitle":"根据appkey搜索负责人"},{"title":"fn+[M]embers","arg":"fn+[M]embers","subtitle":"根据剪贴板内的appkey搜索负责人，快捷键可自定义"},{"title":"oc","arg":"oc","subtitle":"octo线上环境，按住cmd到测试环境"},{"title":"rh","arg":"rh","subtitle":"rhino线上环境，按住cmd到测试环境"},{"title":"mcc","arg":"mcc","subtitle":"mcc线上环境，按住cmd到测试环境"},{"title":"git","arg":"git","subtitle":"code线上环境"},{"title":"plus","arg":"plus","subtitle":"new devops的发布\nnew devops的发布"},{"title":"pl","arg":"pl","subtitle":"现有的plus"},{"title":"rpt","arg":"rpt","subtitle":"raptor 线上环境，按住cmd到测试环境"},{"title":"avt","arg":"rpt","subtitle":"avatar"},{"title":"trace","arg":"trace","subtitle":"mtrace"},{"title":"lc","arg":"trace","subtitle":"logcenter日志列表"},{"title":"rds","arg":"rds","subtitle":"rds集群列表，直接到监控页"},{"title":"ou","arg":"ou","subtitle":"oceanus站点"},{"title":"db","arg":"ou","subtitle":"直接回车后查看集群下的db列表\n\t- 按住cmd后回车到集群监控页面\n\t- 直接回车后查看集群下的db列表\n\t\t- 按住cmd后回车到db详情页\n\t\t- 回车后到sql执行页面\nrds集群列表- 按住cmd后回车到集群监控页面- 直接回车后查看集群下的db列表"},{"title":"sdb","arg":"sdb","subtitle":"根据关键字搜索db"},{"title":"ed","arg":"ed","subtitle":"到家持续交付系统"},{"title":"edlist","arg":"edlist","subtitle":"我的迭代列表"},{"title":"edplan","arg":"edplan","subtitle":"我的上线列表"},{"title":"cc","arg":"cc","subtitle":"clear cache 清除缓存"},{"title":"cg","arg":"cg","subtitle":"我的个人泳道"},{"title":"scg","arg":"scg","subtitle":"根据编排关键字或泳道全程搜索"},{"title":"sq","arg":"sq","subtitle":"squirrell 集群列表"},{"title":"sqg","arg":"sqg","subtitle":"搜索squirrel 集群组列表"},{"title":"cl","arg":"cl","subtitle":"cellar集群组列表"},{"title":"tl","arg":"tl","subtitle":"tair集群列表"},{"title":"mf","arg":"mf","subtitle":"mafka topic list"},{"title":"smf","arg":"smf","subtitle":"搜索mafka topic列表"},{"title":"mfc","arg":"mfc","subtitle":"mafka消费组"},{"title":"smfc","arg":"smfc","subtitle":"搜索mafka消费组"},{"title":"rp","arg":"rp","subtitle":"git repository列表"},{"title":"dp","arg":"dp","subtitle":"部署发布项"},{"title":"prl","arg":"prl","subtitle":"pull request list"}]</string>
 				<key>keyword</key>
 				<string>tip</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -2965,12 +3013,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>mtdaxiang://www.meituan.com/chat?uid={query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3068,12 +3118,14 @@ fi
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://km.sankuai.com/search?key={query}&amp;searchType=0</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3141,12 +3193,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://km.sankuai.com/space/~{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3209,12 +3263,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://avatar.mws.sankuai.com/#/service/detail/host?appkey={query}&amp;env=prod</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3440,12 +3496,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://digger.sankuai.com/dashboard/{query}/show</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3513,12 +3571,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://digger.sankuai.com/dashboard/{query}/show</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -3932,12 +3992,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://cellar.mws.sankuai.com/cluster/detail/{query}/areaManage</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4025,12 +4087,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://squirrel.mws.sankuai.com/cluster/detail?name={query}&amp;env=product</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4098,12 +4162,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://squirrel.mws.sankuai.com/cluster/detail?name={query}&amp;env=product</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4171,12 +4237,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://squirrel.mws.sankuai.com/cluster-group/detail/{query}/info?env=product&amp;page=1</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4316,12 +4384,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://squirrel.mws.sankuai.com/cluster/detail?name={query}&amp;env=product</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4335,12 +4405,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://mafka.mws.sankuai.com/topic/{query}/detail/monitor</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4408,12 +4480,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://mafka.mws.sankuai.com/topic/{query}/detail/monitor</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4481,12 +4555,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://mafka.mws.sankuai.com/consumer/{query}/detail/monitor</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4554,12 +4630,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://mafka.mws.sankuai.com/consumer/{query}/detail/monitor</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4627,12 +4705,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://dev.sankuai.com/cargo/stack/detail/{query}/build</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4700,12 +4780,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://dev.sankuai.com/cargo/stack/detail/{query}/build</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4773,12 +4855,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://dev.sankuai.com/code/repo-detail{query}/file/list</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4846,12 +4930,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://dev.sankuai.com/code/repo-detail{query}/pr/create</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4919,12 +5005,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -4992,12 +5080,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5011,12 +5101,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/dashboard/list?{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5156,12 +5248,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/dashboard/chart?{var:rpt_dashboard_id_iscore}&amp;chartId={query}&amp;tabName=data</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5229,12 +5323,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/dashboard/list?{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5320,12 +5416,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/dashboard/chart?{var:rpt_dashboard_id_iscore}&amp;chartId={query}&amp;tabName=data</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5486,12 +5584,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://raptor.mws.sankuai.com/client/perf/trend?view=project&amp;{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5559,12 +5659,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://coe.mws.sankuai.com/detail/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5632,12 +5734,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://coe.mws.sankuai.com/detail/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5705,12 +5809,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://km.sankuai.com/page/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5778,12 +5884,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://km.sankuai.com/page/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5851,12 +5959,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://km.sankuai.com/page/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -5924,12 +6034,14 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://km.sankuai.com/page/{query}</string>
-				<key>utf8</key>
-				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -6526,7 +6638,7 @@ COE:
 			<key>xpos</key>
 			<real>125</real>
 			<key>ypos</key>
-			<real>2215</real>
+			<real>2235</real>
 		</dict>
 		<key>7825B10B-46D4-4D11-AC91-CA7678727871</key>
 		<dict>
@@ -6587,9 +6699,9 @@ COE:
 		<key>87610FCC-8289-4A00-A7F9-6E62A1EAAE86</key>
 		<dict>
 			<key>xpos</key>
-			<real>545</real>
+			<real>555</real>
 			<key>ypos</key>
-			<real>85</real>
+			<real>95</real>
 		</dict>
 		<key>87DD8F86-CA6E-4CE1-BAAD-7FB5345E5D1A</key>
 		<dict>
@@ -6650,9 +6762,9 @@ COE:
 		<key>97DDE24A-5269-43CC-AD33-A56E8F7BD2BF</key>
 		<dict>
 			<key>xpos</key>
-			<real>545</real>
+			<real>555</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>170</real>
 		</dict>
 		<key>98DFC833-C293-47B7-9593-ED005539D3D7</key>
 		<dict>
@@ -7119,6 +7231,8 @@ COE:
 			<real>3800</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>cache_seconds</key>
