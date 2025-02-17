@@ -169,3 +169,10 @@ eval "$(jenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export HOMEBREW_GITHUB_API_TOKEN=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
+
+# Added by MIDE
+export PATH="/Users/dc0453/.mide/bin:$PATH"
+
+#M2_home
+#export M2_HOME="/usr/local/Cellar/maven/3.8.6/libexec"
+#export PATH="$M2_HOME/bin:$PATH"
