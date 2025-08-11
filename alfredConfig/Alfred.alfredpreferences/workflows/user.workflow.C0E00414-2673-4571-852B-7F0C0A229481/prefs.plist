@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chatgpt_keyword</key>
+	<string>fr</string>
+	<key>friday_app_id</key>
+	<string>21899014160395235348</string>
+	<key>friday_model</key>
+	<string>deepseek-r1-friday</string>
+	<key>timeout_seconds</key>
+	<integer>20</integer>
+</dict>
+</plist>

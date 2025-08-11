@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import os
 import sys
@@ -55,7 +55,7 @@ def main(workflow):
     if units:
         units.sort(key=get_operation_time, reverse=True)
         for u in units:
-            operation_time = utils.from_unix_timestamp(
+            operation_time = utils.format_timestamp_to_relative_time(
                 int(u.operatorTime) / 1000 if u.operatorTime else 0
             )
             wf().add_item(

@@ -1,9 +1,9 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import sys
 
 from kmAction import ReceivedItem, latest_received_list
-from utils import get_args, wf, get_time_expression, from_unix_timestamp_HHMM
+from utils import get_args, wf, get_relative_day_desc, from_unix_timestamp_HHMM
 
 
 def key_for_record(record: ReceivedItem):
@@ -24,7 +24,7 @@ def main(workflow):
             recent_received_time = int(u.recentReceivedTime / 1000)
             wf().add_item(
                 u.title,
-                f"【{get_time_expression(recent_received_time)}】发送人:{u.sender} 时间：{from_unix_timestamp_HHMM(recent_received_time)}",
+                f"【{get_relative_day_desc(recent_received_time)}】发送人:{u.sender} 最近分享时间：{from_unix_timestamp_HHMM(recent_received_time)}",
                 u.contentId,
                 valid=True,
             )

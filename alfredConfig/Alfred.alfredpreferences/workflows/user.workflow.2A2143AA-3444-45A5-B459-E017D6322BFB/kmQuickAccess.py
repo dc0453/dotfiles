@@ -1,11 +1,11 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import sys
 
 import kmAction
 from kmAction import CollectionItem
 import utils
-from utils import get_args, wf
+from utils import get_args, wf,get_relative_day_desc,format_timestamp_to_relative_time
 
 
 def key_for_record(record: CollectionItem):
@@ -19,10 +19,10 @@ def main(workflow):
     units = wf().filter(query, units, key_for_record, min_score=1, fold_diacritics=False)
     if units:
         for u in units:
-            modify_time = utils.from_unix_timestamp(int(u.contentModTime) / 1000)
+            modify_time = int(u.contentModTime / 1000)
             wf().add_item(
                 u.title,
-                f"创建人:{u.contentCreator} - 更新时间:{modify_time}",
+                f"创建人:{u.contentCreator} - 更新时间:{format_timestamp_to_relative_time(modify_time)}",
                 u.contentKey,
                 valid=True,
             )

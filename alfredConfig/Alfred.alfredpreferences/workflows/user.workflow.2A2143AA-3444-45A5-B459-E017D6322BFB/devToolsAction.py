@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import re
 import utils
@@ -12,19 +12,15 @@ WAIT_ELEMENT = EC.presence_of_element_located((By.ID, "app"))
 COOKIE_NAME = "cargo_cookies"
 
 
-def check_login_status(l_manager, resp):
+def check_dev_login_status(l_manager, resp):
     if resp.status_code == 200:
         json_resp = resp.json()
         if "errorMsg" in json_resp:
             error_msg = json_resp["errorMsg"]
-            if "userid or username is empty" == error_msg:
-                l_manager.re_login()
-                raise RuntimeError(
-                    "login timeout , please login first , then retry after one minute."
-                )
+            return  not "userid or username is empty" == error_msg
+    return True
 
-
-login_manager = LoginManager(LOGIN_URL, WAIT_ELEMENT, COOKIE_NAME, check_login_status)
+login_manager = LoginManager(LOGIN_URL, WAIT_ELEMENT, COOKIE_NAME, check_dev_login_status)
 
 # cargo field
 STACK_UUID = "stackuuid"
@@ -62,7 +58,7 @@ def query_paged_cargos(pageNum, page_size, stack_filter="own"):
     return resp.json()
 
 
-def query_my_pr_list():
+def query_my_pr_list(role : str = "reviewer"):
     url = "https://dev.sankuai.com/rest/api/2.0/pull-requests"
     cookies_str = login_manager.get_cookies()
     headers = {
@@ -71,7 +67,7 @@ def query_my_pr_list():
         "web-type": "devtools",
     }
     params = {
-        "role": "reviewer",
+        "role": role,
         "start": 0,
         "limit": 100,
         "withAttributes": True,
@@ -87,7 +83,7 @@ def query_my_pr_list():
     result = resp.json()["result"]["values"]
     if result:
         return [filter_pull_request_fields(r) for r in result]
-    return resp.json()
+    return []
 
 
 def search_cargos(keywords, type="swimlane"):
@@ -241,5 +237,5 @@ def extra_repo_name(repo_url):
 
 if __name__ == "__main__":
     repo = "ssh://git@git.sankuai.com/wm/waimai_kv_group_b_bizauth.git"
-    print
     extra_repo_name(repo)
+    print(query_my_pr_list())

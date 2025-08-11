@@ -4,7 +4,7 @@ import sys
 
 import fsdAction
 from fsdAction import query_all_release_plan_list
-from utils import wf, get_args, from_unix_timestamp
+from utils import wf, get_args, format_timestamp_to_relative_time
 
 
 def key_for_record(test_apply_item):
@@ -22,7 +22,7 @@ def main(workflow):
             wf().add_item(
                 online_plan[fsdAction.FSD_FILED_NAME],
                 "上线时间:{}".format(
-                    from_unix_timestamp(online_plan[fsdAction.FSD_FILED_ONLINE_TIME] / 1000)
+                    format_timestamp_to_relative_time(online_plan[fsdAction.FSD_FILED_ONLINE_TIME] / 1000)
                 ),
                 online_plan[fsdAction.FSD_FILED_ONLINE_ID],
                 valid=True,

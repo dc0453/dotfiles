@@ -176,3 +176,17 @@ export PATH="/Users/dc0453/.mide/bin:$PATH"
 #M2_home
 #export M2_HOME="/usr/local/Cellar/maven/3.8.6/libexec"
 #export PATH="$M2_HOME/bin:$PATH"
+
+# Added by CatPaw
+export PATH="/Users/dc0453/.catpaw/bin:$PATH"
+
+
+
+
+
+
+
+
+
+
+source ~/.moaextrc

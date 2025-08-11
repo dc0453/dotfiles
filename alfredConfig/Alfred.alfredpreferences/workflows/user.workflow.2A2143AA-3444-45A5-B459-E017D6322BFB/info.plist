@@ -1881,6 +1881,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F3E65800-94B2-48F6-BBA7-40B67ADCBF14</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A97C678-B3AF-4542-A85B-F0FB8DAC69F6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F4FEEE83-C587-42D8-BB9B-9194EBA9699C</key>
 		<array>
 			<dict>
@@ -3145,6 +3158,10 @@
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -4267,56 +4284,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>mtdaxiang://www.meituan.com/chat?uid={query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>0F25B176-E62A-4A4F-9A53-F2D5A344A0C8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>query=$1
-if [ -f /usr/local/bin/python ]
-then
-    /usr/local/bin/python queryDxuid.py $query
-else
-    python queryDxuid.py $query
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>64BDC7C4-6ACE-4C6C-8D1B-1E2A7B3CEBE3</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -4366,6 +4333,50 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>$python_path queryDxuid.py {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>64BDC7C4-6ACE-4C6C-8D1B-1E2A7B3CEBE3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>mtdaxiang://www.meituan.com/chat?uid={query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0F25B176-E62A-4A4F-9A53-F2D5A344A0C8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -4374,6 +4385,10 @@ fi</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -4471,7 +4486,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/python3 kmSearch.py "$1" "$mis" "$cache_seconds"</string>
+				<string>$python_path kmSearch.py "$1" "$mis" "$cache_seconds"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -6391,7 +6406,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>loading...please wait</string>
 				<key>script</key>
-				<string>$python_path gitPRMine.py "$1"</string>
+				<string>$python_path gitPullRequest.py "$1" "$mis" "$cache_seconds"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -6399,7 +6414,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>my pr list</string>
+				<string>待我Review的PR列表</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -6449,6 +6464,76 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
+				<string>pr</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>loading...please wait</string>
+				<key>script</key>
+				<string>$python_path gitPullRequest.py "$1" "$mis" "$cache_seconds" "author"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>我发起的Open状态PR</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F3E65800-94B2-48F6-BBA7-40B67ADCBF14</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>3A97C678-B3AF-4542-A85B-F0FB8DAC69F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
 				<string>rpd</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -6469,7 +6554,7 @@ fi</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>rpator dashboard: 打开raptor收藏的大盘</string>
+				<string>我raptor收藏的大盘</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -7635,7 +7720,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Loading... The process may take 1-5 minutes the first time it runs.</string>
 				<key>script</key>
-				<string>$python_path kmIndexForSpace.py "$1" "$mis" "$cache_seconds"</string>
+				<string>$python_path kmIndexForSpace.py "$1" "$mis" 48</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -9856,6 +9941,7 @@ fi</string>
 - `kmm`  - [m]entioned @我的文档
 - `kmt`  - commen[t]ed 我评论的文档
 - `kmr`  - [r]eceived 我大象收到的文档
+- `option +[K]`  - 根据剪贴板内容搜索学城
 - `kmsp` - 索引指定空间的所有的文档，用于快速索引和跳转，默认为我的空间。
     1. **复制** ：在workflow中进行复制 ScriptFilter和Open Url组件。
     2. **修改参数和快捷键**： 双击ScriptFilter，修改文档id和快捷键，第三个参数为缓存时间（小时），第四个参数为学城空间id，如：`"$1" "$mis" 48 223`
@@ -9870,10 +9956,11 @@ fi</string>
 - `ones` - 我的ones列表
 - `onesp` - 最近查看的ones空间
 
+
 ### Jumper
-- `jp` - 根据ip或主机名打
-    - 按住cmd打开终端跳转
-- `host` - 根据ip或主机关
+- `jp` - 根据ip或主机名打开jumper web shell。
+    - 按住cmd打开终端跳转，需按wiki配置：[Jumper终端免登录](https://km.sankuai.com/page/545430795)​​
+- `host` - 根据ip或主机关键字查询，并跳转jumper
     - 按住cmd复制到剪切板
 
 ### 日志中心（新）：
@@ -9909,11 +9996,11 @@ fi</string>
 - `rptb` - [r]a[p][t]or [b]usiness 线上环境，按住cmd到测试环境
 - `rptt` - [r]a[p][t]or [t]ransaction 线上环境，按住cmd到测试环境
 - `rpd` raptor dashboard 收藏的raptor大盘
-    - 回车显示图表，跳转图表详情页
-    - 按住cmd跳转大盘页面。
+    - 回车跳转大盘，
+    - 按住cmd显示大盘图表。
 - `srpd` 搜索大盘
-    - 回车显示图表，跳转图表详情页
-    - 按住cmd跳转大盘页面。
+    - 回车跳转大盘，
+    - 按住cmd显示大盘图表。
 - `rfd` raptor front dashboard 前端监控大盘，使用前需使用cfp(change front project)指令选择前端项目。
 ### RDS：
 - `db` - rds集群列表
@@ -9937,7 +10024,7 @@ fi</string>
 - `sq` - squirrel集群列表，跳转集群详情页 【本地缓存】
 - `ssq` - [S]earch [Sq]uirrel 搜索集群
 - `ssqg` - [S]earch [Sq]uirrel [G]roup 搜索集群组
-- `ssg` - [sq]uirrel  [g]roup 集群组
+- `sqg` - [sq]uirrel  [g]roup 集群组
     - 直接回车后查看集群组下集群列表
         - 按住cmd后回车到集群组详情页
         - 回车后直接到集群详情页
@@ -9955,6 +10042,7 @@ fi</string>
     - 按住cmd创建PR
 - `dp` - [d]e[p]loy 跳转发布页 模糊匹配字段：仓库名、发布项
 - `prl` - [p]ull [r]equest [l]ist  代码评审列表 模糊匹配字段：仓库名、发布项
+- `pr` - [p]ull [r]equest  我发起的代码评审列表 模糊匹配字段：仓库名、发布项
 - `git` - code线上环境，只包含我的appkey，更全发布项请使用repo(repository)指
 - `plus` - 我的发布项【新】，只包含我的appkey，更全发布项请使用dp(deploy)指令
 
@@ -10453,6 +10541,13 @@ fi</string>
 			<key>ypos</key>
 			<real>6070</real>
 		</dict>
+		<key>3A97C678-B3AF-4542-A85B-F0FB8DAC69F6</key>
+		<dict>
+			<key>xpos</key>
+			<real>985</real>
+			<key>ypos</key>
+			<real>7145</real>
+		</dict>
 		<key>3AABBE22-CA5E-4AE6-8F0B-C0AA4031A607</key>
 		<dict>
 			<key>xpos</key>
@@ -10659,9 +10754,9 @@ fi</string>
 		<key>64BDC7C4-6ACE-4C6C-8D1B-1E2A7B3CEBE3</key>
 		<dict>
 			<key>xpos</key>
-			<real>545</real>
+			<real>520</real>
 			<key>ypos</key>
-			<real>3830</real>
+			<real>3810</real>
 		</dict>
 		<key>65122D46-CA20-4171-AAE7-736F9B4ACC1E</key>
 		<dict>
@@ -11478,9 +11573,9 @@ fi</string>
 		<key>DD090F32-8FB6-4774-97E8-61B0FCF7DBFF</key>
 		<dict>
 			<key>xpos</key>
-			<real>855</real>
+			<real>705</real>
 			<key>ypos</key>
-			<real>4335</real>
+			<real>4355</real>
 		</dict>
 		<key>DD3FC0C7-7A9A-4AF2-BD7F-497F78CC1661</key>
 		<dict>
@@ -11622,6 +11717,13 @@ fi</string>
 			<key>ypos</key>
 			<real>6450</real>
 		</dict>
+		<key>F3E65800-94B2-48F6-BBA7-40B67ADCBF14</key>
+		<dict>
+			<key>xpos</key>
+			<real>305</real>
+			<key>ypos</key>
+			<real>7130</real>
+		</dict>
 		<key>F4FEEE83-C587-42D8-BB9B-9194EBA9699C</key>
 		<dict>
 			<key>xpos</key>
@@ -11688,9 +11790,9 @@ fi</string>
 		<key>FA9A4004-1592-4956-8E1E-72E0A9E6B3A4</key>
 		<dict>
 			<key>xpos</key>
-			<real>165</real>
+			<real>170</real>
 			<key>ypos</key>
-			<real>3835</real>
+			<real>3800</real>
 		</dict>
 		<key>FB3465D8-1BFE-462F-A96D-33C8A59DB8C0</key>
 		<dict>

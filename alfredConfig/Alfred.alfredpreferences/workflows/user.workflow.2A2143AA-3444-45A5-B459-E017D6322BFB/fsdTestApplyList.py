@@ -4,7 +4,7 @@ import sys
 
 import fsdAction
 from fsdAction import query_all_test_apply_list
-from utils import wf, get_args, from_unix_timestamp
+from utils import wf, get_args, format_timestamp_to_relative_time
 
 
 def key_for_test_apply(test_apply_item):
@@ -24,7 +24,7 @@ def main(workflow):
             online_time_desc = ""
             if online_time:
                 online_time_desc = "上线时间:{}".format(
-                    from_unix_timestamp(online_time / 1000)
+                    format_timestamp_to_relative_time(online_time / 1000)
                 )
             if source == 1:
                 query = "testApplyDetail/{}".format(apply_id)

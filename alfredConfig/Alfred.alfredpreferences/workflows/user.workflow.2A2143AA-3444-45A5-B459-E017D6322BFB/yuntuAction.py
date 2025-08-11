@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 
 import webUtils
@@ -14,14 +14,10 @@ COOKIE_NAME = "yuntu_cookies"
 
 def check_login_status(l_manager, resp):
     if resp.status_code == 200:
-        json_resp = resp.json()
-        if "status" in json_resp:
-            status = json_resp["status"]
-            if status == 401:
-                l_manager.re_login()
-                raise RuntimeError(
-                    "login timeout , please login first , then retry after one minute."
-                )
+        result = resp.json()
+        if "status" in result:
+            return result.get("status") != 401
+    return True
 
 
 login_manager = LoginManager(LOGIN_URL, WAIT_ELEMENT, COOKIE_NAME, check_login_status)

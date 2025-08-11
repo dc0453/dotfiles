@@ -33,6 +33,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0C7C6271-81C5-4B07-AFB8-9CED7D7EE951</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>打开测试环境</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>2F8E2D2E-A835-44F7-A104-8574259AD95A</key>
 		<array>
@@ -377,6 +387,10 @@ echo ${query}</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -583,6 +597,27 @@ echo ${query}</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://orderadmin.mykeeta.test.sankuai.com/order/query?orderViewId={query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0C7C6271-81C5-4B07-AFB8-9CED7D7EE951</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -633,6 +668,13 @@ echo ${query}</string>
 			<real>50</real>
 			<key>ypos</key>
 			<real>1160</real>
+		</dict>
+		<key>0C7C6271-81C5-4B07-AFB8-9CED7D7EE951</key>
+		<dict>
+			<key>xpos</key>
+			<real>695</real>
+			<key>ypos</key>
+			<real>1090</real>
 		</dict>
 		<key>1766D8E5-6437-449E-A6CF-6AE252AA8F97</key>
 		<dict>
@@ -711,14 +753,14 @@ echo ${query}</string>
 			<key>xpos</key>
 			<real>515</real>
 			<key>ypos</key>
-			<real>1030</real>
+			<real>1025</real>
 		</dict>
 		<key>AA6C8579-316D-4788-99B9-4F62688EB18B</key>
 		<dict>
 			<key>xpos</key>
-			<real>650</real>
+			<real>655</real>
 			<key>ypos</key>
-			<real>705</real>
+			<real>675</real>
 		</dict>
 		<key>B2981760-991A-4A48-882C-96452E5FB78E</key>
 		<dict>

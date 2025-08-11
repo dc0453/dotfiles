@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import os
 import sys
@@ -6,7 +6,7 @@ import sys
 import kmAction
 from kmAction import UnitItem
 import utils
-from utils import get_args, wf
+from utils import get_args, wf, format_timestamp_to_relative_time, get_relative_day_desc
 
 
 def key_for_record(record: UnitItem):
@@ -25,16 +25,16 @@ def main(workflow):
     else:
         km_history_limit = int(os.getenv("km_history_limit"))
     units = kmAction.query_limit_operation_history(km_history_limit)
-    units = wf().filter(query, units, key_for_record, min_score=1, fold_diacritics=False)
+    units = wf().filter(
+        query, units, key_for_record, min_score=1, fold_diacritics=False
+    )
     if units:
         units.sort(key=get_operation_time, reverse=True)
         for u in units:
-            operation_time = utils.from_unix_timestamp(
-                int(u.operatorTime) / 1000 if u.operatorTime else 0
-            )
+            operation_time = int(u.operatorTime / 1000)
             wf().add_item(
                 u.title,
-                f"创建人:{u.creator} - 浏览时间:{operation_time}",
+                f"【{get_relative_day_desc(operation_time)}】创建人:{u.creator} - 浏览时间:{format_timestamp_to_relative_time(operation_time)}",
                 u.pageId,
                 valid=True,
             )

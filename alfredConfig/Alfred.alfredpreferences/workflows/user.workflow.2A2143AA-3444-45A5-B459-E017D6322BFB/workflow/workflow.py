@@ -1938,7 +1938,7 @@ class Workflow(object):
                 )
 
         # sort on keys, then discard the keys
-        results.sort(key=lambda x: (100.0 / x[0][0], x[0][1].lower(), x[0][2]), reverse=ascending)
+        results.sort(key=lambda x: (100.0 / x[0][0], x[0][1].lower(), x[0][2]), reverse=not ascending)
         results = [t[1] for t in results]
 
         if min_score:

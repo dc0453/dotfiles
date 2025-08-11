@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 
 import json
@@ -99,12 +99,25 @@ class WorkflowManager:
         env = wf.args[3] if len(wf.args) > 3 else Environment.PROD
         return query, mis, cache_seconds, env
 
+    @staticmethod
+    def get_four_args() -> tuple:
+        query, mis, cache_seconds = WorkflowManager.get_args()
+        wf = WorkflowManager.get_workflow()
+        forth_arg = wf.args[3] if len(wf.args) > 3 else None
+        return query, mis, cache_seconds, forth_arg
+
 
 class DateTimeUtils:
     """日期时间工具类"""
 
     @staticmethod
     def from_timestamp(timestamp: int) -> str:
+        # 将时间戳转换为日期时间字符串
+        # 参数:
+        #   timestamp: int - Unix时间戳（秒或毫秒）
+        # 返回:
+        #   str - 格式化的日期时间字符串 (YYYY-MM-DD HH:MM:SS)
+
         # 检查时间戳长度，判断是否为毫秒级
         if len(str(timestamp)) > 10:
             # 毫秒级时间戳，需要除以1000
@@ -113,11 +126,47 @@ class DateTimeUtils:
 
     @staticmethod
     def from_timestamp_date(timestamp: int) -> str:
+        """
+        将时间戳转换为日期字符串
+        参数:
+            timestamp: int - Unix时间戳（秒或毫秒）
+        返回:
+            str - 格式化的日期字符串 (YYYY-MM-DD)
+        """
+
         # 检查时间戳长度，判断是否为毫秒级
         if len(str(timestamp)) > 10:
             # 毫秒级时间戳，需要除以1000
             timestamp = timestamp / 1000
         return dt.datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d")
+
+    @staticmethod
+    def format_timestamp_to_relative_time(timestamp: int) -> str:
+        if len(str(timestamp)) > 10:
+            timestamp = timestamp / 1000
+        dt_obj = dt.datetime.fromtimestamp(timestamp)
+        now = dt.datetime.now()
+        delta = now.date() - dt_obj.date()
+
+        if delta.days == 0:
+            if (now - dt_obj).seconds < 60:
+                return "刚刚"
+            elif (now - dt_obj).seconds < 3600:
+                return f"{(now - dt_obj).seconds // 60}分钟前"
+            else:
+                hours = (now - dt_obj).seconds // 3600
+                minutes = ((now - dt_obj).seconds % 3600) // 60
+                return f"{hours}小时前 {dt_obj.strftime('%H:%M')}"
+        elif delta.days == 1:
+            return f"昨天 {dt_obj.strftime('%H:%M')}"
+        elif delta.days == 2:
+            return f"前天 {dt_obj.strftime('%H:%M')}"
+        elif delta.days < 7:
+            return f"{delta.days}天前 {dt_obj.strftime('%H:%M')}"
+        elif dt_obj.year == now.year:
+            return dt_obj.strftime("%m月%d日 %H:%M")
+        else:
+            return dt_obj.strftime("%Y年%m月%d日 %H:%M")
 
     @staticmethod
     def to_unix_timestamp(date_str: str) -> int:
@@ -141,10 +190,10 @@ class DateTimeUtils:
         return int(time.mktime(date.timetuple()))
 
     @staticmethod
-    def get_time_expression(timestamp: float) -> str:
-        now = dt.datetime.now()
-        target_time = dt.datetime.fromtimestamp(timestamp)
-        delta = now - target_time
+    def get_relative_day_desc(timestamp: int) -> str:
+        now = dt.datetime.today().date()
+        target_date = dt.datetime.fromtimestamp(timestamp).date()
+        delta = now - target_date
 
         if delta.days == 0:
             return "今天"
@@ -183,15 +232,18 @@ wf = WorkflowManager.get_workflow
 logger = WorkflowManager.get_workflow().logger
 get_args = WorkflowManager.get_args
 get_args_with_env = WorkflowManager.get_args_with_env
-from_unix_timestamp = DateTimeUtils.from_timestamp
+get_four_args = WorkflowManager.get_four_args
+from_timestamp = DateTimeUtils.from_timestamp
 to_unix_timestamp = DateTimeUtils.to_unix_timestamp
 today_YYHHMM = DateTimeUtils.today_ymd
 days_ago_YYHHMM = DateTimeUtils.days_ago_ymd
 from_unix_timestamp_HHMM = DateTimeUtils.from_unix_timestamp_hm
 unix_timestamp = DateTimeUtils.unix_timestamp
-get_time_expression = DateTimeUtils.get_time_expression
+get_relative_day_desc = DateTimeUtils.get_relative_day_desc
+format_timestamp_to_relative_time = DateTimeUtils.format_timestamp_to_relative_time
 
 if __name__ == "__main__":
     # 测试代码应该移到单独的测试文件中，这里只保留简单的使用示例
     print(f"Today: {DateTimeUtils.today_ymd()}")
+    print(f"Today: {get_relative_day_desc(1739886600)}")
     print(f"7 days ago: {DateTimeUtils.days_ago_ymd(7)}")

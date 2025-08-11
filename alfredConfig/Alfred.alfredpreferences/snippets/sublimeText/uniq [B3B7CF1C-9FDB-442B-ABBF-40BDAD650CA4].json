@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "^(.+)$[\\r\\n](^\\1$[\\r\\n]{0, 1})+\n\n\\1\\n",
+    "uid" : "B3B7CF1C-9FDB-442B-ABBF-40BDAD650CA4",
+    "name" : "uniq",
+    "keyword" : "uniq"
+  }
+}

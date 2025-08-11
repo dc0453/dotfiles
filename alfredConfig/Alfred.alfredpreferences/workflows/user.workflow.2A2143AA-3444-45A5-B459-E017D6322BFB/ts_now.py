@@ -1,7 +1,7 @@
 import sys
 from datetime import datetime
 
-from utils import get_args, from_unix_timestamp, to_unix_timestamp, wf
+from utils import get_args, to_unix_timestamp, wf
 
 
 def main(workflow):

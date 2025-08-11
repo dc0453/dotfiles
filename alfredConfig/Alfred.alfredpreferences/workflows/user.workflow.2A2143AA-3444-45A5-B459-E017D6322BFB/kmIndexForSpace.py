@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 
 import os
@@ -16,7 +16,7 @@ def key_for_record(record: PageItem):
 
 
 def start_refresh_cache_task(space_id):
-    cmd = [sys.executable, __file__, "--update", "-spaceId", space_id]
+    cmd = [sys.executable, __file__, "--update", "-spaceId", f"{space_id}"]
     run_in_background(get_update_task_key(space_id), cmd)
 
 
@@ -95,10 +95,10 @@ if __name__ == "__main__":
                     space_id = sys.argv[space_id_index + 1]
                 if space_id:
                     space_id = space_id.strip()
-                else:
-                    space_id = kmAction.get_space_id_by_mis(mis)
-                update_cache(space_id)
             except ValueError:
                 pass
+            if not space_id:
+                space_id = kmAction.get_space_id_by_mis(mis)
+            update_cache(space_id)
         sys.exit(0)
     sys.exit(wf().run(main))

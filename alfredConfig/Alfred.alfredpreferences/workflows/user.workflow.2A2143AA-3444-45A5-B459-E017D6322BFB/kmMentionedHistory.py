@@ -1,9 +1,15 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import sys
 
 from kmAction import latest_mentioned_list, MentionedItem
-from utils import get_args, wf, get_time_expression, from_unix_timestamp_HHMM
+from utils import (
+    get_args,
+    wf,
+    get_relative_day_desc,
+    from_unix_timestamp_HHMM,
+    format_timestamp_to_relative_time,
+)
 
 
 def key_for_record(record: MentionedItem):
@@ -17,14 +23,16 @@ def get_modify_time(item: MentionedItem):
 def main(workflow):
     query, mis, cache_seconds = get_args()
     units = latest_mentioned_list()
-    units = wf().filter(query, units, key_for_record, min_score=1, fold_diacritics=False)
+    units = wf().filter(
+        query, units, key_for_record, min_score=1, fold_diacritics=False
+    )
     if units:
         units.sort(key=get_modify_time, reverse=True)
         for u in units:
             recent_mention_time = int(u.recentMentionTime / 1000)
             wf().add_item(
                 u.title,
-                f"【{get_time_expression(recent_mention_time)}】@次数:{u.mentionCount} 时间：{from_unix_timestamp_HHMM(recent_mention_time)}",
+                f"【{get_relative_day_desc(recent_mention_time)}】@次数:{u.mentionCount} 时间：{format_timestamp_to_relative_time(recent_mention_time)}",
                 u.contentId,
                 valid=True,
             )

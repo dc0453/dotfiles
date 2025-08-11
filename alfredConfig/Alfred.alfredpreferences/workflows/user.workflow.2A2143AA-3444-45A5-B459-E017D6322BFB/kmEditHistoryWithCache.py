@@ -1,11 +1,11 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import sys
 
 import kmAction
 from kmAction import UnitItem
 import os
-from utils import get_args, wf, from_unix_timestamp
+from utils import get_args, wf, format_timestamp_to_relative_time
 from workflow.background import run_in_background, is_running
 
 KM_CACHE_EDIT_LATEST_LIST = "km_latest_edit_list"
@@ -49,7 +49,7 @@ def main(workflow):
     if km_edit_history:
         km_edit_history.sort(key=get_modify_time, reverse=True)
         for u in km_edit_history:
-            modify_time = from_unix_timestamp(int(u.modifyTime) / 1000)
+            modify_time = format_timestamp_to_relative_time(int(u.modifyTime) / 1000)
             wf().add_item(
                 u.title,
                 f"创建人:{u.creator} - 更新时间:{modify_time}",

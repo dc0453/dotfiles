@@ -1,8 +1,8 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import sys
 
-from utils import wf, get_args
+from utils import wf, get_four_args
 import devToolsAction
 
 
@@ -15,8 +15,10 @@ def key_for_record(record):
 
 
 def main(workflow):
-    query, mis, cache_seconds = get_args()
-    pr_list = devToolsAction.query_my_pr_list()
+    query, mis, cache_seconds, role = get_four_args()
+    if not role:
+        role = "reviewer"
+    pr_list = devToolsAction.query_my_pr_list(role)
     pr_list = wf().filter(query, pr_list, key_for_record)
     if pr_list:
         for record in pr_list:

@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 from unittest.mock import patch, MagicMock
 from kmAction import (
     query_users, search_history, suggest, latest_edit_list, UnitItem,

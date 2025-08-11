@@ -135,7 +135,7 @@ def query_all_test_apply_list():
         while len(result_apply_list) < count:
             page_no = page_no + 1
             resp = query_test_apply_paged_list(
-                "https://fsd.sankuai.com/api/qa/v1/delivery/getDeliveryPlanList?pageNum={}&pageSize={}&relatedMe=true&orgId=&env=&jobName=&source=0,1,2",
+                "https://fsd.sankuai.com/api/qa/v1/delivery/getDeliveryPlanList?relatedMe=true&orgId=&env=&jobName=&source=0,1,2",
                 page_no=page_no,
                 page_size=15,
             )

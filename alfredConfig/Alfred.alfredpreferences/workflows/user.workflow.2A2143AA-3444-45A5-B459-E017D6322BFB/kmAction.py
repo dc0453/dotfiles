@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import datetime as dt
 import getpass
@@ -13,6 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import requests
 import logging
 import uuid
+import webUtils
 
 # 配置日志
 logging.basicConfig(
@@ -206,8 +207,13 @@ def query_dxuid(mis: str) -> Dict:
         Dict: DXUID 信息
     """
     url = "https://km.sankuai.com/dxuid"
-    result = api_request(url, method="POST", data=[mis])
-    return result.get("data", [{}])[0]
+    result = webUtils.post_json(url, login_manager, json_payload=[mis])
+    uid = result.get("data", [])
+    wf().logger.info(f"uid:{uid}")
+    if uid:
+        return uid[0]
+    else:
+        return None
 
 
 def suggest(query: str) -> List[str]:
@@ -336,7 +342,7 @@ def latest_received_list(offset: int = 0, limit: int = 30) -> List[ReceivedItem]
 
 
 def quick_access_list(
-    collection_type: int, content_types: str = "0,2"
+    collection_type: str, content_types: str = "0,2"
 ) -> List[CollectionItem]:
     """
     获取快速访问列表
@@ -503,7 +509,9 @@ def get_space_id_by_page(content_id: str) -> str:
 
 
 if __name__ == "__main__":
-    edit_list = get_all_sub_pages("1535255197")
+    uid = query_dxuid("tangxuejun")
+    print(uid)
+    edit_list = quick_access_list(1)
     for e in edit_list:
         print(e)
     # result = wf().filter("im", edit_list, lambda item: item.titlePinyin)

@@ -2,7 +2,7 @@ import os
 import sys
 import init_path
 from kmAction import latest_edit_list, UnitItem
-from utils import from_unix_timestamp, get_args, wf
+from utils import format_timestamp_to_relative_time, get_args, wf,get_relative_day_desc
 
 
 def key_for_record(record: UnitItem):
@@ -22,10 +22,10 @@ def main(workflow):
     if units:
         units.sort(key=get_modify_time, reverse=True)
         for u in units:
-            modify_time = from_unix_timestamp(int(u.modifyTime) / 1000)
+            modify_time = int(u.modifyTime/1000)
             wf().add_item(
                 u.title,
-                f"创建人:{u.creator} - 更新时间:{modify_time}",
+                f"【{get_relative_day_desc(modify_time)}】创建人:{u.creator} - 最近更新时间:{format_timestamp_to_relative_time(modify_time)}",
                 u.pageId,
                 valid=True,
             )

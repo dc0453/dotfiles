@@ -1,10 +1,10 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 # encoding: utf-8
 import sys
 
 import kmAction
 import utils
-from utils import get_args, wf
+from utils import get_args, wf, get_relative_day_desc,format_timestamp_to_relative_time
 
 
 def key_for_record(record: kmAction.UnitItem):
@@ -16,15 +16,15 @@ def main(workflow):
     units = wf().cached_data(
         "km_collections", kmAction.query_collections, max_age=int(cache_seconds)
     )
-    units = wf().filter(query, units, key_for_record,min_score=1, fold_diacritics=False)
+    units = wf().filter(
+        query, units, key_for_record, min_score=1, fold_diacritics=False
+    )
     if units:
         for u in units:
-            modify_time = utils.from_unix_timestamp(
-                int(u.operatorTime) / 1000 if u.operatorTime else 0
-            )
+            modify_time = int(u.operatorTime/1000)
             wf().add_item(
                 u.title,
-                f"创建人:{u.creator} - 更新时间:{modify_time}",
+                f"【{get_relative_day_desc(modify_time)}】创建人:{u.creator} - 收藏时间:{format_timestamp_to_relative_time(modify_time)}",
                 u.pageId,
                 valid=True,
             )
