@@ -2,10 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AI Prompt</key>
+	<string>Return a command suitable for copy/pasting into \(shell) on \(uname). Do NOT include commentary NOR Markdown triple-backtick code blocks as your whole response will be copied into my terminal automatically.
+
+It must do this: \(ai.prompt)</string>
+	<key>AIFeatureFunctionCalling</key>
+	<true/>
+	<key>AIFeatureHostedCodeInterpeter</key>
+	<false/>
+	<key>AIFeatureHostedFileSearch</key>
+	<false/>
+	<key>AIFeatureHostedWebSearch</key>
+	<false/>
+	<key>AIFeatureStreamingResponses</key>
+	<true/>
+	<key>AITermAPI</key>
+	<integer>1</integer>
+	<key>AIVectorStore</key>
+	<integer>0</integer>
+	<key>AIVendor</key>
+	<integer>0</integer>
 	<key>AboutToPasteTabsWithCancel</key>
 	<true/>
 	<key>AboutToPasteTabsWithCancel_selection</key>
 	<integer>0</integer>
+	<key>AiMaxTokens</key>
+	<integer>65536</integer>
+	<key>AiModel</key>
+	<string>qwen-max</string>
+	<key>AiResponseMaxTokens</key>
+	<integer>8000</integer>
+	<key>AitermURL</key>
+	<string>https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions</string>
 	<key>AllowClipboardAccess</key>
 	<true/>
 	<key>AutoCommandHistory</key>
@@ -2966,6 +2994,8 @@
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Recycle</string>
+			<key>Custom Locale</key>
+			<string>en_HK.UTF-8</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -3448,6 +3478,8 @@
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Set Local Environment Vars</key>
+			<integer>2</integer>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
@@ -3593,9 +3625,7 @@
 	<true/>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Recent Directories</string>
-		<string>Actions</string>
-		<string>Profiles</string>
+		<string>Codecierge</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<true/>
@@ -3607,6 +3637,8 @@
 	<false/>
 	<key>UseOldStyleDropDownViews</key>
 	<true/>
+	<key>UseRecommendedAIModel</key>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WordCharacters</key>

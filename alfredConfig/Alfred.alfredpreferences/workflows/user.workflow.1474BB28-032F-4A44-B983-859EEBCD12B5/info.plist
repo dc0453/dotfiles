@@ -1098,7 +1098,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>open -g "dash-workflow-callback://{query}"</string>
+				<string>open -g "dash-workflow-callback://{query}?openInNewTab=${openInNewTab}"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -1138,7 +1138,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>open -g "dash-workflow-callback://{query}&amp;modifierkey=cmd"</string>
+				<string>open -g "dash-workflow-callback://{query}?modifierkey=cmd"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -1207,7 +1207,7 @@
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>open -g "dash-workflow-callback://{query}&amp;modifierkey=alt"</string>
+				<string>open -g "dash-workflow-callback://{query}?modifierkey=alt"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -2586,6 +2586,28 @@ The keyword is either a docset keyword (defined in Dash's Preferences &gt; Docse
 			<integer>690</integer>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>Results open in a new tab in Dash</string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Open behavior</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>openInNewTab</string>
+		</dict>
+	</array>
 	<key>webaddress</key>
 	<string>kapeli.com</string>
 </dict>

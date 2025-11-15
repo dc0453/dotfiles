@@ -357,6 +357,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2DD393F3-E5C1-499A-974C-34E3B233766E</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>打开eu控制面板</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>27FE4CBD-FBF8-4629-B315-77D5B7BC1440</key>
 		<array>
@@ -1795,6 +1805,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>338ABDD1-36C5-48AE-89C3-224A0DA08261</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>打开eu控制面板</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>E7C919BB-9BBA-462A-B1DD-99C5302197AA</key>
 		<array>
@@ -2161,6 +2181,27 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
+				<string>https://octo.mws.keetapp.com/service-provider-info?appkey={query}&amp;env=prod</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>2DD393F3-E5C1-499A-974C-34E3B233766E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
 				<string>https://lion.mws.sankuai.com/config/dync?appKey={query}&amp;env=prod&amp;key={var:lion_key}</string>
 			</dict>
 			<key>type</key>
@@ -2490,6 +2531,27 @@
 			<string>E7776A7C-94D5-4E85-B85C-2667D201F5A3</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://avatar.mws.keetapp.com/#/service/detail/host?appkey={query}&amp;env=prod</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>338ABDD1-36C5-48AE-89C3-224A0DA08261</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -10450,6 +10512,13 @@ fi</string>
 			<key>ypos</key>
 			<real>1850</real>
 		</dict>
+		<key>2DD393F3-E5C1-499A-974C-34E3B233766E</key>
+		<dict>
+			<key>xpos</key>
+			<real>670</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
 		<key>2DF146B6-7932-4DB8-9981-2DFC36A05B01</key>
 		<dict>
 			<key>xpos</key>
@@ -10519,6 +10588,13 @@ fi</string>
 			<real>850</real>
 			<key>ypos</key>
 			<real>3365</real>
+		</dict>
+		<key>338ABDD1-36C5-48AE-89C3-224A0DA08261</key>
+		<dict>
+			<key>xpos</key>
+			<real>700</real>
+			<key>ypos</key>
+			<real>750</real>
 		</dict>
 		<key>34E20414-76D7-4F26-8C2E-B151B8046E83</key>
 		<dict>
@@ -11573,9 +11649,9 @@ fi</string>
 		<key>DD090F32-8FB6-4774-97E8-61B0FCF7DBFF</key>
 		<dict>
 			<key>xpos</key>
-			<real>705</real>
+			<real>855</real>
 			<key>ypos</key>
-			<real>4355</real>
+			<real>4335</real>
 		</dict>
 		<key>DD3FC0C7-7A9A-4AF2-BD7F-497F78CC1661</key>
 		<dict>

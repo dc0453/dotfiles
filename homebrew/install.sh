@@ -89,7 +89,7 @@ binaries=(
   fzf
   graphviz
   htop
-  jenv
+  #jenv
   jq
   mackup
   maven

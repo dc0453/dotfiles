@@ -34,8 +34,8 @@ sh $DOTFILES_ROOT/python/install.sh
 # Set up spf13-vim
 sh $DOTFILES_ROOT/vim/install.sh
 
-# Set up jenv
-sh $DOTFILES_ROOT/jenv/install.sh
+# Set up sdkman
+sh $DOTFILES_ROOT/sdkman/install.sh
 
 # Set up iterm2
 sh $DOTFILES_ROOT/iterm2/install.sh
@@ -46,3 +46,5 @@ sh $DOTFILES_ROOT/karabiner/install.sh
 # Set up tmux
 sh $DOTFILES_ROOT/tmux/install.sh
 
+# Set jdk
+sh $DOTFILES_ROOT/java/install.sh

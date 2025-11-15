@@ -1,1 +1,2 @@
-JAVA_HOME=$(/usr/libexec/java_home -v $(jenv version-name))
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+JAVA_HOME=$(sdk home java $(sdk current java | awk '{print $NF}'))

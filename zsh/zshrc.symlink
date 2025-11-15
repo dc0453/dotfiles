@@ -165,7 +165,7 @@ pastefinish() {
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 
-eval "$(jenv init -)"
+#eval "$(jenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export HOMEBREW_GITHUB_API_TOKEN=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
@@ -189,4 +189,24 @@ export PATH="/Users/dc0453/.catpaw/bin:$PATH"
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 source ~/.moaextrc
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

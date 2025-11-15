@@ -43,6 +43,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AD3803BF-E35B-4012-96A2-61EF867EA7A8</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>2F8E2D2E-A835-44F7-A104-8574259AD95A</key>
 		<array>
@@ -618,6 +628,27 @@ echo ${query}</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://orderadmin.keetapp.com/order/query?orderViewId={query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>AD3803BF-E35B-4012-96A2-61EF867EA7A8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -665,16 +696,16 @@ echo ${query}</string>
 		<key>068D5378-83D1-48A4-8B95-956A55382F58</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>1160</real>
+			<real>1350</real>
 		</dict>
 		<key>0C7C6271-81C5-4B07-AFB8-9CED7D7EE951</key>
 		<dict>
 			<key>xpos</key>
-			<real>695</real>
+			<real>660</real>
 			<key>ypos</key>
-			<real>1090</real>
+			<real>1095</real>
 		</dict>
 		<key>1766D8E5-6437-449E-A6CF-6AE252AA8F97</key>
 		<dict>
@@ -700,9 +731,9 @@ echo ${query}</string>
 		<key>50C156ED-75DF-469B-8E05-19BA8FD46E59</key>
 		<dict>
 			<key>xpos</key>
-			<real>515</real>
+			<real>505</real>
 			<key>ypos</key>
-			<real>1160</real>
+			<real>1350</real>
 		</dict>
 		<key>5470C536-97F5-422E-925A-38D66A7788EC</key>
 		<dict>
@@ -761,6 +792,13 @@ echo ${query}</string>
 			<real>655</real>
 			<key>ypos</key>
 			<real>675</real>
+		</dict>
+		<key>AD3803BF-E35B-4012-96A2-61EF867EA7A8</key>
+		<dict>
+			<key>xpos</key>
+			<real>525</real>
+			<key>ypos</key>
+			<real>1190</real>
 		</dict>
 		<key>B2981760-991A-4A48-882C-96452E5FB78E</key>
 		<dict>
