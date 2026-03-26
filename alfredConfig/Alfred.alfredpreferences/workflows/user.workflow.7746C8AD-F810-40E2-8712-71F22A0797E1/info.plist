@@ -333,7 +333,7 @@ echo -n "$query" | say $1 -v Samantha</string>
 				<key>script</key>
 				<string>cd $TMPDIR
 query="$1"
-voice="youdao-${query}.mp3"
+voice="youdao-${query}.wav"
 
 echo say: "$voice" &gt;&amp;2
 

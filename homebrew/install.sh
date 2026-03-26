@@ -53,6 +53,7 @@ install_homebrew () {
     # Install GCM Core using Homebrew
     # see more : https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
     brew tap microsoft/git
+    brew tap BrycensRanch/repo
 
     # Install jdk8
     # brew tap adoptopenjdk/openjdk
@@ -98,6 +99,7 @@ binaries=(
   openjdk
   pyenv
   pyenv-virtualenv
+  pipenv
   reattach-to-user-namespace
   ssh-copy-id
   the_silver_searcher
@@ -109,6 +111,9 @@ binaries=(
   webp
   watch
   wget
+  tabview
+  sdkman
+  snapx
   # graphviz
   # z
   # trash

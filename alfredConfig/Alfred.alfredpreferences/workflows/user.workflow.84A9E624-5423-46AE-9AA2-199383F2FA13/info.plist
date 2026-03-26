@@ -49,7 +49,7 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>打开eu机房</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>

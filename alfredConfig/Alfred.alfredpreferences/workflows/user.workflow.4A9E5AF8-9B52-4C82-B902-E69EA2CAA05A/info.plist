@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>0CFD0C7B-1C00-4105-9BE0-7A1FA546FD10</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>748381FC-6DE8-47F5-9A3D-EEB67C13CEBA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2FF03D7A-1A6D-4D5E-BD68-CAF92294EB30</key>
 		<array>
 			<dict>
@@ -466,6 +479,54 @@
 			<dict>
 				<key>paths</key>
 				<array>
+					<string>/Applications/Tabbit Browser.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>748381FC-6DE8-47F5-9A3D-EEB67C13CEBA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>0CFD0C7B-1C00-4105-9BE0-7A1FA546FD10</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
 					<string>/System/Volumes/Data/Applications/Google Chrome.app</string>
 				</array>
 				<key>toggle</key>
@@ -528,6 +589,13 @@
 			<key>ypos</key>
 			<real>340</real>
 		</dict>
+		<key>0CFD0C7B-1C00-4105-9BE0-7A1FA546FD10</key>
+		<dict>
+			<key>xpos</key>
+			<real>375</real>
+			<key>ypos</key>
+			<real>475</real>
+		</dict>
 		<key>2FF03D7A-1A6D-4D5E-BD68-CAF92294EB30</key>
 		<dict>
 			<key>xpos</key>
@@ -576,6 +644,13 @@
 			<real>50</real>
 			<key>ypos</key>
 			<real>460</real>
+		</dict>
+		<key>748381FC-6DE8-47F5-9A3D-EEB67C13CEBA</key>
+		<dict>
+			<key>xpos</key>
+			<real>525</real>
+			<key>ypos</key>
+			<real>475</real>
 		</dict>
 		<key>92306CF7-C165-42C5-AE94-6C033E48DDCB</key>
 		<dict>

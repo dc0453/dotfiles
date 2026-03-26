@@ -29,11 +29,11 @@ It must do this: \(ai.prompt)</string>
 	<key>AiMaxTokens</key>
 	<integer>65536</integer>
 	<key>AiModel</key>
-	<string>qwen-max</string>
+	<string>LongCat-8B-128K-Chat</string>
 	<key>AiResponseMaxTokens</key>
 	<integer>8000</integer>
 	<key>AitermURL</key>
-	<string>https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions</string>
+	<string>https://aigc.sankuai.com/v1/openai/native/chat/completions</string>
 	<key>AllowClipboardAccess</key>
 	<true/>
 	<key>AutoCommandHistory</key>
@@ -606,6 +606,8 @@ It must do this: \(ai.prompt)</string>
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>9B14E53E-7926-498F-9840-D4BA591A6510</string>
+	<key>Default Browser Profile Guid</key>
+	<string>A3CC577F-BBC8-4874-BC1F-A05AF0D912DD</string>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>DockIconTogglesWindow</key>
