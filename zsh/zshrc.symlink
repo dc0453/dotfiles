@@ -178,33 +178,16 @@ export PATH="/Users/dc0453/.mide/bin:$PATH"
 #export PATH="$M2_HOME/bin:$PATH"
 
 # Added by CatPaw
-export PATH="/Users/dc0453/.catpaw/bin:$PATH"
 
 
+# OpenClaw Completion
+source "/Users/dc0453/.openclaw/completions/openclaw.zsh"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# nvm - 确保使用 arm64 default node（必须在所有 PATH 修改之后）
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm use default --silent 2>/dev/null || true
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -212,22 +195,32 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 
 
+# Added by CatDesk
+export PATH="$HOME/.catdesk/bin:$PATH"
 
 
+# Added by CatPaw
+export PATH="/Users/dc0453/.catpaw/bin:$PATH"
+
+# bun completions
+[ -s "/Users/dc0453/.bun/_bun" ] && source "/Users/dc0453/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 
+# GitNexus embedding 配置
+export GITNEXUS_EMBEDDING_URL=https://mmc.sankuai.com/openclaw/v1/native
+export GITNEXUS_EMBEDDING_API_KEY=catpaw
+export GITNEXUS_EMBEDDING_MODEL=text-embedding-3-small
+export GITNEXUS_EMBEDDING_DIMS=1536
+export PATH="$HOME/.local/bin:$PATH"
 
 
-
-
-
-
-
-
-# OpenClaw Completion
-source "/Users/dc0453/.openclaw/completions/openclaw.zsh"
-
-
-
+# claude -> mc --code (managed by setup-claude-alias.sh)
+claude() {
+  mc --code "$@"
+}
 
 source ~/.moaextrc

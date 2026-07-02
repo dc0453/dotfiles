@@ -44,6 +44,35 @@ It must do this: \(ai.prompt)</string>
 	<true/>
 	<key>CheckTestRelease</key>
 	<true/>
+	<key>ClaudeCodeTriggersInstalled</key>
+	<true/>
+	<key>CodeReviewSavedPrompts</key>
+	<data>
+	W3sibmFtZSI6IkRlZmF1bHQiLCJ1dWlkIjoiOTZFMUZBMEItN0I4MS00OTZGLUIwNEQt
+	MkQzRDNFODNDOUE2IiwidGV4dCI6IlJldmlldyB0aGUgcGVuZGluZyBjaGFuZ2VzIGlu
+	IHRoaXMgcmVwby4gRmxhZyBpc3N1ZXMgYSBjYXJlZnVsIG1haW50YWluZXIgd291bGQg
+	YmxvY2sgb24gYmVmb3JlIG1lcmdlLCBpbiByb3VnaGx5IHRoaXMgb3JkZXI6XG4gIDEu
+	IENvcnJlY3RuZXNzIOKAlCBsb2dpYyBlcnJvcnMsIGJyb2tlbiBpbnZhcmlhbnRzLCBt
+	aXNzZWQgZWRnZSBjYXNlcywgb2ZmLWJ5LW9uZSwgcmFjZXMsIGxpZmV0aW1lXC9tZW1v
+	cnkgYnVncywgZXJyb3IgcGF0aHMgdGhhdCBzd2FsbG93IGZhaWx1cmVzLlxuICAyLiBT
+	ZWN1cml0eSDigJQgaW5qZWN0aW9uLCBhdXRoblwvYXV0aHogbWlzdGFrZXMsIHNlY3Jl
+	dCBoYW5kbGluZywgdW5zYWZlIGRlc2VyaWFsaXphdGlvbiwgdW5zYWZlIGRlZmF1bHRz
+	LCBUT0NUT1UuXG4gIDMuIFJlbGlhYmlsaXR5ICYgcGVyZm9ybWFuY2Ug4oCUIGJsb2Nr
+	aW5nIHRoZSB3cm9uZyB0aHJlYWQsIHVuYm91bmRlZCByZXNvdXJjZSB1c2UsIGFjY2lk
+	ZW50YWwgTyhOwrIpLCByZXRyaWVzIHdpdGhvdXQgYmFja29mZiwgc2lsZW50IGZhaWx1
+	cmUgcGF0aHMuXG4gIDQuIENvbnRyYWN0IHJpc2sg4oCUIGJlaGF2aW9yIGNoYW5nZXMg
+	Y2FsbGVycyByZWx5IG9uLCBzaWxlbnRseSBjaGFuZ2VkIGRlZmF1bHRzLCBicm9rZW4g
+	YmFja3dhcmQgY29tcGF0aWJpbGl0eSwgbWlzc2luZyBtaWdyYXRpb25zLlxuXG5Gb3Ig
+	ZWFjaCBmaW5kaW5nIGNpdGUgYGZpbGU6bGluZWAsIGV4cGxhaW4gKndoeSogaXQgaXMg
+	d3JvbmcgKG5vdCB3aGF0IHRoZSBjb2RlIGRvZXMpLCBhbmQgcHJvcG9zZSBhIGNvbmNy
+	ZXRlIGZpeCB3aGVuIG9uZSBpcyBvYnZpb3VzLiBCZSBjYWxpYnJhdGVkOiBpZiBhIGZp
+	bmRpbmcgaXMgbm90IGhpZ2gtY29uZmlkZW5jZSwgc2F5IHNvIG9yIHNraXAgaXQuIFZl
+	cmlmeSBjbGFpbXMgYWdhaW5zdCB0aGUgYWN0dWFsIGNvZGUgcmF0aGVyIHRoYW4gaW5m
+	ZXJyaW5nIGZyb20gbmFtZXMuXG5cblNraXAgcHVyZSBzdHlsZSwgZm9ybWF0dGluZywg
+	bmFtaW5nLCBhbmQgYW55dGhpbmcgYSBsaW50ZXIgb3IgQ0kgYWxyZWFkeSBlbmZvcmNl
+	cy5cblxuSWYgeW91IGZpbmQgbm90aGluZyB3b3J0aCBmaXhpbmcsIHNheSBzbyBwbGFp
+	bmx5LiJ9XQ==
+	</data>
 	<key>Command</key>
 	<string>/usr/local/bin/tmux-CCnew-A-smain</string>
 	<key>ConvertDosNewlines</key>
@@ -607,12 +636,14 @@ It must do this: \(ai.prompt)</string>
 	<key>Default Bookmark Guid</key>
 	<string>9B14E53E-7926-498F-9840-D4BA591A6510</string>
 	<key>Default Browser Profile Guid</key>
-	<string>A3CC577F-BBC8-4874-BC1F-A05AF0D912DD</string>
+	<string>454A27D6-24D5-4ED3-A43D-51DD769C3C25</string>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>DockIconTogglesWindow</key>
 	<true/>
 	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
+	<key>EnableAPIServer</key>
 	<true/>
 	<key>EnableProxyIcon</key>
 	<false/>
@@ -3628,6 +3659,7 @@ It must do this: \(ai.prompt)</string>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Codecierge</string>
+		<string>Session Status</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<true/>
@@ -3645,6 +3677,36 @@ It must do this: \(ai.prompt)</string>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>Workgroups</key>
+	<data>
+	W3sibmFtZSI6IkNsYXVkZSBDb2RlIiwidW5pcXVlSWRlbnRpZmllciI6ImJ1aWx0aW4u
+	Y2xhdWRlQ29kZSIsInNlc3Npb25zIjpbeyJ1bmlxdWVJZGVudGlmaWVyIjoiYnVpbHRp
+	bi5jbGF1ZGVDb2RlLm1haW4iLCJ1cmxTdHJpbmciOiIiLCJjb21tYW5kIjoiIiwicGVy
+	RmlsZUNvbW1hbmQiOiIiLCJkaXNwbGF5TmFtZSI6IkNoYXQiLCJtb2RlIjoicmVndWxh
+	ciIsImtpbmQiOnsia2luZCI6InJvb3QifSwidG9vbGJhckl0ZW1zIjpbeyJraW5kIjoi
+	bW9kZVN3aXRjaGVyIn0seyJraW5kIjoiZ2l0U3RhdHVzIn1dfSx7InVuaXF1ZUlkZW50
+	aWZpZXIiOiJidWlsdGluLmNsYXVkZUNvZGUuZGlmZiIsInVybFN0cmluZyI6IiIsImNv
+	bW1hbmQiOiJnaXQgZGlmZnRvb2wgLXkgLXggdmltZGlmZiBcXChnaXRCYXNlKSIsInBl
+	ckZpbGVDb21tYW5kIjoiZ2l0IGRpZmZ0b29sIC15IC14IHZpbWRpZmYgXFwoZ2l0QmFz
+	ZSkgLS0gXFwoZmlsZSkiLCJkaXNwbGF5TmFtZSI6IkRpZmYiLCJtb2RlIjoiZGlmZiIs
+	ImtpbmQiOnsia2luZCI6InBlZXIifSwidG9vbGJhckl0ZW1zIjpbeyJraW5kIjoibW9k
+	ZVN3aXRjaGVyIn0seyJraW5kIjoiY2hhbmdlZEZpbGVTZWxlY3RvciJ9LHsia2luZCI6
+	ImdpdEJhc2VTZWxlY3RvciJ9LHsicmVsb2FkU2hvcnRjdXQiOnsic2VyaWFsaXplZCI6
+	IjB4NzItMHgxMDAwMDAtMHhmIn0sImtpbmQiOiJuYXZpZ2F0aW9uIiwiYmFja1Nob3J0
+	Y3V0Ijp7InNlcmlhbGl6ZWQiOiIweGY3MDItMHgzNDAwMDAtMHg3YiJ9LCJmb3J3YXJk
+	U2hvcnRjdXQiOnsic2VyaWFsaXplZCI6IjB4ZjcwMy0weDM0MDAwMC0weDdjIn19XSwi
+	cGFyZW50SUQiOiJidWlsdGluLmNsYXVkZUNvZGUubWFpbiJ9LHsidW5pcXVlSWRlbnRp
+	ZmllciI6ImJ1aWx0aW4uY2xhdWRlQ29kZS5yZXZpZXciLCJ1cmxTdHJpbmciOiIiLCJj
+	b21tYW5kIjoiY2xhdWRlIFxcKGNvZGVSZXZpZXdQcm9tcHQpIC0tYXBwZW5kLXN5c3Rl
+	bS1wcm9tcHQtZmlsZSAnXFwoY29kZVJldmlld1N5c3RlbVByb21wdEZpbGUpJyAtLXNl
+	dHRpbmdzICdcXChpdGVybTIuYXBwQnVuZGxlUGF0aClcL0NvbnRlbnRzXC9SZXNvdXJj
+	ZXNcL2NvZGUtcmV2aWV3LXNldHRpbmdzLnR4dCciLCJwZXJGaWxlQ29tbWFuZCI6IiIs
+	ImRpc3BsYXlOYW1lIjoiQ29kZSBSZXZpZXciLCJtb2RlIjoiY29kZVJldmlldyIsImtp
+	bmQiOnsia2luZCI6InBlZXIifSwidG9vbGJhckl0ZW1zIjpbeyJraW5kIjoibW9kZVN3
+	aXRjaGVyIn0seyJraW5kIjoicmVsb2FkIiwic2hvcnRjdXQiOnsic2VyaWFsaXplZCI6
+	IjB4NzItMHgxMDAwMDAtMHhmIn19XSwicGFyZW50SUQiOiJidWlsdGluLmNsYXVkZUNv
+	ZGUubWFpbiJ9XX1d
+	</data>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 </dict>
