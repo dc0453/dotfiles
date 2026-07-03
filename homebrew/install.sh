@@ -12,6 +12,7 @@ fi
 
 #init environment variables
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 
@@ -28,21 +29,9 @@ install_homebrew () {
     #/bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
   else
     git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git
-    if [[ "$IS_MAC_OS" == true ]]; then
-      #homebrew
-      BREW_TAPS="$(BREW_TAPS="$(brew tap 2>/dev/null)"; echo -n "${BREW_TAPS//$'\n'/:}")"
-      for tap in core cask{,-fonts,-drivers,-versions} command-not-found; do
-          if [[ ":${BREW_TAPS}:" == *":homebrew/${tap}:"* ]]; then
-              # 将已有 tap 的上游设置为本镜像
-              git -C "$(brew --repo homebrew/${tap})" remote set-url origin "https://mirrors.ustc.edu.cn/homebrew-${tap}.git"
-          else   # 在 tap 缺失时自动安装
-              brew tap "homebrew/${tap}" "https://mirrors.ustc.edu.cn/homebrew-${tap}.git"
-          fi
-      done
-    else
-      #linuxbrew
+    # 仅处理 homebrew/core（cask 及其他 tap 已废弃，现代 Homebrew 通过 JSON API 管理）
+    if brew tap 2>/dev/null | grep -q "^homebrew/core$"; then
       git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
-      git -C "$(brew --repo homebrew/command-not-found)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-command-not-found.git
     fi
 
     # Install GCM Core using Homebrew
