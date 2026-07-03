@@ -1,42 +1,59 @@
-# !/bin/sh
+#!/usr/bin/env bash
 
-plugins=${HOME}/.plugins
+DOTFILES_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$DOTFILES_ROOT/script/utils.sh"
+
+plugins="${HOME}/.plugins"
 
 IS_MAC_OS=""
 if [[ "$OSTYPE" == darwin* ]]; then
-      IS_MAC_OS=true
+    IS_MAC_OS=true
 fi
 
-if [[ ! -d ${plugins} ]]; then
-    mkdir ${plugins}
-fi
+mkdir -p "${plugins}"
+cd "${plugins}"
 
-cd ${plugins}
-
-# install powerline fonts
-if [[ ! -d ${plugins}/fonts ]]; then
-	git clone https://github.com/powerline/fonts.git
-	sh ./fonts/install.sh
-fi
-
-# install solarized and dircolors
-if [[ ! -d ${plugins}/solarized ]]; then
-	git clone https://github.com/altercation/solarized.git
-    if [[ "$IS_MAC_OS" == true ]]; then
-      if [[ -d "/Applications/iTerm.app" ]]; then
-        open "${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
-      else
-        echo "iTerm2 not found, skipping Solarized color scheme import. Install iTerm2 and manually open:"
-        echo "  ${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
-      fi
-      if [[ -d "/Applications/Utilities/Terminal.app" ]]; then
-        open "${plugins}/solarized/osx-terminal.app-colors-solarized/xterm-256color/Solarized Dark xterm-256color.terminal"
-      fi
+# ── Powerline fonts ──────────────────────────────────────────────────────────
+if [[ ! -d "${plugins}/fonts" ]]; then
+    info "cloning powerline fonts..."
+    if git clone --depth=1 https://github.com/powerline/fonts.git; then
+        sh ./fonts/install.sh
+        info "powerline fonts installed"
+    else
+        echo "⚠️  failed to clone powerline/fonts, skipping"
     fi
+else
+    info "powerline fonts already installed, skipping"
 fi
 
-if [[ ! -d ${plugins}/dircolors-solarized ]]; then
-	git clone https://github.com/seebi/dircolors-solarized.git
+# ── Solarized ────────────────────────────────────────────────────────────────
+if [[ ! -d "${plugins}/solarized" ]]; then
+    info "cloning solarized..."
+    if git clone --depth=1 https://github.com/altercation/solarized.git; then
+        info "solarized cloned"
+        if [[ "$IS_MAC_OS" == true ]]; then
+            if [[ -d "/Applications/iTerm.app" ]]; then
+                open "${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
+            else
+                echo "⚠️  iTerm2 not found, manually open to import color scheme:"
+                echo "   ${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
+            fi
+            if [[ -d "/Applications/Utilities/Terminal.app" ]]; then
+                open "${plugins}/solarized/osx-terminal.app-colors-solarized/xterm-256color/Solarized Dark xterm-256color.terminal"
+            fi
+        fi
+    else
+        echo "⚠️  failed to clone solarized, skipping"
+    fi
+else
+    info "solarized already installed, skipping"
 fi
 
-exit 0
+# ── dircolors-solarized ──────────────────────────────────────────────────────
+if [[ ! -d "${plugins}/dircolors-solarized" ]]; then
+    info "cloning dircolors-solarized..."
+    git clone --depth=1 https://github.com/seebi/dircolors-solarized.git \
+        || echo "⚠️  failed to clone dircolors-solarized, skipping"
+else
+    info "dircolors-solarized already installed, skipping"
+fi
