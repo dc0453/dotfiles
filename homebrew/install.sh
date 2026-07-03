@@ -88,9 +88,9 @@ binaries=(
   webp
   watch
   wget
-  tabview
-  sdkman
+  tabiew
   snapx
+  # sdkman 通过 sdkman/install.sh 单独安装，非 brew 公式
   # graphviz
   # z
   # trash
@@ -166,6 +166,8 @@ brew install coreutils
 brew install findutils
 
 echo "Installing binaries..."
+# snapx 来自第三方 tap，需要先 trust
+brew trust brycensranch/repo 2>/dev/null || true
 brew install ${binaries[@]}
 
 # echo "Installing fonts..."
