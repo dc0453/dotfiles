@@ -123,7 +123,7 @@ apps=(
   # google-chrome
   # qq
   # macdown  # markdown编辑器
-  # iterm2 # 加强版终端
+  iterm2 # 加强版终端
   # iina
   # the-unarchiver  # 免费的解压软件
   # xtrafinder  # 加强finder
