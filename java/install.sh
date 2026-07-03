@@ -1,12 +1,7 @@
-#!/bin/sh
-#
-# dot
-#
-# `dot` handles installation, updates, things like that. Run it periodically
-# to make sure you're on the latest and greatest.
+#!/usr/bin/env bash
 
-cd "$(dirname "$0")/.."
-DOTFILES_ROOT=$(pwd)
+DOTFILES_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$DOTFILES_ROOT/script/utils.sh"
 
 # Java版本变量
 JAVA_VERSION="17.0.15-amzn"
@@ -19,8 +14,8 @@ if [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
     if ! sdk list java | grep -q "$JAVA_VERSION"; then
         sdk install java $JAVA_VERSION
     else
-        echo "Java $JAVA_VERSION 已安装"
+        info "Java $JAVA_VERSION 已安装"
     fi
 else
-    echo "SDKMAN 未安装，跳过 Java 安装步骤"
+    info "SDKMAN 未安装，跳过 Java 安装步骤"
 fi

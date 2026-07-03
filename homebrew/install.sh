@@ -1,9 +1,12 @@
-# !/bin/bash
+#!/usr/bin/env bash
 #
 # Homebrew
 #
 # This installs some of the common dependencies needed (or at least desired)
 # using Homebrew.
+
+DOTFILES_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$DOTFILES_ROOT/script/utils.sh"
 
 IS_MAC_OS=""
 if [[ "$OSTYPE" == darwin* ]]; then
@@ -19,13 +22,13 @@ export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 install_homebrew () {
   # wiki -> https://mirrors.ustc.edu.cn/help/brew.git.html
   if ! command -v brew >/dev/null; then
-    echo "Installing Homebrew for you..."
+    info "Installing Homebrew for you..."
     # install from USTC mirror
     /bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
     # install from GitHub
     #/bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
   else
-    echo "Homebrew already installed, updating mirrors..."
+    info "Homebrew already installed, updating mirrors..."
   fi
 
   # 无论是否新装，均同步镜像源配置
@@ -45,16 +48,16 @@ filter_already_installed_apps() {
         appName=$(brew info $app --json=v2 | jq '.casks[].name[0]' -r)
         if ls /Applications | grep "$appName"
         then
-            echo "$app has installed\n"
+            info "$app already installed"
         else
             not_installed_apps+="$app "
         fi
     done
 }
 
-echo "installing homebrew"
+info "installing homebrew"
 install_homebrew
-echo "install homebrew done"
+info "install homebrew done"
 
 # Binaries
 binaries=(
@@ -166,7 +169,7 @@ apps=(
 #   font-source-code-pro
 # )
 
-echo "Update Homebrew..."
+info "Update Homebrew..."
 # Update homebrew recipes
 # brew update
 
@@ -175,7 +178,7 @@ brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
-echo "Installing binaries..."
+info "Installing binaries..."
 # snapx 来自第三方 tap，需要先 trust
 brew trust brycensranch/repo 2>/dev/null || true
 failed_binaries=()
@@ -185,7 +188,7 @@ done
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
-echo "Installing apps..."
+info "Installing apps..."
 filter_already_installed_apps
 failed_apps=()
 for app in ${not_installed_apps[@]}; do

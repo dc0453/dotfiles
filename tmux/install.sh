@@ -1,11 +1,14 @@
-# !/bin/sh
+#!/usr/bin/env bash
+
+DOTFILES_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$DOTFILES_ROOT/script/utils.sh"
 
 script_dir="$(dirname "$0")"
-base_dir=`cd $script_dir && pwd`
+base_dir=$(cd $script_dir && pwd)
 
 plugins=${HOME}/.plugins
 
-echo "[start] installing tmux config"
+info "installing tmux config"
 
 IS_MAC_OS=""
 if [[ "$OSTYPE" == darwin* ]]; then
@@ -26,6 +29,6 @@ fi
 
 # link my customized configuration
 #ln -s -f ${base_dir}/tmux.conf.local.symlink ~/.tmux.conf.local
-echo "[done] install tmux config"
+info "install tmux config done"
 
 exit 0

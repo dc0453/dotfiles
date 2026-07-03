@@ -6,7 +6,7 @@ source "$DOTFILES_ROOT/script/utils.sh"
 # ── pyenv: install latest Python 3 ──────────────────────────────────────────
 
 if ! command -v pyenv >/dev/null; then
-  echo "pyenv not found, skipping Python installation"
+  info "pyenv not found, skipping Python installation"
   exit 0
 fi
 
@@ -37,7 +37,7 @@ plugins=(
 )
 
 if ! command -v pip3 >/dev/null; then
-  echo "pip3 not found, skipping plugin installation"
+  info "pip3 not found, skipping plugin installation"
   exit 0
 fi
 

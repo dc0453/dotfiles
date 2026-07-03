@@ -17,7 +17,7 @@ install_ohmyzsh () {
   fi
 }
 
-echo "installing oh-my-zsh"
+info "installing oh-my-zsh"
 
 install_ohmyzsh
 
@@ -34,4 +34,4 @@ for theme in "$base_dir/custom/themes"/*.zsh-theme; do
 done
 #source ${HOME}/.zshrc
 
-echo "install oh-my-zsh done"
+info "install oh-my-zsh done"
