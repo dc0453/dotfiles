@@ -90,6 +90,12 @@ binaries=(
   wget
   tabiew
   snapx
+  git-lfs
+  zsh-syntax-highlighting
+  nvm
+  multitail
+  telnet
+  chsrc
   # sdkman 通过 sdkman/install.sh 单独安装，非 brew 公式
   # graphviz
   # z
@@ -112,6 +118,10 @@ apps=(
   sublime-text
   keycastr
   karabiner-elements
+  localsend
+  cmux
+  health-tick
+  codex
   # java
   # google-chrome
   # qq
