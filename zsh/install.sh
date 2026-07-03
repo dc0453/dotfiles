@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 
+DOTFILES_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$DOTFILES_ROOT/script/utils.sh"
+
 ZSH="${HOME}/.oh-my-zsh"
 
 install_ohmyzsh () {
   if [ ! -d ${ZSH} ]
   then
-    echo 'installing oh-my-zsh'
+    info 'installing oh-my-zsh'
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --keep-zshrc
   fi
 }
