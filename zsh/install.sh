@@ -5,7 +5,7 @@ ZSH="${HOME}/.oh-my-zsh"
 install_ohmyzsh () {
   if [ ! -d ${ZSH} ]
   then
-    info 'installing oh-my-zsh'
+    echo 'installing oh-my-zsh'
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --keep-zshrc
   fi
 }
