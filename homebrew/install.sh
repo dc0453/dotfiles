@@ -11,26 +11,23 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 
 #init environment variables
-if [[ "$(uname -s)" == "Linux" ]]; then BREW_TYPE="linuxbrew"; else BREW_TYPE="homebrew"; fi
-export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
-export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/${BREW_TYPE}-core.git"
-export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/${BREW_TYPE}-bottles"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
+export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 
 install_homebrew () {
-  # wiki -> https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/
+  # wiki -> https://mirrors.ustc.edu.cn/help/brew.git.html
   # can support linuxbrew and homebrew
   if test ! $(which brew)
   then
     echo "Installing Homebrew for you..."
-    # install from tsinghua mirror
-    git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
-    /bin/bash brew-install/install.sh
-    rm -rf brew-install
+    # install from USTC mirror
+    /bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
 
     # install from GitHub
     #/bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
-  else 
-    git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+  else
+    git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git
     if [[ "$IS_MAC_OS" == true ]]; then
       #homebrew
       BREW_TAPS="$(BREW_TAPS="$(brew tap 2>/dev/null)"; echo -n "${BREW_TAPS//$'\n'/:}")"
@@ -38,16 +35,16 @@ install_homebrew () {
           if [[ ":${BREW_TAPS}:" == *":homebrew/${tap}:"* ]]; then
               # 将已有 tap 的上游设置为本镜像并设置 auto update
               # 注：原 auto update 只针对托管在 GitHub 上的上游有效
-              git -C "$(brew --repo homebrew/${tap})" remote set-url origin "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-${tap}.git"
+              git -C "$(brew --repo homebrew/${tap})" remote set-url origin "https://mirrors.ustc.edu.cn/homebrew-${tap}.git"
               git -C "$(brew --repo homebrew/${tap})" config homebrew.forceautoupdate true
           else   # 在 tap 缺失时自动安装（如不需要请删除此行和下面一行）
-              brew tap --force-auto-update "homebrew/${tap}" "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-${tap}.git"
+              brew tap --force-auto-update "homebrew/${tap}" "https://mirrors.ustc.edu.cn/homebrew-${tap}.git"
           fi
       done
     else
       #linuxbrew
-      git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/linuxbrew-core.git
-      git -C "$(brew --repo homebrew/command-not-found)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-command-not-found.git
+      git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+      git -C "$(brew --repo homebrew/command-not-found)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-command-not-found.git
     fi
 
     # Install GCM Core using Homebrew
