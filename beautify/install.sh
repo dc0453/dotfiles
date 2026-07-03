@@ -23,8 +23,15 @@ fi
 if [[ ! -d ${plugins}/solarized ]]; then
 	git clone https://github.com/altercation/solarized.git
     if [[ "$IS_MAC_OS" == true ]]; then
-      open "${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
-      open "${plugins}/solarized/osx-terminal.app-colors-solarized/xterm-256color/Solarized Dark xterm-256color.terminal"
+      if [[ -d "/Applications/iTerm.app" ]]; then
+        open "${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
+      else
+        echo "iTerm2 not found, skipping Solarized color scheme import. Install iTerm2 and manually open:"
+        echo "  ${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
+      fi
+      if [[ -d "/Applications/Utilities/Terminal.app" ]]; then
+        open "${plugins}/solarized/osx-terminal.app-colors-solarized/xterm-256color/Solarized Dark xterm-256color.terminal"
+      fi
     fi
 fi
 
