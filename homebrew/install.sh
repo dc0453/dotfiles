@@ -168,17 +168,27 @@ brew install findutils
 echo "Installing binaries..."
 # snapx 来自第三方 tap，需要先 trust
 brew trust brycensranch/repo 2>/dev/null || true
-brew install ${binaries[@]}
-
-# echo "Installing fonts..."
-# brew cask install ${fonts[@]}
+failed_binaries=()
+for pkg in "${binaries[@]}"; do
+  brew install "$pkg" || { echo "⚠️  failed to install binary: $pkg"; failed_binaries+=("$pkg"); }
+done
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "Installing apps..."
 filter_already_installed_apps
-echo $not_installed_apps" will install"
-brew install --cask --appdir="/Applications" ${not_installed_apps[@]}
+failed_apps=()
+for app in ${not_installed_apps[@]}; do
+  brew install --cask --appdir="/Applications" "$app" || { echo "⚠️  failed to install app: $app"; failed_apps+=("$app"); }
+done
+
+# 汇总失败项
+if [[ ${#failed_binaries[@]} -gt 0 ]]; then
+  echo "❌ Failed binaries: ${failed_binaries[*]}"
+fi
+if [[ ${#failed_apps[@]} -gt 0 ]]; then
+  echo "❌ Failed apps: ${failed_apps[*]}"
+fi
 
 # clean things up
 brew cleanup
