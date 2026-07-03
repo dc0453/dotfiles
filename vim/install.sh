@@ -13,4 +13,4 @@ if [[ ! -d $base_dir ]]; then
   curl https://j.mp/spf13-vim3 -L > $spf13_script && sh $spf13_script
 fi
 
-info "install spf13-vim done"
+success "install spf13-vim done"

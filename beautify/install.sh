@@ -18,9 +18,9 @@ if [[ ! -d "${plugins}/fonts" ]]; then
     info "cloning powerline fonts..."
     if git clone --depth=1 https://github.com/powerline/fonts.git; then
         sh ./fonts/install.sh
-        info "powerline fonts installed"
+        success "powerline fonts installed"
     else
-        echo "⚠️  failed to clone powerline/fonts, skipping"
+        warn "failed to clone powerline/fonts, skipping"
     fi
 else
     info "powerline fonts already installed, skipping"
@@ -30,12 +30,12 @@ fi
 if [[ ! -d "${plugins}/solarized" ]]; then
     info "cloning solarized..."
     if git clone --depth=1 https://github.com/altercation/solarized.git; then
-        info "solarized cloned"
+        success "solarized cloned"
         if [[ "$IS_MAC_OS" == true ]]; then
             if [[ -d "/Applications/iTerm.app" ]]; then
                 open "${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
             else
-                echo "⚠️  iTerm2 not found, manually open to import color scheme:"
+                warn "iTerm2 not found, manually open to import color scheme:"
                 echo "   ${plugins}/solarized/iterm2-colors-solarized/Solarized Dark.itermcolors"
             fi
             if [[ -d "/Applications/Utilities/Terminal.app" ]]; then
@@ -43,7 +43,7 @@ if [[ ! -d "${plugins}/solarized" ]]; then
             fi
         fi
     else
-        echo "⚠️  failed to clone solarized, skipping"
+        warn "failed to clone solarized, skipping"
     fi
 else
     info "solarized already installed, skipping"
@@ -53,7 +53,7 @@ fi
 if [[ ! -d "${plugins}/dircolors-solarized" ]]; then
     info "cloning dircolors-solarized..."
     git clone --depth=1 https://github.com/seebi/dircolors-solarized.git \
-        || echo "⚠️  failed to clone dircolors-solarized, skipping"
+        || warn "failed to clone dircolors-solarized, skipping"
 else
     info "dircolors-solarized already installed, skipping"
 fi

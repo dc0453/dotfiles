@@ -29,6 +29,6 @@ fi
 
 # link my customized configuration
 #ln -s -f ${base_dir}/tmux.conf.local.symlink ~/.tmux.conf.local
-info "install tmux config done"
+success "install tmux config done"
 
 exit 0

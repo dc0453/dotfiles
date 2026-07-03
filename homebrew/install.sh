@@ -57,7 +57,7 @@ filter_already_installed_apps() {
 
 info "installing homebrew"
 install_homebrew
-info "install homebrew done"
+success "install homebrew done"
 
 # Binaries
 binaries=(
@@ -183,7 +183,7 @@ info "Installing binaries..."
 brew trust brycensranch/repo 2>/dev/null || true
 failed_binaries=()
 for pkg in "${binaries[@]}"; do
-  brew install "$pkg" || { echo "⚠️  failed to install binary: $pkg"; failed_binaries+=("$pkg"); }
+  brew install "$pkg" || { warn "failed to install binary: $pkg"; failed_binaries+=("$pkg"); }
 done
 
 # Install apps to /Applications
@@ -192,15 +192,15 @@ info "Installing apps..."
 filter_already_installed_apps
 failed_apps=()
 for app in ${not_installed_apps[@]}; do
-  brew install --cask --appdir="/Applications" "$app" || { echo "⚠️  failed to install app: $app"; failed_apps+=("$app"); }
+  brew install --cask --appdir="/Applications" "$app" || { warn "failed to install app: $app"; failed_apps+=("$app"); }
 done
 
 # 汇总失败项
 if [[ ${#failed_binaries[@]} -gt 0 ]]; then
-  echo "❌ Failed binaries: ${failed_binaries[*]}"
+  warn "Failed binaries: ${failed_binaries[*]}"
 fi
 if [[ ${#failed_apps[@]} -gt 0 ]]; then
-  echo "❌ Failed apps: ${failed_apps[*]}"
+  warn "Failed apps: ${failed_apps[*]}"
 fi
 
 # clean things up

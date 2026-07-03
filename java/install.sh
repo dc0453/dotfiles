@@ -17,5 +17,5 @@ if [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
         info "Java $JAVA_VERSION 已安装"
     fi
 else
-    info "SDKMAN 未安装，跳过 Java 安装步骤"
+    warn "SDKMAN 未安装，跳过 Java 安装步骤"
 fi

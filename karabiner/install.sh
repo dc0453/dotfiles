@@ -16,4 +16,4 @@ ln -s $base_dir/complex_modifications/* $KARABINER_ASSETS/complex_modifications/
 # copy my karabiner.json
 ln -s $base_dir/karabiner.json $KARABINER_CONFIG/
 
-info "config karabiner done"
+success "config karabiner done"

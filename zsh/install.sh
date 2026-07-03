@@ -34,4 +34,4 @@ for theme in "$base_dir/custom/themes"/*.zsh-theme; do
 done
 #source ${HOME}/.zshrc
 
-info "install oh-my-zsh done"
+success "install oh-my-zsh done"
