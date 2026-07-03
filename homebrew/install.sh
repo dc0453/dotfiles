@@ -128,10 +128,8 @@ binaries=(
 
 # Apps
 apps=(
-  adoptopenjdk8
   postman
   sublime-text
-  git-credential-manager-core
   keycastr
   karabiner-elements
   # java
