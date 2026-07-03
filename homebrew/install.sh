@@ -72,6 +72,7 @@ binaries=(
   maven
   mysql
   node
+  npm
   openjdk
   pyenv
   pyenv-virtualenv
