@@ -33,12 +33,10 @@ install_homebrew () {
       BREW_TAPS="$(BREW_TAPS="$(brew tap 2>/dev/null)"; echo -n "${BREW_TAPS//$'\n'/:}")"
       for tap in core cask{,-fonts,-drivers,-versions} command-not-found; do
           if [[ ":${BREW_TAPS}:" == *":homebrew/${tap}:"* ]]; then
-              # 将已有 tap 的上游设置为本镜像并设置 auto update
-              # 注：原 auto update 只针对托管在 GitHub 上的上游有效
+              # 将已有 tap 的上游设置为本镜像
               git -C "$(brew --repo homebrew/${tap})" remote set-url origin "https://mirrors.ustc.edu.cn/homebrew-${tap}.git"
-              git -C "$(brew --repo homebrew/${tap})" config homebrew.forceautoupdate true
-          else   # 在 tap 缺失时自动安装（如不需要请删除此行和下面一行）
-              brew tap --force-auto-update "homebrew/${tap}" "https://mirrors.ustc.edu.cn/homebrew-${tap}.git"
+          else   # 在 tap 缺失时自动安装
+              brew tap "homebrew/${tap}" "https://mirrors.ustc.edu.cn/homebrew-${tap}.git"
           fi
       done
     else
