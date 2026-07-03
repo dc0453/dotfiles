@@ -18,32 +18,17 @@ export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 
 install_homebrew () {
   # wiki -> https://mirrors.ustc.edu.cn/help/brew.git.html
-  # can support linuxbrew and homebrew
-  if test ! $(which brew)
-  then
-    echo "Installing Homebrew for you..."
-    # install from USTC mirror
-    /bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
-
-    # install from GitHub
-    #/bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
-  else
-    git -C "$(brew --repo)" remote set-url origin https://mirrors.ustc.edu.cn/brew.git
-    # 仅处理 homebrew/core（cask 及其他 tap 已废弃，现代 Homebrew 通过 JSON API 管理）
-    if brew tap 2>/dev/null | grep -q "^homebrew/core$"; then
-      git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
-    fi
-
-    # Install GCM Core using Homebrew
-    # see more : https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
-    brew tap microsoft/git
-    brew tap BrycensRanch/repo
-
-    # Install jdk8
-    # brew tap adoptopenjdk/openjdk
-
-    brew update-reset
+  if command -v brew >/dev/null; then
+    echo "Homebrew already installed, skipping."
+    return
   fi
+
+  echo "Installing Homebrew for you..."
+  # install from USTC mirror
+  /bin/bash -c "$(curl -fsSL https://mirrors.ustc.edu.cn/misc/brew-install.sh)"
+
+  # install from GitHub
+  #/bin/bash -c "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install.sh)"
 }
 
 declare -a not_installed_apps
