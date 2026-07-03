@@ -81,7 +81,7 @@ binaries=(
   ssh-copy-id
   the_silver_searcher
   thrift
-  tldr
+  tlrc
   tmux
   tree
   vim
