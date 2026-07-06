@@ -92,7 +92,6 @@ binaries=(
   watch
   wget
   tabiew
-  snapx
   git-lfs
   zsh-syntax-highlighting
   nvm
@@ -179,9 +178,8 @@ brew list coreutils &>/dev/null || brew install coreutils
 brew list findutils &>/dev/null || brew install findutils
 
 info "Installing binaries..."
-# snapx 来自第三方 tap BrycensRanch/repo（https://github.com/BrycensRanch/homebrew-repo）
-brew tap BrycensRanch/repo 2>/dev/null || true
-brew trust BrycensRanch/repo 2>/dev/null || true
+# snapx 已从 brew 列表移除，编译安装耗时过长，需用时手动安装
+# 参考 https://github.com/BrycensRanch/homebrew-repo
 failed_binaries=()
 for pkg in "${binaries[@]}"; do
   brew install "$pkg" || { warn "failed to install binary: $pkg"; failed_binaries+=("$pkg"); }
