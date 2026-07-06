@@ -2,3 +2,4 @@
 *~
 *.swp
 alfredConfig/**/YoudaoTranslate*.log
+.omc/
