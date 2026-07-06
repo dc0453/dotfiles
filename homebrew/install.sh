@@ -179,9 +179,8 @@ brew list coreutils &>/dev/null || brew install coreutils
 brew list findutils &>/dev/null || brew install findutils
 
 info "Installing binaries..."
-# snapx 来自第三方 tap brycensranch/repo，需先 tap 再 trust
-brew tap brycensranch/repo 2>/dev/null || true
-brew trust brycensranch/repo 2>/dev/null || true
+# snapx 来自第三方 tap BrycensRanch/repo（https://github.com/BrycensRanch/homebrew-repo）
+brew tap BrycensRanch/repo 2>/dev/null || true
 failed_binaries=()
 for pkg in "${binaries[@]}"; do
   brew install "$pkg" || { warn "failed to install binary: $pkg"; failed_binaries+=("$pkg"); }
