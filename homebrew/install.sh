@@ -18,6 +18,8 @@ export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
 export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
+# 无人值守模式：跳过所有交互确认（brew install / brew install --cask / brew 安装脚本）
+export NONINTERACTIVE=1
 
 install_homebrew () {
   # wiki -> https://mirrors.ustc.edu.cn/help/brew.git.html
