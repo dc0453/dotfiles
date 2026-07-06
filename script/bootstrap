@@ -134,7 +134,11 @@ install_dotfiles () {
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
-  link_file "$DOTFILES_ROOT" "$HOME/.dotfiles"
+  # 仅在 repo 不是直接克隆到 ~/.dotfiles 时才创建软链
+  # 否则会产生 ~/.dotfiles -> ~/.dotfiles 的循环软链
+  if [[ "$(realpath "$DOTFILES_ROOT")" != "$(realpath "$HOME/.dotfiles" 2>/dev/null)" ]]; then
+    link_file "$DOTFILES_ROOT" "$HOME/.dotfiles"
+  fi
 }
 
 chsh_zsh() {
