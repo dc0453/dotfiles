@@ -10,6 +10,12 @@ if ! command -v pyenv >/dev/null; then
   exit 0
 fi
 
+# bootstrap 在非交互式子 shell 中运行，.zprofile 不会被 source
+# 手动初始化 pyenv shims，确保 pip3 指向 pyenv 管理的 Python，而非系统 Python
+export PYENV_ROOT="${PYENV_ROOT:-/usr/local/var/pyenv}"
+export PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 info "fetching latest Python 3 version..."
 LATEST_PY3=$(pyenv install --list | grep -E '^\s+3\.[0-9]+\.[0-9]+$' | tail -1 | tr -d ' ')
 info "latest Python 3: ${LATEST_PY3}"

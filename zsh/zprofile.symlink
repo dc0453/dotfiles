@@ -6,9 +6,9 @@ PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
 # pyenv
-export PYENV_ROOT=/usr/local/var/pyenv
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-command -v pyenv >/dev/null && eval "$(pyenv init --path)"
+export PYENV_ROOT="/usr/local/var/pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"          # 始终加入 bin（含 shims 所需的 pyenv 二进制）
+command -v pyenv >/dev/null && eval "$(pyenv init --path)"  # 将 shims 加入 PATH
 
 # my scripts
 export PATH=$PATH:${HOME}/code/scripts
