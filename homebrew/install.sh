@@ -181,6 +181,7 @@ brew list findutils &>/dev/null || brew install findutils
 info "Installing binaries..."
 # snapx 来自第三方 tap BrycensRanch/repo（https://github.com/BrycensRanch/homebrew-repo）
 brew tap BrycensRanch/repo 2>/dev/null || true
+brew trust BrycensRanch/repo 2>/dev/null || true
 failed_binaries=()
 for pkg in "${binaries[@]}"; do
   brew install "$pkg" || { warn "failed to install binary: $pkg"; failed_binaries+=("$pkg"); }
@@ -190,6 +191,7 @@ done
 # Default is: /Users/$user/Applications
 # health-tick 来自第三方 tap lifedever/tap（https://github.com/lifedever/health-tick-release）
 brew tap lifedever/tap 2>/dev/null || true
+brew trust lifedever/tap 2>/dev/null || true
 info "Installing apps..."
 filter_already_installed_apps
 failed_apps=()
