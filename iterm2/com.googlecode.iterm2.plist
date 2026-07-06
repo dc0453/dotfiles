@@ -45,7 +45,7 @@ It must do this: \(ai.prompt)</string>
 	<key>CheckTestRelease</key>
 	<true/>
 	<key>ClaudeCodeTriggersInstalled</key>
-	<true/>
+	<false/>
 	<key>CodeReviewSavedPrompts</key>
 	<data>
 	W3sibmFtZSI6IkRlZmF1bHQiLCJ1dWlkIjoiOTZFMUZBMEItN0I4MS00OTZGLUIwNEQt
