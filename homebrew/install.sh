@@ -188,6 +188,8 @@ done
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
+# health-tick 来自第三方 tap lifedever/tap（https://github.com/lifedever/health-tick-release）
+brew tap lifedever/tap 2>/dev/null || true
 info "Installing apps..."
 filter_already_installed_apps
 failed_apps=()
