@@ -17,8 +17,6 @@ install_ohmyzsh () {
   fi
 }
 
-info "installing oh-my-zsh"
-
 install_ohmyzsh
 
 base_dir="$(cd "$(dirname "$0")" && pwd)"

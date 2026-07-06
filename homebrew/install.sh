@@ -45,12 +45,10 @@ declare -a not_installed_apps
 filter_already_installed_apps() {
     for app in ${apps[@]}
     do
-        appName=$(brew info $app --json=v2 | jq '.casks[].name[0]' -r)
-        if ls /Applications | grep "$appName"
-        then
+        if brew list --cask "$app" &>/dev/null; then
             info "$app already installed"
         else
-            not_installed_apps+="$app "
+            not_installed_apps+=("$app")
         fi
     done
 }
@@ -174,9 +172,9 @@ info "Update Homebrew..."
 # brew update
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
+brew list coreutils &>/dev/null || brew install coreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
+brew list findutils &>/dev/null || brew install findutils
 
 info "Installing binaries..."
 # snapx 来自第三方 tap，需要先 trust

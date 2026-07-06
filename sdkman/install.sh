@@ -12,6 +12,10 @@ if [ -f "$SDKMAN_INIT" ]; then
 else
     info "安装 sdkman..."
     curl -s "https://get.sdkman.io" | bash
+    if [ ! -f "$SDKMAN_INIT" ]; then
+        warn "sdkman 安装失败，跳过 Java 安装"
+        exit 0
+    fi
     success "sdkman 安装完成"
 fi
 
@@ -30,6 +34,11 @@ else
     sdk install java "${JAVA_VERSION}"
 fi
 
-info "设置 Java ${JAVA_VERSION} 为默认版本..."
-sdk default java "${JAVA_VERSION}"
+current_default=$(sdk current java 2>/dev/null | grep -o '[^ ]*$' || true)
+if [[ "$current_default" == "${JAVA_VERSION}" ]]; then
+    info "Java ${JAVA_VERSION} 已是默认版本，跳过"
+else
+    info "设置 Java ${JAVA_VERSION} 为默认版本..."
+    sdk default java "${JAVA_VERSION}"
+fi
 success "Java ${JAVA_VERSION} 配置完成"

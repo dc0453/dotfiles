@@ -10,11 +10,12 @@ JAVA_VERSION="17.0.15-amzn"
 if [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
     source "$HOME/.sdkman/bin/sdkman-init.sh"
     
-    # 检查指定Java版本是否已安装
-    if ! sdk list java | grep -q "$JAVA_VERSION"; then
-        sdk install java $JAVA_VERSION
-    else
+    # 检查指定Java版本是否已安装（匹配 installed 字样，避免误判可用版本）
+    if sdk list java | grep -q "${JAVA_VERSION}.*installed"; then
         info "Java $JAVA_VERSION 已安装"
+    else
+        info "安装 Java $JAVA_VERSION..."
+        sdk install java $JAVA_VERSION
     fi
 else
     warn "SDKMAN 未安装，跳过 Java 安装步骤"

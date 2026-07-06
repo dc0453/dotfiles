@@ -45,4 +45,6 @@ info "upgrading pip..."
 pip3 install --upgrade pip
 
 info "installing pip plugins..."
-pip3 install "${plugins[@]}"
+for plugin in "${plugins[@]}"; do
+  pip3 show "$plugin" &>/dev/null && info "$plugin already installed" || pip3 install "$plugin"
+done
