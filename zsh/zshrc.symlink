@@ -77,7 +77,6 @@ plugins=(
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-source $ZSH/oh-my-zsh.sh
 #source ${HOME}/.bash_profile
 
 # User configuration
@@ -135,6 +134,8 @@ then
     load $file
   done
 fi
+
+load $ZSH/oh-my-zsh.sh
 
 IS_MAC_OS=""
 if [[ "$OSTYPE" == darwin* ]]; then
