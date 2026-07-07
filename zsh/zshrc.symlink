@@ -181,7 +181,7 @@ export PATH="/Users/dc0453/.mide/bin:$PATH"
 
 
 # OpenClaw Completion
-source "/Users/dc0453/.openclaw/completions/openclaw.zsh"
+[ -f "$HOME/.openclaw/completions/openclaw.zsh" ] && source "$HOME/.openclaw/completions/openclaw.zsh"
 
 
 # nvm - 确保使用 arm64 default node（必须在所有 PATH 修改之后）
