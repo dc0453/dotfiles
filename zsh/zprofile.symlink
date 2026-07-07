@@ -25,10 +25,18 @@ alias vi='vim'
 export EDITOR='vim'
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm (arm64)
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# Use LTS node by default (arm64 native)
-nvm use --lts --silent 2>/dev/null || true
+# nvm 懒加载：首次调用时才初始化，加速启动
+[ -s "$NVM_DIR/nvm.sh" ] && {
+  nvm_lazy_load() {
+    unset -f nvm node npm npx pnpm yarn 2>/dev/null
+    \. "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+  }
+  nvm()  { nvm_lazy_load; nvm "$@"; }
+  node() { nvm_lazy_load; node "$@"; }
+  npm()  { nvm_lazy_load; npm "$@"; }
+  npx()  { nvm_lazy_load; npx "$@"; }
+}
 
 # claude -> mc --code (managed by setup-claude-alias.sh)
 claude() {

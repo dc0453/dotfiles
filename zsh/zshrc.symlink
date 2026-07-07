@@ -136,9 +136,6 @@ then
   done
 fi
 
-load $ZSH/oh-my-zsh.sh
-
-
 IS_MAC_OS=""
 if [[ "$OSTYPE" == darwin* ]]; then
     IS_MAC_OS=true
@@ -150,7 +147,13 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 
-autoload -U compinit && compinit
+autoload -U compinit
+# compinit 加速：缓存 1 天内有效，跳过耗时检查
+if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
+  compinit -d ~/.zcompdump
+else
+  compinit -C -d ~/.zcompdump
+fi
 
 # This speeds up pasting w/ autosuggest
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
@@ -177,10 +180,19 @@ export PATH="/Users/dc0453/.mide/bin:$PATH"
 #export M2_HOME="/usr/local/Cellar/maven/3.8.6/libexec"
 #export PATH="$M2_HOME/bin:$PATH"
 
-# nvm - 确保使用 arm64 default node（必须在所有 PATH 修改之后）
+# nvm - 懒加载（首次调用 nvm/node/npm 时才初始化，加速启动）
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-nvm use default --silent 2>/dev/null || true
+nvm_lazy_load() {
+  unset -f nvm node npm npx pnpm yarn 2>/dev/null
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  nvm use default --silent 2>/dev/null || true
+}
+nvm()  { nvm_lazy_load; nvm "$@"; }
+node() { nvm_lazy_load; node "$@"; }
+npm()  { nvm_lazy_load; npm "$@"; }
+npx()  { nvm_lazy_load; npx "$@"; }
+pnpm() { nvm_lazy_load; pnpm "$@"; }
+yarn() { nvm_lazy_load; yarn "$@"; }
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
