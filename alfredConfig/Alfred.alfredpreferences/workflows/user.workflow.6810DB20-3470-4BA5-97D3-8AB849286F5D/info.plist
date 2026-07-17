@@ -75,7 +75,7 @@
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>打开EU机房</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
