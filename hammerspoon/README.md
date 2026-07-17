@@ -1,152 +1,102 @@
-# PorcoSpoon - My Versatile Hammerspoon Config
+# Hammerspoon 配置
 
-After having discovered the extremely powerful [Hammerspoon](http://www.hammerspoon.org/) app, and finally landing on a configuration that I am very happy with, I thought I should share it with others to enjoy. I've tried to comment `init.lua` to make it easier to understand.
+这份配置用于快捷键驱动的应用切换、窗口循环和鼠标窗口操作。`~/.hammerspoon` 应链接到本目录；保存 Lua 文件后，Hammerspoon 会自动重载配置。
 
-I use this config together with some [Karabiner](https://karabiner-elements.pqrs.org) remapping to achieve a fast and usable config with a short learning curve.
+它与 [Karabiner-Elements](https://karabiner-elements.pqrs.org/) 配合使用：右 Option 作为 Hyper，右 Command 作为四修饰键组合。
 
 # Features
 
-- Reload on Save
-- Hyper Key
-- Additional hotkeys to switch spaces
-- Window Switcher menu
-- **Quick per-application window switcher (Across spaces!)**
-- Rounded screen corners
-- MiroWindowManager with reduced animation times
-- Universal Mic muter with hotkey
-- Drag to resize and move windows
-- App launcher
-- ... Some additional Spoons that are currently disabled
-
+- 保存 `.lua` 文件自动重载 Hammerspoon
+- 启用 `hs.ipc`，可通过 `hs` 命令行客户端执行 Hammerspoon 命令
+- 右 Option Hyper 快捷键启动或切换 Zoom
+- 右 Command 快捷键循环 CatPaw IDE 和 Google Chrome 窗口
+- 通用窗口选择器菜单
+- SkyRocket 鼠标移动和缩放窗口
+- 已保留但未启用的 Spoons
 
 # Additional details and usage
 
 ## Hyper and hotkeys
 
-Hyper is what people like to call a special shortcut comprised of multiple modifier keys. In this case the hyper key is the following:
+本配置中有两组修饰键：
 
-Hyper = <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>cmd</kbd>
+- **Hyper**：<kbd>control</kbd> + <kbd>option</kbd> + <kbd>command</kbd>。右 <kbd>Option</kbd> 由 Karabiner 映射为该组合。
+- **右 Command**：<kbd>shift</kbd> + <kbd>control</kbd> + <kbd>option</kbd> + <kbd>command</kbd>。映射见 [`../karabiner/complex_modifications/hyper-key.json`](../karabiner/complex_modifications/hyper-key.json)。
 
 ### Karabiner configuration
-I've used [Karabiner](https://karabiner-elements.pqrs.org) and the default mac hotkey settings to remap the useless <kbd>capslock</kbd> key into something extremely powerful. If you tap <kbd>capslock</kbd>, it triggers "non_us_backslash" (what even is that?) which I have remapped to open spotlight or Alfred. Hold it and it acts like the hyper modifier. Perfect.
+
+启用 Karabiner 后需同时加载右 Option 与右 Command 的映射：
+
+- 右 <kbd>Option</kbd>：发送 Hyper（<kbd>control</kbd> + <kbd>option</kbd> + <kbd>command</kbd>）。
+- 右 <kbd>Command</kbd>：发送 <kbd>shift</kbd> + <kbd>control</kbd> + <kbd>option</kbd> + <kbd>command</kbd>。
+
+右 Command 的规则文件会屏蔽该四修饰键与 <kbd>,</kbd>、<kbd>.</kbd>、<kbd>/</kbd> 的 macOS `sysdiagnose` 冲突。
 
 ### Launcher
-I use <kbd>Hyper</kbd> + `<key>` to either launch or switch to certain applications. This is easily configured in the init.lua file so feel free to modify it for your own use. 
 
-examples:
+`openswitch(name)` 返回一个可以直接绑定给快捷键的函数：目标应用不在前台时打开或聚焦；已在前台时交由 `switcherfunc()` 切换该应用的常规窗口。
 
-- <kbd>Hyper</kbd>+<kbd>V</kbd> = Launch or switch to Vivaldi
-- <kbd>Hyper</kbd>+<kbd>S</kbd> = Launch or switch to Slack
-- <kbd>Hyper</kbd>+<kbd>C</kbd> = Launch or switch to Calendar
-- <kbd>Hyper</kbd>+<kbd>E</kbd> = Launch or switch to Excel
-... you get the idea
+当前启用的应用快捷键：
 
-### App Switcher
+- 右 <kbd>Option</kbd> + <kbd>Z</kbd>：打开、聚焦或切换 `zoom.us`。
 
-Many other configs online have similar features, but what is unique about this config is that if the app is already focused and you hit the key combination again, focus will cycle through the open windows of the current application. This works across spaces, and is really great when you have a bunch of windows open at the same time.
+### Per-application window cycle
 
-I've also remapped <kbd>right ctrl</kbd>+<kbd>right</kbd>/<kbd>left</kbd> to switch spaces left and right.
+[`window_cycle.lua`](window_cycle.lua) 是独立的窗口循环模块。调用方式与 `openswitch(name)` 一致：
+
+```lua
+local windowCycle = require("window_cycle")
+hs.hotkey.bind(modifiers, key, windowCycle("Application Name"))
+```
+
+当前绑定：
+
+- 右 <kbd>Command</kbd> + <kbd>P</kbd>：循环 `CatPaw IDE` 窗口。
+- 右 <kbd>Command</kbd> + <kbd>C</kbd>：循环 `Google Chrome` 窗口。
+
+模块优先使用 AppleScript、应用的 Window 菜单和全屏 Space 兜底，以支持 Chrome 的跨全屏窗口切换。对于 CatPaw IDE 等不支持 AppleScript 窗口枚举的 Electron 应用，会自动降级为 Hammerspoon 原生 `hs.window.filter` 窗口列表。
+
+应用名必须与 `hs.application:name()` 一致。排障时可将 `window_cycle.lua` 顶部的 `TRACE_ENABLED` 改为 `true`，在 Hammerspoon Console 输出各阶段耗时。
 
 ## App Switcher
-Thanks to the help of [dmgerman](https://github.com/dmgerman) who's code allowed me to implement my app switcher, I've also maintained his app switcher menu.
 
-- <kbd>alt</kbd>+<kbd>b</kbd> opens a switcher dialogue for all open windows
-- <kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>b</kbd> opens a switcher dialogue for all open windows for the current app
-- <kbd>hyper</kbd>+<kbd>tab</kbd> switches to the last focused window
+[`switcher.lua`](switcher.lua) 提供所有应用的窗口选择菜单：
 
-## MiroWindowsManager
+- <kbd>option</kbd> + <kbd>B</kbd>：显示所有可切换窗口。
+- <kbd>option</kbd> + <kbd>shift</kbd> + <kbd>B</kbd>：显示当前应用的可切换窗口。
 
-[MiroWindowsManager](https://github.com/miromannino/miro-windows-manager) is a great spoon to maneuver windows in a convenient fashion. Maybe one day I will graduate to a tiling window manger, but for now dragging a window to the sides will make it take up that half of the screen. Dragging to the top makes it take up the whole screen.
+它基于 Hammerspoon 原生窗口过滤器维护窗口列表，因此能够展示 CatPaw IDE 等不支持 AppleScript 的应用。
 
-MiroWindowsManager also has some hotkeys mapped to it.
-I use the following:
+## SkyRocket
 
-- <kbd>Hyper</kbd>+<kbd>up</kbd> = Resize the window to take up the top half of the screen
-- <kbd>Hyper</kbd>+<kbd>down</kbd> = Resize the window to take up the bottom half of the screen
-- <kbd>Hyper</kbd>+<kbd>right</kbd> = Resize the window to take up the right half of the screen
-- <kbd>Hyper</kbd>+<kbd>left</kbd> = Resize the window to take up the left half of the screen
-- <kbd>Hyper</kbd>+<kbd>f</kbd> = Resize the window to take up the whole screen
+[SkyRocket Spoon](https://github.com/dbalatero/SkyRocket.spoon) 已启用：
 
-Tapping the respective keys again does extra things, best to head to [MiroWindowsManager](https://github.com/miromannino/miro-windows-manager) page to learn more.
-
-![example](https://github.com/miromannino/miro-windows-manager/raw/imgs/example.gif)
-
-## Skyrocket
-
-The [Skyrocket Spoon](https://github.com/dbalatero/SkyRocket.spoon) allows to resize and move windows conveniently without having to grab a window by the corner of window decoration.
-
-In my config:
-- <kbd>ctrl</kbd>+<kbd>shift</kbd> allows you to move a window with the mouse
-- <kbd>alt</kbd>+<kbd>shift</kbd> allows you to resize a window with the mouse.
-
-
-## Micmute
-
-Here, I used the [Micmute Spoon](https://www.hammerspoon.org/Spoons/MicMute.html) and mapped it to <kbd>Pagedown</kbd>. I never use the key and it sits on the corner of my keyboard, so it is a convenient way for me to toggle the microphone on and off when on Zoom calls. A menubar icon will display the status, but you might have to hit it a few times for it to sync up with the current state.
-
-## Rounded corners
-
-Just the [RoundedCorners Spoon](https://www.hammerspoon.org/Spoons/RoundedCorners.html). I think it looks nice. feel free to disable to get those pixels back. Might cause burn in if you have an OLED panel, so be careful.
+- <kbd>control</kbd> + <kbd>shift</kbd> + 鼠标拖动：移动窗口。
+- <kbd>option</kbd> + <kbd>shift</kbd> + 鼠标拖动：缩放窗口。
 
 ## Disabled Spoons
 
-I have some extra Spoons in my repo, but I am not actively using them so they are disabled in the `init.lua`. Feel free to delete them.
+以下组件在仓库中保留，但当前 `init.lua` 未启用：
+
+- MiroWindowsManager
+- MicMute
+- RoundedCorners
+- ArrangeDesktop、DeepLTranslate、HSKeybindings、Hotkeys、KSheet
 
 # Install
 
-- Install [Hammerspoon](https://www.hammerspoon.org/)
-- copy the contents of this repo into you `~/.hammerspoon` folder
-- Reload the config
+1. 安装 [Hammerspoon](https://www.hammerspoon.org/) 并授予辅助功能权限；窗口循环的原生降级路径依赖该权限。
+2. 在仓库根目录执行 `hammerspoon/install.sh`，它会将 `~/.hammerspoon` 链接到本目录；如果目标是普通目录，会先创建带时间戳的备份。
+3. 启动或重载 Hammerspoon。配置加载后会显示 `Config loaded`。
+
+### Hammerspoon CLI
+
+`init.lua` 已加载 `hs.ipc`。Hammerspoon 正在运行时，可使用应用内的 `hs` 客户端，例如：
+
+```bash
+hs -c 'hs.reload()'
+```
 
 ### Karabiner config
 
-To get capslock to work as described above I followed [the following guide](https://brettterpstra.com/2017/06/15/a-hyper-key-with-karabiner-elements-full-instructions/) with some modifications.
-
-Insert the following into your '~/.config/karabiner/karabiner.json' file. Watch out for closing brackets and comments! Reload the config to activate.
-
-```
-"complex_modifications": {
-"parameters": {
-	"basic.simultaneous_threshold_milliseconds": 50,
-	"basic.to_delayed_action_delay_milliseconds": 500,
-	"basic.to_if_alone_timeout_milliseconds": 1000,
-	"basic.to_if_held_down_threshold_milliseconds": 500,
-	"mouse_motion_to_scroll.speed": 100
-},
-"rules": [
-	{
-		"manipulators": [
-			{
-				"description": "Change caps_lock to command+control+option.",
-				"from": {
-					"key_code": "caps_lock",
-					"modifiers": {
-						"optional": [
-							"any"
-						]
-					}
-				},
-				"to": [
-					{
-						"key_code": "left_control",
-						"modifiers": [
-							"left_command",
-							"left_option"
-						]
-					}
-				],
-				"to_if_alone": [
-					{
-						"key_code": "non_us_backslash"
-					}
-				],
-				"type": "basic"
-			}
-		]
-	},
-	},
-	
-```
-
-### Spotlight/Alfred hotkey remap
-Next, open up the settings app > keyboard > Shortcuts, and then remap spotlight by clicking the current shortcut and tapping capslock. If you prefer [Alfred](https://www.alfredapp.com), remap that in the app settings instead.
+导入或合并 [`../karabiner/complex_modifications/hyper-key.json`](../karabiner/complex_modifications/hyper-key.json) 中的右 Command 规则，并确保右 Option 的 Hyper 映射已在 Karabiner 中启用。完成后在 Karabiner-Elements 中重新加载规则。
