@@ -573,11 +573,130 @@ local function focusTargetViaMenuWithRetries(target)
   return focusTargetViaMenuOnce(target)
 end
 
+local function screenByUUID(uuid)
+  for _, screen in ipairs(hs.screen.allScreens()) do
+    if screen:getUUID() == uuid then
+      return screen
+    end
+  end
+  return nil
+end
+
+local function focusVisibleWindowOnScreen(screen)
+  for _, win in ipairs(hs.window.visibleWindows()) do
+    if win:isStandard() and win:screen() == screen then
+      win:focus()
+      return true
+    end
+  end
+  return false
+end
+
 local function gotoSpace(spaceId)
   local start = nowMs()
-  local ok, err = hs.spaces.gotoSpace(spaceId)
-  traceCycle(string.format("hs.spaces.gotoSpace space=%s ok=%s %.1fms", tostring(spaceId), tostring(ok), nowMs() - start))
-  return ok, err
+  local displayUUID, displayErr = hs.spaces.spaceDisplay(spaceId)
+  local screen = displayUUID and screenByUUID(displayUUID)
+  if not screen then
+    traceCycle("native space switch display missing: " .. tostring(displayErr))
+    return false, displayErr or "display not found"
+  end
+
+  local spaces, spacesErr = hs.spaces.spacesForScreen(screen)
+  local activeSpace = hs.spaces.activeSpaceOnScreen(screen)
+  local activeIndex = indexOfWindowId(spaces or {}, activeSpace)
+  local targetIndex = indexOfWindowId(spaces or {}, spaceId)
+  if not activeIndex or not targetIndex then
+    traceCycle("native space switch index missing: " .. tostring(spacesErr))
+    return false, spacesErr or "space index not found"
+  end
+
+  if activeIndex == targetIndex then
+    return true
+  end
+
+  local direction = targetIndex > activeIndex and 1 or -1
+  local keyCode = direction > 0 and 124 or 123
+  local maxSteps = #spaces
+  local steps = 0
+
+  while activeSpace ~= spaceId and steps < maxSteps do
+    if not focusVisibleWindowOnScreen(screen) then
+      return false, "no visible window on target display"
+    end
+    hs.timer.usleep(150000)
+
+    local previousSpace = activeSpace
+    local ok, result = hs.osascript.applescript(string.format([[
+tell application "System Events" to key code %d using control down
+]], keyCode))
+    if not ok then
+      return false, result
+    end
+
+    local deadline = nowMs() + 1500
+    repeat
+      hs.timer.usleep(50000)
+      activeSpace = hs.spaces.activeSpaceOnScreen(screen)
+    until activeSpace ~= previousSpace or nowMs() >= deadline
+
+    if activeSpace == previousSpace then
+      return false, "space switch timed out"
+    end
+    steps = steps + 1
+  end
+
+  local switched = activeSpace == spaceId
+  traceCycle(string.format(
+    "native space switch space=%s steps=%d switched=%s %.1fms",
+    tostring(spaceId),
+    steps,
+    tostring(switched),
+    nowMs() - start
+  ))
+  return switched, switched and nil or "target space not reached"
+end
+
+local function cycleApplicationFullscreenSpace()
+  local spaces = applicationFullscreenSpaces()
+  if #spaces < 2 then
+    return false
+  end
+
+  local focusedWindow = hs.window.focusedWindow()
+  local focusedWindowId = focusedWindow and focusedWindow:id()
+  local currentIndex = 0
+  for i, space in ipairs(spaces) do
+    if space.windowId == focusedWindowId then
+      currentIndex = i
+      break
+    end
+  end
+
+  local targetIndex = (currentIndex % #spaces) + 1
+  local target = spaces[targetIndex]
+  traceCycle(string.format(
+    "fullscreen cycle target space=%s window=%s",
+    tostring(target.spaceId),
+    tostring(target.windowId)
+  ))
+
+  local targetDisplay = hs.spaces.spaceDisplay(target.spaceId)
+  local targetScreen = targetDisplay and screenByUUID(targetDisplay)
+  local targetIsVisible = targetScreen
+    and hs.spaces.activeSpaceOnScreen(targetScreen) == target.spaceId
+  local targetWindow = targetIsVisible and target.windowId and hs.window.get(target.windowId)
+  if targetWindow then
+    targetWindow:raise():focus()
+    showHighlightForWindow(targetWindow)
+    return true
+  end
+
+  local switched = gotoSpace(target.spaceId)
+  if switched then
+    local visibleTarget = target.windowId and hs.window.get(target.windowId)
+    showHighlightForWindow(visibleTarget)
+  end
+  return switched
 end
 
 local function focusTargetViaFullscreenSpaces(target)
@@ -649,8 +768,13 @@ local function cycleWindow()
   markAmbiguousBounds(snapshot)
 
   if snapshot.count < 2 or #snapshot.windows < 2 then
-    hs.alert.show(appName .. " has " .. tostring(snapshot.count) .. " window")
-    finishCycleTrace("finish not enough windows")
+    if cycleApplicationFullscreenSpace() then
+      finishCycleTrace("finish fullscreen space cycle")
+      return
+    end
+
+    hs.application.launchOrFocus(appName)
+    finishCycleTrace("finish single window launch or focus")
     return
   end
 
