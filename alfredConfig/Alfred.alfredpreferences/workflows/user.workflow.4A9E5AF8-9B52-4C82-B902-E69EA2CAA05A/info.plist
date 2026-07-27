@@ -219,7 +219,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>~/Applications/IntelliJ IDEA Ultimate.app</string>
+					<string>~/Applications/IntelliJ IDEA.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>

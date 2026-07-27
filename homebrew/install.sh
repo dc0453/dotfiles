@@ -124,6 +124,7 @@ apps=(
   cmux
   health-tick
   codex
+  snapzy
   # java
   # google-chrome
   # qq

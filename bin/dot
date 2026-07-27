@@ -49,5 +49,8 @@ bash $DOTFILES_ROOT/hammerspoon/install.sh
 # Set up tmux
 bash $DOTFILES_ROOT/tmux/install.sh
 
+# Link Snapzy configuration
+bash $DOTFILES_ROOT/snapzy/link.sh
+
 # Set jdk
 bash $DOTFILES_ROOT/java/install.sh

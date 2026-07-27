@@ -229,4 +229,3 @@ claude() {
   mc --code "$@"
 }
 
-source ~/.moaextrc
