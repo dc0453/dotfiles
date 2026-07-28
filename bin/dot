@@ -52,5 +52,8 @@ bash $DOTFILES_ROOT/tmux/install.sh
 # Link Snapzy configuration
 bash $DOTFILES_ROOT/snapzy/link.sh
 
+# Link cmux configuration
+bash $DOTFILES_ROOT/cmux/link.sh
+
 # Set jdk
 bash $DOTFILES_ROOT/java/install.sh
